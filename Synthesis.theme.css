@@ -29,7 +29,7 @@ Join Salt's Discord Themes server! https://discord.gg/uy8nKQVatp
 
 :root
 {
-    --background-image: "https://i.imgur.com/Qr5w1TH.png";  /* Background image. Values: any image link in "quotes". See GitHub readme for included images! */
+    --background-image: "https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png";  /* Background image. Values: any image link in "quotes". See GitHub readme for included images! */
     --crt-scanline-light: rgba(255,255,255,0.05);        	/* CRT monitor light scanline stripe tone. Default: rgba(255,255,255,0.05) */
     --crt-scanline-dark: rgba(0,0,0,0.1);                	/* CRT monitor dark scanline stripe tone. Default: rgba(0,0,0,0.1) */
     --crt-flicker: none;                                    /* CRT monitor overlay flickering, may be performance heavy. Values: flicker (on) or none (off). */
