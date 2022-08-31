@@ -279,7 +279,7 @@ body {
 }
 
 .bg-1QIAus {
-  background-image: url(var(--background-image, "https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png")) center/cover;
+  background: var(--background-image, url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png)) center/cover;
 }
 
 @-webkit-keyframes flicker {
