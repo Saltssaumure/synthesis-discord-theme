@@ -2,7 +2,9 @@
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/synthesis-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/synthesis-discord-theme/releases/latest "Latest release")
 ![Total size](https://img.shields.io/github/repo-size/saltssaumure/synthesis-discord-theme?style=flat-square "Total size")
 
-A vibrant neon synthwave theme built for BetterDiscord.
+***A vibrant neon synthwave theme built for BetterDiscord.***
+
+![Screenshot of Synthesis Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/187690344-9369a7a6-a424-48af-a020-bc9582b1d3ee.png)
 
 ## Installation
 1. Install [BetterDiscord](https://betterdiscord.app/).
