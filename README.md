@@ -19,8 +19,8 @@
 ## Customisation
 
 ### Background image
-- **Theme setting:** change the value of `--background-image` to an image link. Check the [backgrounds folder](https://github.com/Saltssaumure/synthesis-discord-theme/tree/main/backgrounds) for suggested backgrounds!
-- **Default value:** `"https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png"`.
+- **Theme setting:** change the value of `--background-image` to an image link encased in `url()`. Check the [backgrounds folder](https://github.com/Saltssaumure/synthesis-discord-theme/tree/main/backgrounds) for suggested backgrounds!
+- **Default value:** `url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png)`.
 
 ### CRT scanline colour
 - **Theme settings:** change the value of `--crt-scanline-light` and `--crt-scanline-dark` to any colour. Low opacity value stronly recommended.
