@@ -1,0 +1,1278 @@
+/**
+ * @name Synthesis - Main
+ * @author Saltssaumure#7557
+ * @description Main section of the Synthesis theme. Please download the autoupdater from https://github.com/Saltssaumure/synthesis-discord-theme/releases/tag/latest.
+ * @version 1.0
+*/
+
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter&display=swap');
+
+$white: rgb(255, 255, 255);
+$pink: rgb(206, 63, 251);
+$rose: #f34383;
+$green: #39b887;
+// $gold: rgb(201, 150, 48);
+$gold: rgb(255, 165, 0);
+$blue: rgb(84, 63, 251);
+$blurple: rgb(88, 101, 242);
+$darkpurple: rgb(20, 6, 36);
+$darkblue: rgb(0, 0, 128);
+
+:root {
+    --font-primary: Inter, sans-serif;
+    --font-display: "Fira Code", monospace;
+    --font-code: "Fira Code",Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+}
+code,
+.markup-eYLPri pre {
+  font-family: var(--font-code);
+}
+
+.theme-dark,
+.theme-light {
+    --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 0px; /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
+    --rs-small-width: 3px; /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 7px; /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 16px; /* Thickness of status border for User profile | MUST end in px */
+    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+    --rs-online-color: #{$green}; /* Colour for online status */
+    --rs-idle-color: #{$gold}; /* Colour for idle status */
+    --rs-dnd-color: #{$rose}; /* Colour for dnd status */
+    --rs-offline-color: transparent; /* Colour for offline status */
+    --rs-streaming-color: #{$blue}; /* Colour for streaming status */
+    --rs-invisible-color: transparent; /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+    --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-secondary-alt: transparent;
+    --background-tertiary: transparent;
+    --background-accent: transparent;
+    --background-floating: transparent;
+    --background-nested-floating: transparent;
+    --background-mobile-primary: transparent;
+    --background-mobile-secondary: transparent;
+
+    --channeltextarea-background: #{transparentize($darkpurple, 0.5)};
+    --modal-background: #{$darkpurple};
+    --modal-footer-background: #{$blue};
+
+    --background-modifier-hover: #{transparentize($gold, 0.5)};
+    --background-modifier-active: #{transparentize($gold, 0.3)};
+    --background-modifier-selected: #{transparentize($gold, 0.5)};
+    --background-modifier-accent: #{transparentize($gold, 0.5)};
+
+    --deprecated-card-bg: #{transparentize($darkpurple, 0.3)};
+    --deprecated-text-input-bg: #{transparentize($darkpurple, 0.3)};
+    --deprecated-text-input-border: transparent;
+
+    --text-normal: #{$white};
+    --text-muted: #{$gold};
+    --text-link: #{lighten($gold, 20)};
+    --text-positive: #{$green};
+    --channels-default: #{$gold};
+    --channel-icon: #{$gold};
+    
+    --header-primary: #{$white};
+    --header-secondary: #{lighten($blurple, 20)};
+
+    --interactive-normal: #{$gold};
+    --interactive-hover: #{$white};
+    --interactive-active: #{$white};
+    --interactive-muted: #{$pink};
+
+    --input-background: #{transparentize($darkpurple, 0.3)};
+    --input-placeholder-text: #{transparentize($white, 0.5)};
+
+    --scrollbar-thin-thumb: #{$blue};
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #{$blurple};
+    --scrollbar-auto-track: #{transparentize($blue, 0.5)};
+    --scrollbar-auto-scrollbar-color-thumb: #{$blurple};
+    --scrollbar-auto-scrollbar-color-track: #{transparentize($blue, 0.5)};
+
+    $status-transparency: 0.5;
+    --status-danger: #{$rose};
+    --status-danger-background: #{transparentize($rose, $status-transparency)};
+    --status-positive: #{$green};
+    --status-positive-background: #{transparentize($green, $status-transparency)};
+    --status-warning: #{$gold};
+    --status-warning-background: #{transparentize($gold, $status-transparency)};
+
+    $button-transparency: 0.3;
+    $button-disabled-transparency: 0.8;
+    $button-active-darken: 5;
+    // Secondary button
+    --button-secondary-background: #{transparentize($blue, $button-transparency)};
+    --button-secondary-background-hover: #{$blue};
+    --button-secondary-background-active: #{darken($blue, $button-active-darken)};
+    --button-secondary-background-disabled: #{transparentize($blue, $button-disabled-transparency)};
+    // Positive button
+    --button-positive-background: #{transparentize($green, $button-transparency)};
+    --button-positive-background-hover: #{$green};
+    --button-positive-background-active: #{darken($green, $button-active-darken)};
+    --button-positive-background-disabled: #{transparentize($green, $button-disabled-transparency)};
+    // Danger button
+    --button-danger-background: #{transparentize($rose, $button-transparency)};
+    --button-danger-background-hover: #{$rose};
+    --button-danger-background-active: #{darken($rose, $button-active-darken)};
+    --button-danger-background-disabled: #{transparentize($rose, $button-disabled-transparency)};
+
+    // Danger outlined button
+    --button-outline-danger-border: #{$rose};
+    --button-outline-danger-border-hover: #{$rose};
+    --button-outline-danger-border-active: #{darken($rose, $button-active-darken)};
+    --button-outline-danger-background-hover: #{$rose};
+    --button-outline-danger-background-active: #{darken($rose, $button-active-darken)};
+    // Brand outlined button (default: blurple)
+    --button-outline-brand-border: #{$blue};
+    --button-outline-brand-border-hover: #{$blue};
+    --button-outline-brand-border-active: #{darken($blue, $button-active-darken)};
+    --button-outline-brand-background-hover: #{$blue};
+    --button-outline-brand-background-active: #{darken($blue, $button-active-darken)};
+    
+    // Buttons 
+    .button-f2h6uQ,
+    .bd-button:not(.bd-addon-button),
+    .topPill-3DJJNV .item-3XjbnG,
+    #bd-pub-button {
+        border-radius: 50px;
+    }
+
+    // More buttons
+    .lookFilled-yCfaCM,
+    .lookOutlined-3yKVGo,
+    .lookInverted-2mDUMi {
+        box-shadow: 0 0 5px 0 $darkpurple;
+    }
+
+    @mixin button($button-color) {
+        background-color: transparentize($button-color, $button-transparency);
+        &:hover {
+            background-color: $button-color;
+        }
+        &:active {
+            background-color: #{darken($button-color, $button-active-darken)};
+        }
+    }
+
+    .lookFilled-yCfaCM.colorBrand-I6CyqQ {
+        @include button($blue);
+    }
+    .lookInverted-2mDUMi.colorBrand-I6CyqQ {
+        @include button($white);
+    }
+    .bd-button,
+    #bd-pub-button {
+        @include button($blue);
+    }
+    .bd-button.bd-button-danger {
+        @include button($rose);
+    }
+    .circleIconButton-1VxDrg.selected-2r1Hvo {
+        @include button($green);
+    }
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+    .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+        @include button($blue);
+    }
+    .lookLink-15mFoz.colorLink-1Md3RZ {
+        --text-link: #{$white};
+    }
+    .lookLink-15mFoz.colorPrimary-2AuQVo {
+        color: #{$white};
+    }
+    .buttonWhite-hd8TaT {
+        border-color: transparentize($white, $button-transparency)!important;
+        &:hover,
+        &:active {
+            border-color: $white!important;
+        }
+    }
+
+    // Profile preview and popout
+    .profileColors-3Y0XaR {
+        // --profile-body-background-color: #{$darkpurple};
+        --profile-gradient-primary-color: #{transparentize($darkpurple, 0.2)};
+        --profile-gradient-secondary-color: #{transparentize($darkpurple, 0.5)};
+        --profile-body-background-color: #{transparentize($darkpurple, 0.2)};
+        --profile-body-divider-color: #{$gold};
+        --profile-body-divider-opacity: 0.5;
+    }
+}
+
+// Popouts
+.layerContainer-2v_Sit .theme-dark,
+.layerContainer-2v_Sit .theme-light {
+    --background-primary: #{$darkpurple};
+    --background-secondary: #{$darkpurple}; 
+    --background-secondary-alt: #{transparentize($darkpurple, 0.2)};
+    --background-tertiary: #{$blue};
+    --background-accent: #{$pink};
+    --background-floating: #{$darkpurple};
+
+    --background-modifier-hover: #{transparentize($gold, 0.5)};
+    --background-modifier-active: #{transparentize($gold, 0.5)};
+    --background-modifier-selected: #{transparentize($gold, 0.5)};
+    --background-modifier-accent: #{transparentize($gold, 0.5)};
+
+    --text-normal: inherit;
+    --text-muted: inherit;
+    --channels-default: inherit;
+
+    --interactive-normal: #{$white};
+    --interactive-hover: #{$white};
+    --interactive-active: #{$white};
+    --interactive-muted: #{$pink};
+
+    --header-secondary: #{$gold};
+
+    --search-popout-option-fade: linear-gradient(
+        90deg, 
+        transparent,
+        #{$darkpurple} 80%
+    );
+    --search-popout-option-fade-hover: linear-gradient(
+        90deg,
+        transparent,
+        #{transparentize($gold, 0.5)} 80%
+    );
+    --search-popout-option-user-nickname: var(--text-normal);
+    --search-popout-option-user-username: var(--text-muted);
+    --search-popout-option-filter-text: blue;
+    --search-popout-option-non-text-color: #{$white};
+    --search-popout-option-filter-color: #{$white};
+    --search-popout-option-answer-color: #{$white};
+    --search-popout-date-picker-border: 1px solid hsla(214,calc(var(--saturation-factor, 1)*9.1%),15.1%,0.3);
+    --search-popout-date-picker-hint-text: #{$white};
+    --search-popout-date-picker-hint-value-text: #{$white};
+    --search-popout-date-picker-hint-value-background: var(--brand-experiment);
+    --search-popout-date-picker-hint-value-background-hover: var(--brand-experiment-430);
+}
+
+.appMount-2yBXZl,
+body {
+    background-color: $darkpurple;
+}
+
+// Image background
+.bg-1QIAus {
+    background-image: url(var(--background-image, "https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png")) center/cover;
+}
+
+$outmost-spacing: 30px;
+$outmost-border-width: 10px;
+$sidebar-spacing: 20px;
+$sidebar-border-width: 5px;
+$item-spacing: 10px;
+$sidebar-width: 72px; // Set by Discord
+$channels-width: 240px; // Set by Discord
+
+@mixin overlay {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+@mixin scanline-overlay() {
+    @include overlay();
+    background-image: linear-gradient(
+        var(--crt-scanline-light, rgba(255,255,255, 0.05)) 50%,
+        var(--crt-scanline-dark, rgba(0,0,0, 0.1)) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 1000;
+    pointer-events: none;
+    animation: var(--crt-flicker, none) 0.1s infinite alternate;
+}
+@keyframes flicker {
+    0% { background-color: transparent; }
+    100% { background-color: rgba(0,0,0, 0.05); }
+}
+
+@mixin outmost-box() {
+    border: $outmost-border-width solid #{$blurple};
+    margin: $outmost-spacing;
+    margin-top: 10px;
+    border-radius: $outmost-spacing;
+    box-shadow: 0 0 30px 0 $gold inset, 0 0 20px 0 $darkblue;
+    background: transparentize($darkblue, 0.7);
+}
+
+@mixin orange-box() {
+    border: $sidebar-border-width solid $gold;
+    border-radius: $sidebar-spacing;
+    box-shadow: 0 0 10px 0 $gold;
+}
+
+@mixin blue-box() {
+    border: $sidebar-border-width solid $blue;
+    border-radius: $sidebar-spacing;
+    box-shadow: 0 0 20px 0 $darkblue;
+}
+
+@mixin unread-pill($pill-size) {
+    width: calc(2 * $pill-size);
+    height: calc(2 * $pill-size);
+    margin-left: calc(0px - $pill-size);
+    border-radius: 0 $pill-size $pill-size 0;
+    background-color: $gold;
+}
+
+// Title bar
+.titleBar-1it3bQ {
+    .alignCenter-14kD11 {
+        border-radius: 0 0 $item-spacing $item-spacing;
+    }
+}
+
+// Main view
+.container-1eFtFS {
+    @include outmost-box();
+    width: auto;
+
+    // Tint over whole main view
+    &::after {
+        @include overlay;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background-color: transparentize($gold, 0.9);
+    }
+    // Scanline overlay over server and channel sidebars
+    &::before {
+        margin: $sidebar-spacing;
+        width: calc($sidebar-width + $channels-width + $sidebar-border-width);
+        height: calc(100% - (2 * ($sidebar-spacing + $sidebar-border-width)));
+        @include orange-box();
+        @include scanline-overlay();
+    }
+
+    // Fade in/out scrollers
+    .scrollerBase-_bVAAt {
+        mask-image: linear-gradient(transparent, black 5%, black 95%, transparent);
+    }
+}
+
+// Servers sidebar
+.guilds-2JjMmN {
+    margin: $sidebar-spacing;
+    margin-right: 0;
+    @include orange-box();
+
+    .platform-osx & .scroller-3X7KbA,
+    .platform-win & .scroller-3X7KbA {
+        padding: 12px 0 4px 0;
+    }
+
+    // New messages pill
+    .item-2LIpTv {
+        @include unread-pill(6px);
+    }
+    .pill-2RsI5Q:not(.bd-selected) .item-2LIpTv {
+        height: calc(2 * 6px)!important;
+    }
+}
+
+// Channels sidebar and main chat
+.base-2jDfDU {
+
+    // Channels sidebar
+    .sidebar-1tnWFu {
+        margin: $sidebar-spacing 0; 
+
+        // Header
+        .header-3OsQeK {
+            box-shadow: none;
+        }
+        .clickable-vvKY2q .header-3OsQeK:hover,
+        .selected-1GtAC5 .header-3OsQeK {
+            background-color: transparent;
+        }
+
+        // New messages pill
+        .unread-36eUEm {
+            @include unread-pill(6px);
+            top: calc(50% - 3px);
+        }
+
+        // Channel group name
+        .container-q97qHp {
+            text-align: center;
+        }
+
+        // Channel
+        .content-1gYQeQ,
+        .layout-1qmrhw,
+        .content-1Tgc42 {
+            border-radius: $item-spacing;
+        }
+
+        // Self button
+        .withTagAsButton-OsgQ9L,
+        .withTagless-10ooWt {
+            border-radius: 30px;
+            margin-bottom: 4px;
+            margin-right: 4px;
+        }
+    }
+
+    // Top bar
+    .title-31SJ6t {
+        // Search
+        .search-2Mwzzq .DraftEditor-root .DraftEditor-editorContainer {
+            height: 24px;
+
+            .searchFilter-2UfsDk,
+            .searchAnswer-23w-CH
+            {
+                padding: 0 6px;
+                border: 2px solid $gold;
+                background: var(--background-modifier-selected);
+                height: 22px;
+                line-height: 18px;
+            }
+            .searchFilter-2UfsDk {
+                border-radius: 10px 0 0 10px;
+            }
+            .searchAnswer-23w-CH {
+                padding-left: 0;
+                border-radius: 0 10px 10px 0;
+            }
+        }
+    }
+    // Top bar shadow
+    .content-1jQy2l:before,
+    .chat-1-OBC7:before {
+        display: none;
+    }
+
+    // Main chat
+    .chatContent-3KubbW {
+
+        .messagesWrapper-RpOMA3 {
+            margin-bottom: 4px;
+
+            // New messages bar
+            .newMessagesBar-1hF-9G {
+                min-height: 30px;
+                top: -8px;
+                background: linear-gradient(transparent, transparentize($blurple, 0.4) 40%, transparentize($blurple, 0.2));
+            }
+            // Jump to present bar
+            .jumpToPresentBar-1cEnH0 {
+                background: linear-gradient(transparentize($blue, 0.2), transparentize($blue, 0.4) 60%, transparent);
+            }
+
+            // Chat message
+            .messageListItem-ZZ7v6g {
+                margin-left: 17px;
+
+                // Image embed
+                .imageWrapper-oMkQl4 {
+                    border-radius: calc(2 * $item-spacing);
+                    // Gif label
+                    .imageAccessory-2yA7Kb {
+                        $tag-spacing: 12px;
+                        top: $tag-spacing;
+                        right: $tag-spacing;
+                        .gifTag-1TvtGO {
+                            border-top-right-radius: calc((2 * $item-spacing) - $tag-spacing);
+                        }
+                    }
+                }
+
+                .embedFull-1HGV2S, // Link embed
+                .wrapper-1HIH0j, // Invite embed
+                .embedSpotify-1rDvOE, // Spotify embed
+                .wrapperAudio-1Bzv_Z // Audio embed
+                {
+                    border-radius: calc(2 * $item-spacing);
+                    background-color: transparentize($gold, 0.7);
+                }
+
+                // Link embed
+                .embedFull-1HGV2S {
+                    .embedThumbnail-2nTasl .imageWrapper-oMkQl4 {
+                        border-radius: $item-spacing;
+                    }
+
+                    &::after {
+                        height: 100%;
+                        width: calc(100% + 4px);
+                        left: -4px;
+                        border-radius: inherit;
+                        @include scanline-overlay();
+                    }
+                }
+
+                // Audio embed
+                .audioControls-3fmemK {
+                    border-radius: $item-spacing;
+                }
+
+                // Spoiler embed
+                .spoilerContainer-3wsC0k {
+                    border-radius: calc(2 * $item-spacing);
+                }
+
+                // Attachment embed
+                .footer-GXWBBp {
+                    background-color: transparentize($blue, 0.2);
+                }
+
+                // Gift embed
+                .giftCodeContainer-3ObH0O {
+                    .tile-2mmK5T {
+                        background-color: transparentize($blue, 0.7);
+                        border-radius: calc(2 * $item-spacing);
+                        .invalidPoop--w1123,
+                        .description-X8_53U {
+                            background-color: transparent;
+                        }
+                    }
+                }
+
+                // Thread
+                .container-3i3IzO {
+                    border-radius: $item-spacing;
+                    background-color: transparentize($gold, 0.7);
+                }
+            }
+
+            // Chat dividers 
+            $divider-color: $gold;
+            .divider-2rZFJK {
+                --divider-color: #{$divider-color};
+                border-top: none;
+                background-color: $divider-color;
+                height: 2px;
+                border-radius: 5px;
+                box-shadow: 0 0 3px 1px darken($divider-color, 20);
+                justify-content: center;
+
+                // New message divider pill
+                .unreadPill-3nEWYM {
+                    border-radius: $item-spacing;
+                    color: darken($divider-color, 30);
+                    padding: 2px 10px;
+                    right: auto;
+                    top: -5px;
+                    text-transform: capitalize;
+                    box-shadow: 0 0 5px 1px darken($divider-color, 20);
+
+                    .unreadPillCap-2-iI4h {
+                        display: none;
+                    }
+                }
+                
+                // Date change divider
+                .content-3spvdd {
+                    background: $divider-color;
+                    color: darken($divider-color, 30);
+                    padding: 2px 10px;
+                    font-size: 10px;
+                    line-height: 9px;
+                    font-weight: 700;
+                    box-shadow: 0 0 5px 1px darken($divider-color, 20);
+                }
+            }
+            .group-spacing-16 .divider-IqmEqJ {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+
+        // Chat text area
+        .scrollableContainer-15eg7h {
+            @include orange-box();
+
+            &::before {
+                height: calc(100% - (2 * $sidebar-border-width));
+                width: calc(100% - (2 * $sidebar-border-width));
+                @include scanline-overlay();
+                border-radius: inherit;
+            }
+        }
+    }
+
+    // Video call
+    .callContainer-HtHELf {
+        background: transparent;
+        .gradientContainer-phMG8d {
+            background-image: none;
+        }
+    }
+
+    // Discover servers
+    .categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
+        background-color: var(--background-modifier-selected);
+    }
+    .pageWrapper-2PwDoS {
+        background-color: transparent;
+        // Search
+        .searchBox-pyIJJj {
+            border-radius: $item-spacing;
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .select-1Ia3hD {
+            border-radius: $item-spacing;
+        }
+    }
+
+    // Server home
+    .background-fkKrXt,
+    .headerBarInner-2pcZSM:after {
+        background: transparent;
+    }
+
+    // Thread floater (narrow screens)
+    .chatTarget-3H6mpC {
+        background: transparentize($darkpurple, $amount: 0.2);
+    }
+    .floating-3M3WeH {
+        margin: $sidebar-spacing;
+        @include blue-box();
+    }
+
+    // Members sidebar
+    .container-2o3qEW {
+        position: relative;
+        margin: 0 $sidebar-spacing $sidebar-spacing 0;
+        height: auto;
+        @include orange-box();
+
+        // MemberCount plugin
+        #MemberCount {
+            border-bottom: none;
+        }
+
+        // Member
+        .layout-1qmrhw {
+            border-radius: $item-spacing;
+        }
+
+        &::before {
+            width: 100%;
+            height: 100%;
+            border-radius: calc($sidebar-spacing - $sidebar-border-width);
+            @include scanline-overlay();
+        }
+    }
+}
+
+// Popovers
+.container-18GwIk, // Threads 
+.recentMentionsPopout-2bI1ZN, // Inbox
+.messagesPopoutWrap-3zryHW, // Pinned messages
+.menu-1QACrS, // Account menu
+.container-2McqkF.elevationBorderHigh-3drnJX, // Search options
+.userPopout-3fydSP, // User profile
+.contentWrapper-3vHNP2, // Emoji picker
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm // Emoji picker add
+{
+    @include blue-box();
+    overflow: hidden;
+    max-height: calc(764px - (2 * $sidebar-border-width) - 15px)!important;
+}
+
+// Create group chat select friends
+// Search entry
+.tag-15zcD_ {
+    border-radius: 16px;
+}
+// Friend item
+.friend-8ZraY7 {
+    border-radius: $item-spacing;
+
+    &.friendSelected-3cwmD7 {
+        background-color: var(--background-modifier-hover);
+    }
+
+    .checkbox-f1HnKB {
+        border-radius: 50%;
+        border: 2px solid $gold;
+
+        &.checked-1pZh2h {
+            border-color: $gold!important;
+            path {
+                fill: $gold;
+            }
+        }
+    }
+}
+
+// Emoji picker
+.contentWrapper-3vHNP2,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm {
+    background-color: $blue;
+
+    .emojiPicker-6YCk8a {
+        background-color: transparent;
+
+        // Header
+        .header-11eigE {
+            background-color: $blue;
+            box-shadow: none;
+
+            // Search
+            .container-1SX9VC {
+                background-color: transparentize($darkpurple, 0.2);
+                border-radius: 20px;
+            }
+        }
+    
+        // Main picker
+        .bodyWrapper-1eSOtW,
+        .listWrapper-2DwCYS,
+        .content-A8TzKf {
+            background-color: $darkpurple;
+    
+            // Hovered emoji or sticker
+            .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+            .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
+                background-color: transparentize($pink, 0.5);
+            }
+        }
+    
+        // Emoji info
+        .inspector-DFKXwB {
+            background-color: transparentize($darkpurple, 0.2);
+        }
+    }
+}
+// Server/category list
+.wrapper-22rqw6 {
+    background-color: transparentize($darkpurple, 0.2);
+    top: calc(50px + $sidebar-border-width);
+}
+
+// Upload file entry
+.item-1OdjEX {
+    border-radius: $item-spacing;
+}
+
+// Threads popover entry 
+.container-2rzKKA {
+    border: 2px solid var(--background-primary);
+    border-radius: 50px;
+}
+
+// Searchbar in popout
+.container-2oNtJn {
+    background-color: transparentize($gold, 0.7);
+    border-radius: 20px;
+}
+
+// Search options
+.theme-dark {
+    // Header
+    .focused-2FU0YH {
+        background-color: var(--background-tertiary);
+    }
+    // Calendar
+    .calendarPicker-sDhzdi {
+        .react-datepicker,
+        .react-datepicker__header {
+            background-color: var(--background-floating);
+        }
+        .react-datepicker__day--disabled,
+        .react-datepicker__day--outside-month,
+        .react-datepicker__day.react-datepicker__day--disabled,
+        .react-datepicker__day.react-datepicker__day--disabled:hover {
+            background-color: var(--background-floating);
+        }
+    }
+    .datePickerHint-Ir4715 {
+        .hintValue-V9hd8l {
+            border-radius: 20px;
+            padding: 0 8px;
+        }
+    }
+}
+
+// Profile popout 
+.avatarWrapper-3y0KZ1 {
+    left: 26px;
+    top: 84px;
+    .avatar-2OC07D {
+        border: 0;
+    }
+    // View profile shadow
+    .avatarHint-2g3Mcd {
+        top: 0;
+        left: 0;
+        border-radius: 50px;
+        foreignObject { 
+            mask: none;
+        }
+    }
+}
+.avatarPositionNormal-V4Mjtq {
+    top: 24px;
+}
+
+// with Nitro theme
+.userPopoutThemed-3BZ4by {
+    padding: 0;
+    overflow: hidden;
+
+    .userPopoutInnerWithTheme-71l1ON::before {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: $sidebar-spacing;
+    }
+
+    // Nitro upsell banner
+    .wrapper-400BN2 {
+        width: calc(100% - (2 * $sidebar-border-width));
+        border-radius: calc($sidebar-spacing - $sidebar-border-width);
+    }
+}
+
+@mixin blue-box-small() {
+    border: 2px solid $blue;
+    box-shadow: 0 0 10px 0 $darkblue;
+    background: transparentize($darkpurple, 0.3);
+    border-radius: $item-spacing;
+
+    &::after {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        @include scanline-overlay();
+    }
+}
+
+// Dropdown input popout
+.popout-1KHNAq {
+    @include blue-box-small();
+
+    .selectedIcon-19TbzU {
+        color: $green;
+    }
+}
+
+// Attachment language select popout
+.languageSelector-2e1IuO {
+    @include blue-box-small();
+}
+
+// Popouts that depend on theme-dark/light
+.theme-dark, .theme-light {
+
+    // Add registered game
+    .addGamePopout-2SKNIV {
+        @include blue-box-small();
+        .divider-_0um2u {
+            border-top: none;
+        }
+    }
+
+    // Create server
+    .footerSeparator-VzAYwb {
+        box-shadow: none;
+    }
+
+    // Tooltips
+    .tooltipPrimary-3qLMbS {
+        $tooltip-color: transparentize($pink, 0.2);
+        background-color: $tooltip-color;
+        border-radius: 20px;
+        box-shadow: 0 0 5px 0 darken($color: $tooltip-color, $amount: 5);
+
+        .tooltipPointer-3L49xb {
+            border-top-color: $tooltip-color;
+        }
+
+        .tooltipContent-Nejnvh {
+            .activityIcon-vfIBet,
+            .activityIcon-vfIBet {
+                color: $white;
+            }
+        }
+    }
+
+    .root-g14mjS {
+        @include blue-box();
+
+        // Delete message confirmation
+        .message-G6O-Wv {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        //BD addon errors
+        .bd-addon-error {
+            border-radius: 50px;
+            background: transparent;
+            border: 2px solid var(--modal-background);
+        }
+        .bd-addon-error:hover {
+            border-color: $pink;
+        }
+        }
+}
+
+// Status glow
+.wrapper-1VLyxH[aria-label*="Online"] {
+    --statusGlowColor: var(--rs-online-color);
+}
+.wrapper-1VLyxH[aria-label*="Idle"] {
+    --statusGlowColor: var(--rs-idle-color);
+}
+.wrapper-1VLyxH[aria-label*="Do Not Disturb"] {
+    --statusGlowColor: var(--rs-dnd-color);
+}
+.wrapper-1VLyxH[aria-label*="Streaming"] {
+    --statusGlowColor: var(--rs-streaming-color);
+}
+.wrapper-1VLyxH {
+    box-shadow: 0 0 10px var(--statusGlowColor);
+}
+
+// Colour stuff
+// Focused menu option
+.colorDefault-CDqZdO.focused-3qFvc8 {
+    background-color: transparentize($pink, 0.7);
+}
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+    background-color: transparentize($pink, 0.5);
+}
+
+// Keybinds
+.theme-dark,
+.theme-light {
+    .keybindShortcut-3zF1P9 {
+        .key-N5VmHN {
+            color: $white;
+            background-color: $pink;
+            box-shadow: inset 0 -4px 0 darken($pink, 30);
+            border: 1px solid darken($pink, 30);
+            border-radius: 20px;
+        }
+    }
+}
+
+// User settings view
+.standardSidebarView-E9Pc3j {
+    @include outmost-box();
+    
+    // Scanline and tint overlay over whole view
+    &::after {
+        @include scanline-overlay();
+        width: 100%;
+        height: 100%;
+        border-radius: calc($outmost-spacing - $outmost-border-width);
+        background-color: transparentize($gold, 0.9);
+    }
+
+    // Settings sidebar
+    .side-2ur1Qk {
+        .item-3XjbnG,
+        .background-Gjdjzm {
+            border-radius: $item-spacing;
+        }
+    }
+
+    // Large menu items and info cards
+    .item-2idW98,
+    .radioBar-3w9XY-,
+    .card-16VQ8C,
+    .container-3jbRo5 {
+        border-radius: calc(2 * $item-spacing);
+    }
+
+    .select-1Ia3hD, // Single line inputs
+    .container-30qY7E, // Dropdown selectors
+    .input-2g-os5 // Keybind recorders
+    { 
+        border-radius: 50px;
+    }
+
+    // Bar sliders
+    .slider-1NC-Gf {
+        $bar-color: $pink;
+        @mixin bar() {
+            background: $bar-color;
+            box-shadow: 0 0 3px 1px darken($bar-color, 20);
+        }
+        .markDash-yk2kJ- {
+            background: $gold;
+        }
+        .defaultValue-19SZ-q .markValue-2U_-UG {
+            color: $white;
+        }
+        .bar-1Bhnl9 {
+            background: transparentize($bar-color, 0.5);
+            overflow: visible;
+            .barFill-2Bh7CX {
+                border-radius: 4px;
+                @include bar();
+            }
+        }
+        .grabber-2GQyvM {
+            $grabber-size: 15px;
+            border: none;
+            height: $grabber-size;
+            width: $grabber-size;
+            margin-top: calc(0px - ($grabber-size / 2));
+            margin-left: calc(0px - ($grabber-size / 2));
+            border-radius: 50%;
+            @include bar();
+        }
+    }
+
+    // Toggles
+    .control-1fl03- {
+        .container-2nx-BQ {
+            background-color: transparentize($darkpurple, 0.2)!important;
+            path {
+                fill: $darkpurple!important;
+            }
+        }
+        .checked-25WXMf {
+            background-color: transparentize($gold, 0.3)!important;
+            path {
+                fill: $gold!important;
+            }
+        }
+    }
+    // BetterDiscord toggles
+    .bd-switch {
+        .bd-switch-body {
+            --switch-color: #{transparentize($darkpurple, 0.2)};
+            .bd-switch-symbol path {
+                fill: $darkpurple;
+            }
+        }
+        input:checked+.bd-switch-body {
+            --switch-color: #{transparentize($gold, 0.3)};
+            .bd-switch-symbol path {
+                fill: $gold;
+            }
+        }
+    }
+
+    // Section specifics
+    // My Account 
+    .accountProfileCard-lbN7n- {
+        @include blue-box();
+        background-color: transparentize($darkpurple, 0.3);
+    }
+    // Profiles
+    #profile-customization-tab {
+        // Preview
+        .profileCustomizationPreview-2-Y173 {
+            @include blue-box();
+        }
+        // User/Server Profile tabs
+        .top-K_jibn .brand-3g5E0C.item-3XjbnG:active,
+        .top-K_jibn .brand-3g5E0C.selected-g-kMVV.item-3XjbnG {
+            border-bottom-color: $gold;
+        }
+    }
+
+    // Privacy & Safety DM options
+    .radioBar-3w9XY- {
+        border-left: 5px solid var(--radio-bar-accent-color);
+    }
+    // Devices session icons
+    .sessionIcon-2fwSzb {
+        background: transparentize($gold, 0.7);
+        svg {
+            color: $gold;
+        }
+    }
+    // Connections account bubbles
+    .inner-1lPVFp {
+        border-radius: $item-spacing;
+    }
+    // Billing info card
+    .codeRedemptionRedirect-2hYMSQ {
+        background-color: var(--deprecated-card-bg);
+        border: none;
+    }
+    // Voice & Video
+    .userSettingsVoice-1fEtsL {
+        // Voice settings
+        .container-3NTP7o {
+            border-radius: 20px;
+            background: $blue!important;
+            .progress-1S-TDF {
+                background-color: transparentize($darkpurple, 0.5);
+            }
+            .notches-2w7UZJ.gray-3wP137 {
+                background-image: none;
+            }
+        }
+        // Video background
+        .backgroundOptionInner-SSz19O,
+        .backgroundOptionRing-1vvQ0C {
+            border-radius: $item-spacing;
+        }
+    }
+    // Registered Games
+    #game-activity-tab {
+        .notDetected-M3Ghh2,
+        .nowPlaying-3UpuKc {
+            border-radius: calc(2 * $item-spacing);
+        }
+        .default-1Tkeeg {
+            background-color: var(--status-danger);
+            background-image: url(https://discord.com/assets/eb69ec9fdd30653a3ade1ab501a7cd3d.svg)
+        }
+        .game-2f2vPC {
+            box-shadow: none;
+
+            .gameName-zbZetm {
+                color: var(--header-primary);
+            }
+            .gameNameInput-2wbDJ9:focus,
+            .gameNameInput-2wbDJ9:hover {
+                background-color: transparentize($darkpurple, 0.3);
+                border-color: transparent;
+            }
+            .lastPlayed-1jum9A, 
+            .overlayStatusText-In0YrK {
+                color: var(--header-secondary);
+            }
+            .overlayToggleIconOn-21NN2N .fill-297bdf {
+                fill: $gold;
+            }
+        }
+    }
+    // Game Overlay
+    .wrapper-SdcMKg {
+        border-radius: calc(2 * $item-spacing);
+        .option-1QI4c9 {
+            border-radius: $item-spacing;
+        }
+    }
+    // BetterDiscord settings
+    // Collapsible settings arrow
+    .bd-settings-group.collapsible .bd-settings-title::after {
+        background: $gold;
+    }
+    // Dropdown selector
+    .bd-select {
+        border-radius: 20px;
+        .bd-select-options {
+            @include blue-box-small();
+        }
+    }
+    // Number input
+    .bd-number-input {
+        border-radius: 20px;
+    }
+    .bd-addon-views .bd-view-button.selected {
+        background-color: $gold;
+    }
+    // Plugin/Theme buttons
+    $bd-radius: 20px;
+    .bd-controls>.bd-addon-button:first-of-type {
+        border-radius: $bd-radius 0 0 $bd-radius;
+    }
+    .bd-controls>.bd-addon-button:last-of-type {
+        border-radius: 0 $bd-radius $bd-radius 0;
+    }
+}
+
+// Friends view
+// DM list
+.interactive-1vLZ_I {
+    border-radius: $item-spacing;
+}
+// Active Now sidebar
+.nowPlayingColumn-1eCBCN {
+    position: relative;
+    margin: 0 $sidebar-spacing $sidebar-spacing 0;
+    height: auto;
+    @include orange-box();
+
+    .scroller-hE2gWq {
+        border: none;
+
+        .wrapper-2RrXDg {
+            border-width: 2px;
+            border-radius: $item-spacing;
+        }
+        .outer-2JOHae.active-1W_Gl9,
+        .outer-2JOHae.interactive-2zD88a:hover {
+            background-color: transparent;
+        }
+        .inset-SbsSFp {
+            background-color: transparent;
+        }
+    }
+
+    &::after {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        border-radius: calc($sidebar-spacing - $sidebar-border-width);
+        @include scanline-overlay();
+    }
+}
+
+// Misc stuff
+// Bot tag
+.px-MnE_OR.botTag-7aX5WZ {
+    border-radius: 20px;
+    .botText-1fD6Qk {
+        line-height: 20px;
+    }
+}
+// Code block
+.markup-eYLPri code,
+.textContainer-36wgKK {
+    background: transparentize($blue, 0.5);
+}
+// Spoiler text
+.theme-dark,
+.theme-light {
+    .spoilerText-27bIiA.hidden-3B-Rum {
+        background: transparentize($blue, 0.5);
+    }
+}
+/* BetterDiscord toasts */
+.bd-toasts {
+    align-items: flex-end;
+    right: 0;
+}
+    .bd-toast {
+        margin-right: 24px;
+        background-color: transparentize($blue, $amount: 0.3);
+        border-radius: 30px;
+    }
+    .bd-toast.toast-success {
+        background-color: transparentize($blurple, $amount: 0.2);
+    }
+/* Title bar */
+.titleBar-1it3bQ::before {
+    content: var(--title-text, "Synthesis v1.0");
+    font-family: var(--font-display);
+    font-weight: 500;
+    color: var(--text-muted);
+    text-shadow: 0 0 5px $gold;
+	position: absolute;
+    top: -4px;
+    left: 0;
+    height: 18px;
+    padding: 4px;
+    line-height: 23px;
+    font-size: 14px;
+    letter-spacing: 0;
+	z-index: 1;
+}
+.wordmark-2u86JB {
+	display: none;
+}
