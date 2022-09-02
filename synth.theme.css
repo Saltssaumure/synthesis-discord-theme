@@ -712,7 +712,6 @@ body {
   pointer-events: none;
   -webkit-animation: var(--crt-flicker, none) 0.1s infinite alternate;
           animation: var(--crt-flicker, none) 0.1s infinite alternate;
-  background-color: var(--tint-overlay, rgba(255, 165, 0, 0.1));
 }
 
 .container-18GwIk,

@@ -760,7 +760,6 @@ $title-height: 48px; // Set by Discord
             height: 100%;
             border-radius: calc($sidebar-spacing - $sidebar-border-width);
             @include scanline-overlay();
-            background-color: var(--tint-overlay, rgba(255, 165, 0, 0.1));
         }
     }
 }
