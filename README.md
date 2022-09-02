@@ -22,9 +22,13 @@
 - **Theme setting:** change the value of `--background-image` to an image link encased in `url()`. Check the [backgrounds folder](https://github.com/Saltssaumure/synthesis-discord-theme/tree/main/backgrounds) for suggested backgrounds!
 - **Default value:** `url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png)`.
 
+### Tint overlay
+- **Theme setting:** change the value of `--tint-overlay` to any color. Low opacity value stronly recommended.
+- **Default value:** `rgba(255, 165, 0, 0.1)`.
+
 ### CRT scanline colour
 - **Theme settings:** change the value of `--crt-scanline-light` and `--crt-scanline-dark` to any colour. Low opacity value stronly recommended.
-- **Default values:** `rgba(255,255,255,0.05)` and `rgba(0,0,0,0.1)`.
+- **Default values:** `rgba(255, 255, 255, 0.05)` and `rgba(0, 0, 0, 0.1)`.
 
 ### CRT flicker effect
 *Warning: this is a fast flickering effect and may not be suitable for people with photosensitive epilepsy.*
