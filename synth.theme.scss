@@ -12,13 +12,13 @@
 $white: rgb(255, 255, 255);
 $pink: rgb(206, 63, 251);
 $rose: #f34383;
-$green: #39b887;
-// $gold: rgb(201, 150, 48);
+$green: #34ac8c;
 $gold: rgb(255, 165, 0);
 $blue: rgb(84, 63, 251);
 $blurple: rgb(88, 101, 242);
 $darkpurple: rgb(20, 6, 36);
 $darkblue: rgb(0, 0, 128);
+$streamer-color: hsl(262,46.8%,39.8%);
 
 :root {
     --font-primary: Inter, sans-serif;
@@ -59,15 +59,17 @@ code,
     --background-mobile-secondary: transparent;
 
     --channeltextarea-background: #{transparentize($darkpurple, 0.5)};
+    --channel-text-area-placeholder: #{transparentize($white, 0.5)};
     --modal-background: #{$darkpurple};
     --modal-footer-background: #{$blue};
 
-    --background-modifier-hover: #{transparentize($gold, 0.5)};
+    --background-modifier-hover: #{transparentize($gold, 0.4)};
     --background-modifier-active: #{transparentize($gold, 0.3)};
     --background-modifier-selected: #{transparentize($gold, 0.5)};
     --background-modifier-accent: #{transparentize($gold, 0.5)};
 
     --deprecated-card-bg: #{transparentize($darkpurple, 0.3)};
+    --deprecated-card-editable-bg: #{transparentize($darkpurple, 0.3)};
     --deprecated-text-input-bg: #{transparentize($darkpurple, 0.3)};
     --deprecated-text-input-border: transparent;
 
@@ -122,6 +124,12 @@ code,
     --button-danger-background-hover: #{$rose};
     --button-danger-background-active: #{darken($rose, $button-active-darken)};
     --button-danger-background-disabled: #{transparentize($rose, $button-disabled-transparency)};
+    // Outlined button
+    --button-outline-primary-text: #{$white};
+    --button-outline-primary-text-hover: #{$white};
+    --button-outline-primary-border: #{transparentize($blue, $button-transparency)};
+    --button-outline-primary-border-hover: #{$blue};
+    --button-outline-primary-background-hover: #{$blue};
 
     // Danger outlined button
     --button-outline-danger-border: #{$rose};
@@ -140,7 +148,9 @@ code,
     .button-f2h6uQ,
     .bd-button:not(.bd-addon-button),
     .topPill-3DJJNV .item-3XjbnG,
-    #bd-pub-button {
+    #bd-pub-button,
+    .streamerModeEnabledBtn-2nlJTD,
+    .button-1iHNQ2 {
         border-radius: 50px;
     }
 
@@ -193,6 +203,12 @@ code,
         &:active {
             border-color: $white!important;
         }
+    }
+    .streamerModeEnabledBtn-2nlJTD {
+        @include button($streamer-color);
+    }
+    .button-1_oXub.tertiary-1e-lAP:not(.disabled-184-il) {
+        @include button($blue);
     }
 
     // Profile preview and popout
@@ -272,6 +288,7 @@ $sidebar-border-width: 5px;
 $item-spacing: 10px;
 $sidebar-width: 72px; // Set by Discord
 $channels-width: 240px; // Set by Discord
+$title-height: 48px; // Set by Discord
 
 @mixin overlay {
     content: "";
@@ -304,16 +321,42 @@ $channels-width: 240px; // Set by Discord
     background: transparentize($darkblue, 0.7);
 }
 
+@mixin box($radius, $border-color, $border-size, $shadow-color, $shadow-size) {
+    border: $border-size solid $border-color;
+    border-radius: $radius;
+    box-shadow: 0 0 $shadow-size 0 $shadow-color;
+}
+
+@mixin medium-box($border-color, $shadow-color, $shadow-size) {
+    @include box($sidebar-spacing, $border-color, $sidebar-border-width, $shadow-color, $shadow-size);
+}
+
+@mixin small-box($border-color, $shadow-color, $shadow-size) {
+    @include box($item-spacing, $border-color, 2px, $shadow-color, 10px);
+    &::after {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        @include scanline-overlay();
+    }
+}
+
 @mixin orange-box() {
-    border: $sidebar-border-width solid $gold;
-    border-radius: $sidebar-spacing;
-    box-shadow: 0 0 10px 0 $gold;
+    @include medium-box($gold, $gold, 10px);
 }
 
 @mixin blue-box() {
-    border: $sidebar-border-width solid $blue;
-    border-radius: $sidebar-spacing;
-    box-shadow: 0 0 20px 0 $darkblue;
+    @include medium-box($blue, $darkblue, 20px);
+}
+
+@mixin orange-box-small() {
+    @include small-box($gold, $gold, 10px);
+    background: transparentize($darkblue, 0.8);
+}
+
+@mixin blue-box-small() {
+    @include small-box($blue, $darkblue, 10px);
+    background: transparentize($darkpurple, 0.3);
 }
 
 @mixin unread-pill($pill-size) {
@@ -329,6 +372,11 @@ $channels-width: 240px; // Set by Discord
     .alignCenter-14kD11 {
         border-radius: 0 0 $item-spacing $item-spacing;
     }
+}
+
+// Fade in/out scrollers
+.scrollerBase-_bVAAt:not(.scroller-1bVxF5) {
+    mask-image: linear-gradient(transparent, black 5%, black 95%, transparent);
 }
 
 // Main view
@@ -352,11 +400,11 @@ $channels-width: 240px; // Set by Discord
         @include orange-box();
         @include scanline-overlay();
     }
+}
 
-    // Fade in/out scrollers
-    .scrollerBase-_bVAAt {
-        mask-image: linear-gradient(transparent, black 5%, black 95%, transparent);
-    }
+// Channel/user group name
+.container-q97qHp {
+    text-align: center;
 }
 
 // Servers sidebar
@@ -377,10 +425,36 @@ $channels-width: 240px; // Set by Discord
     .pill-2RsI5Q:not(.bd-selected) .item-2LIpTv {
         height: calc(2 * 6px)!important;
     }
+
+    // Add and explore buttons
+    .circleIconButton-1VxDrg {
+        color: $green;
+    }
+    .circleIconButton-1VxDrg.selected-2r1Hvo {
+        color: $white;
+    }
 }
 
 // Channels sidebar and main chat
 .base-2jDfDU {
+    // Notice banners
+    .notice-2HEN-u {
+        $notice-spacing: 20px;
+        $notice-border-width: 5px;
+
+        position: absolute;
+        right: $notice-spacing;
+        width: calc(100% - $channels-width - 36px - (2 * ($notice-spacing + $notice-border-width)));
+        // border-radius: 0 0 $notice-spacing $notice-spacing;
+        top: $title-height;
+        border-radius: $notice-spacing;
+
+        &.colorStreamerMode-8uoRWd {
+            background-color: transparentize($streamer-color, 0.4);
+            border: $notice-border-width solid lighten($streamer-color,20);
+            box-shadow: 0 0 10px 0 darken($streamer-color,20);
+        }
+    }
 
     // Channels sidebar
     .sidebar-1tnWFu {
@@ -399,11 +473,6 @@ $channels-width: 240px; // Set by Discord
         .unread-36eUEm {
             @include unread-pill(6px);
             top: calc(50% - 3px);
-        }
-
-        // Channel group name
-        .container-q97qHp {
-            text-align: center;
         }
 
         // Channel
@@ -472,6 +541,18 @@ $channels-width: 240px; // Set by Discord
             // Chat message
             .messageListItem-ZZ7v6g {
                 margin-left: 17px;
+
+                // Options bar
+                .wrapper-2vIMkT {
+                    @include orange-box-small();
+                    height: 34px;
+
+                    &::before {
+                        height: 100%;
+                        width: 100%;
+                        @include scanline-overlay();
+                    }
+                }
 
                 // Image embed
                 .imageWrapper-oMkQl4 {
@@ -599,6 +680,22 @@ $channels-width: 240px; // Set by Discord
                 border-radius: inherit;
             }
         }
+        // Chat autocomplete suggestions
+        .autocomplete-3NRXG8 {
+            @include orange-box();
+            background-color: $darkpurple;
+
+            &::before {
+                @include scanline-overlay();
+                height: 100%;
+                width: 100%;
+            }
+
+            // Option
+            .base-2v-uc0 {
+                border-radius: $item-spacing;
+            }
+        } 
     }
 
     // Video call
@@ -675,7 +772,9 @@ $channels-width: 240px; // Set by Discord
 .container-2McqkF.elevationBorderHigh-3drnJX, // Search options
 .userPopout-3fydSP, // User profile
 .contentWrapper-3vHNP2, // Emoji picker
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm // Emoji picker add
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm, // Emoji picker add
+.container-2O1UgZ, // User management add role selector
+.container-3ssFyj // View as role role selector
 {
     @include blue-box();
     overflow: hidden;
@@ -776,6 +875,10 @@ $channels-width: 240px; // Set by Discord
     .focused-2FU0YH {
         background-color: var(--background-tertiary);
     }
+    // Option item
+    .option-ayUoaq {
+        border-radius: $item-spacing;
+    }
     // Calendar
     .calendarPicker-sDhzdi {
         .react-datepicker,
@@ -803,6 +906,7 @@ $channels-width: 240px; // Set by Discord
     top: 84px;
     .avatar-2OC07D {
         border: 0;
+        margin: 6px;
     }
     // View profile shadow
     .avatarHint-2g3Mcd {
@@ -817,7 +921,6 @@ $channels-width: 240px; // Set by Discord
 .avatarPositionNormal-V4Mjtq {
     top: 24px;
 }
-
 // with Nitro theme
 .userPopoutThemed-3BZ4by {
     padding: 0;
@@ -837,18 +940,23 @@ $channels-width: 240px; // Set by Discord
         border-radius: calc($sidebar-spacing - $sidebar-border-width);
     }
 }
+// Account switcher popover
+.avatar-2Vndt_ {
+    border: 0;
+    margin: 7px;
+}
 
-@mixin blue-box-small() {
-    border: 2px solid $blue;
-    box-shadow: 0 0 10px 0 $darkblue;
-    background: transparentize($darkpurple, 0.3);
+// Pinned messages
+.messageGroupWrapper-1jf_7C {
+    border-radius: $sidebar-spacing;
+}
+
+// Inbox
+.jumpButton-1V_1FA {
     border-radius: $item-spacing;
-
-    &::after {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        @include scanline-overlay();
+    background-color: transparent;
+    .text-2ifC_x {
+        color: lighten($blurple, 20);
     }
 }
 
@@ -867,7 +975,8 @@ $channels-width: 240px; // Set by Discord
 }
 
 // Popouts that depend on theme-dark/light
-.theme-dark, .theme-light {
+.theme-dark,
+.theme-light {
 
     // Add registered game
     .addGamePopout-2SKNIV {
@@ -919,50 +1028,10 @@ $channels-width: 240px; // Set by Discord
         .bd-addon-error:hover {
             border-color: $pink;
         }
-        }
-}
-
-// Status glow
-.wrapper-1VLyxH[aria-label*="Online"] {
-    --statusGlowColor: var(--rs-online-color);
-}
-.wrapper-1VLyxH[aria-label*="Idle"] {
-    --statusGlowColor: var(--rs-idle-color);
-}
-.wrapper-1VLyxH[aria-label*="Do Not Disturb"] {
-    --statusGlowColor: var(--rs-dnd-color);
-}
-.wrapper-1VLyxH[aria-label*="Streaming"] {
-    --statusGlowColor: var(--rs-streaming-color);
-}
-.wrapper-1VLyxH {
-    box-shadow: 0 0 10px var(--statusGlowColor);
-}
-
-// Colour stuff
-// Focused menu option
-.colorDefault-CDqZdO.focused-3qFvc8 {
-    background-color: transparentize($pink, 0.7);
-}
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-    background-color: transparentize($pink, 0.5);
-}
-
-// Keybinds
-.theme-dark,
-.theme-light {
-    .keybindShortcut-3zF1P9 {
-        .key-N5VmHN {
-            color: $white;
-            background-color: $pink;
-            box-shadow: inset 0 -4px 0 darken($pink, 30);
-            border: 1px solid darken($pink, 30);
-            border-radius: 20px;
-        }
     }
 }
 
-// User settings view
+// User settings, server settings, channel setttings view
 .standardSidebarView-E9Pc3j {
     @include outmost-box();
     
@@ -972,7 +1041,7 @@ $channels-width: 240px; // Set by Discord
         width: 100%;
         height: 100%;
         border-radius: calc($outmost-spacing - $outmost-border-width);
-        background-color: transparentize($gold, 0.9);
+        background-color: var(--tint-overlay);
     }
 
     // Settings sidebar
@@ -1031,42 +1100,164 @@ $channels-width: 240px; // Set by Discord
         }
     }
 
-    // Toggles
-    .control-1fl03- {
-        .container-2nx-BQ {
-            background-color: transparentize($darkpurple, 0.2)!important;
-            path {
-                fill: $darkpurple!important;
-            }
-        }
-        .checked-25WXMf {
-            background-color: transparentize($gold, 0.3)!important;
-            path {
-                fill: $gold!important;
-            }
-        }
+    // Remove item x bubble
+    .default-1Tkeeg {
+        background-color: var(--status-danger);
+        background-image: url(https://discord.com/assets/eb69ec9fdd30653a3ade1ab501a7cd3d.svg)
     }
-    // BetterDiscord toggles
-    .bd-switch {
-        .bd-switch-body {
-            --switch-color: #{transparentize($darkpurple, 0.2)};
-            .bd-switch-symbol path {
-                fill: $darkpurple;
-            }
+
+    // Careful you have unsaved changes!
+    .container-20TyK0 {
+        background-color: transparentize($green, 0.5)!important;
+        border-radius: $sidebar-spacing;
+    }
+
+    // Channel settings section specifics
+    // Channel permissions
+    .group-LWHoGI {
+        border-radius: $item-spacing;
+        border: 2px solid $gold;
+        overflow: hidden;
+        // Denied permission
+        .deny-1GO6vI.selected-3jieYB,
+        .passthrough--fbdFR.selected-3jieYB {
+            background-color: transparentize($rose, 0.5);
         }
-        input:checked+.bd-switch-body {
-            --switch-color: #{transparentize($gold, 0.3)};
-            .bd-switch-symbol path {
-                fill: $gold;
-            }
+        // Neutral permission
+        .passthrough--fbdFR.selected-3jieYB {
+            background-color: transparentize($white, 0.5);
+        }
+        // Allowed permission
+        .allow-1h61-Z.selected-3jieYB {
+            background-color: transparentize($green, 0.5);
         }
     }
 
-    // Section specifics
+    // Server settings section specifics
+    // Overview
+        // Edit server image
+        .imageUploaderIcon-2OHmFu {
+            background-color: transparentize($gold, $amount: 0.3);
+            background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3Cpath d='m13.5 8.25v4.5c0 .8284271-.6715729 1.5-1.5 1.5h-10.5c-.82842712 0-1.5-.6715729-1.5-1.5v-10.5c0-.82842712.67157288-1.5 1.5-1.5h7.5-3v1.5h-4.5v10.5h10.5v-4.5zm-5.28-.5325 2.655 3.5325h-8.25l2.0625-2.6475 1.47 1.77zm3.78-5.4675h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25v-2.25h1.5z' fill='%23fff' transform='translate(2.25 1.5)'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        // Server banner with no Nitro
+        .avatarUploaderInnerSquareDisabled-3M9eJS {
+            border-radius: $sidebar-spacing;
+            background-color: transparentize($pink, 0.7);
+        }
+    // Roles
+    #roles-tab {
+        // Role items
+        .container-3EtAkD,
+        .roleRow-230vCm {
+            border-radius: $sidebar-spacing;
+        }
+        // Edit role page
+        .page-15bX59 {
+            // Role list
+            .sidebar-3K3Z4C {
+                .titleContainer-3fPic2 {
+                    padding-bottom: 0;
+                }
+                .scrollerBase-_bVAAt {
+                    padding-top: 16px;
+                }
+            }
+            // Role details
+            .contentContainer-3hXFtK {
+                .header-JUTO-g {
+                    background: linear-gradient($darkpurple 92%, transparent);
+                    margin-left: -24px;
+                    padding-left: 24px;
+                }
+                // Tabs
+                .top-K_jibn .brand-3g5E0C.item-3XjbnG:active,
+                .top-K_jibn .brand-3g5E0C.selected-g-kMVV.item-3XjbnG,
+                .top-K_jibn .brand-3g5E0C.item-3XjbnG:hover {
+                    border-bottom-color: $gold;
+                }
+                // Role icon preview
+                .previewContainer-1GxmBJ {
+                    background: transparentize($pink, 0.5);
+                    .preview-3SR4Rd {
+                        color: $pink;
+                    }
+                }
+                // Role icon demo
+                .previewContainer-1xQAsw {
+                    border-radius: $sidebar-spacing;
+                }
+                // Member with role item
+                .memberRow-1FhJgR {
+                    border-radius: $item-spacing;
+                }
+            }
+        }
+    }
+    // Stickers
+    .tier-3CS7-p {
+        border-radius: $sidebar-spacing;
+        overflow: hidden;
+        .tierHeaderLocked-30MLlO {
+            color: $pink;
+            background-color: transparentize($pink, 0.7);
+        }
+        .tierHeaderUnlocked-1OpOLf {
+            @extend .tierHeaderLocked-30MLlO;
+            color: #{$white};
+        }
+        .tierBody-1d3UiS {
+            background-color: transparentize($pink, 0.9);
+            color: #{$white};
+        }
+        .wrapper-24fR1R {
+            background-color: transparentize($pink, 0.9);
+        }
+    } 
+    // Rules Screening
+    .previewContainer-1L7bG- {
+        background-color: transparentize($blue, 0.7);
+        border-radius: $sidebar-spacing;
+    }
+    // Audit Log
+    .auditLog-1NVAY0 {
+        border-radius: $sidebar-spacing;
+        border-color: $blue;
+        overflow: hidden;
+        .headerClickable-zGQJz3,
+        .headerExpanded-1-zwDr {
+            background-color: transparentize($blue, 0.7);
+            color: $white;
+        }
+        .changeDetails-1kMZqI {
+            background-color: transparentize($blue, 0.9);
+        }
+    }
+    // Overview
+    .upsellContainer-2a5eMP {
+        background-color: transparentize($blue, 0.7);
+    }
+    // Welcome Screen
+    .previewContainer-29oeA6 {
+        background-color: transparentize($blue, 0.7);
+        border-radius: $sidebar-spacing;
+    }
+    // Server Boost tab
+    .serverBoostTabItem-3QwA3W[aria-selected=true] {
+        color: var(--interactive-active)!important;
+        background-color: var(--background-modifier-selected)!important;
+    }
+
+    // User settings section specifics
     // My Account 
     .accountProfileCard-lbN7n- {
         @include blue-box();
         background-color: transparentize($darkpurple, 0.3);
+        // Avatar
+        .avatar-3mTjvZ {
+            border: 0;
+            margin: 7px;
+        }
     }
     // Profiles
     #profile-customization-tab {
@@ -1075,12 +1266,12 @@ $channels-width: 240px; // Set by Discord
             @include blue-box();
         }
         // User/Server Profile tabs
+        .top-K_jibn .brand-3g5E0C.item-3XjbnG:hover,
         .top-K_jibn .brand-3g5E0C.item-3XjbnG:active,
         .top-K_jibn .brand-3g5E0C.selected-g-kMVV.item-3XjbnG {
             border-bottom-color: $gold;
         }
     }
-
     // Privacy & Safety DM options
     .radioBar-3w9XY- {
         border-left: 5px solid var(--radio-bar-accent-color);
@@ -1125,10 +1316,6 @@ $channels-width: 240px; // Set by Discord
         .notDetected-M3Ghh2,
         .nowPlaying-3UpuKc {
             border-radius: calc(2 * $item-spacing);
-        }
-        .default-1Tkeeg {
-            background-color: var(--status-danger);
-            background-image: url(https://discord.com/assets/eb69ec9fdd30653a3ade1ab501a7cd3d.svg)
         }
         .game-2f2vPC {
             box-shadow: none;
@@ -1224,6 +1411,72 @@ $channels-width: 240px; // Set by Discord
 }
 
 // Misc stuff
+// Status glow
+.wrapper-1VLyxH[aria-label*="Online"] {
+    --statusGlowColor: var(--rs-online-color);
+}
+.wrapper-1VLyxH[aria-label*="Idle"] {
+    --statusGlowColor: var(--rs-idle-color);
+}
+.wrapper-1VLyxH[aria-label*="Do Not Disturb"] {
+    --statusGlowColor: var(--rs-dnd-color);
+}
+.wrapper-1VLyxH[aria-label*="Streaming"] {
+    --statusGlowColor: var(--rs-streaming-color);
+}
+.wrapper-1VLyxH {
+    box-shadow: 0 0 10px var(--statusGlowColor);
+}
+// Focused menu option
+.colorDefault-CDqZdO.focused-3qFvc8 {
+    background-color: transparentize($pink, 0.7);
+}
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+    background-color: transparentize($pink, 0.5);
+}
+// Keybinds
+.theme-dark,
+.theme-light {
+    .keybindShortcut-3zF1P9 {
+        .key-N5VmHN {
+            color: $white;
+            background-color: $pink;
+            box-shadow: inset 0 -4px 0 darken($pink, 30);
+            border: 1px solid darken($pink, 30);
+            border-radius: 20px;
+        }
+    }
+}
+// Toggles
+$toggle-off: $blue;
+$toggle-on: $gold;
+.container-2nx-BQ {
+    background-color: transparentize($toggle-off, 0.2)!important;
+    path {
+        fill: $toggle-off!important;
+    }
+}
+.checked-25WXMf {
+    background-color: transparentize($toggle-on, 0.3)!important;
+    path {
+        fill: $toggle-on!important;
+    }
+}
+// BetterDiscord toggles
+.bd-switch {
+    .bd-switch-body {
+        --switch-color: #{transparentize($toggle-off, 0.2)};
+        .bd-switch-symbol path {
+            fill: $toggle-off;
+        }
+    }
+    input:checked+.bd-switch-body {
+        --switch-color: #{transparentize($toggle-on, 0.3)};
+        .bd-switch-symbol path {
+            fill: $toggle-on;
+        }
+    }
+}
 // Bot tag
 .px-MnE_OR.botTag-7aX5WZ {
     border-radius: 20px;
@@ -1239,8 +1492,14 @@ $channels-width: 240px; // Set by Discord
 // Spoiler text
 .theme-dark,
 .theme-light {
-    .spoilerText-27bIiA.hidden-3B-Rum {
+    .spoilerText-27bIiA {
         background: transparentize($blue, 0.5);
+        &.hidden-3B-Rum {
+            @extend .spoilerText-27bIiA;
+            &:hover {
+                background: $blue;
+            }
+        }
     }
 }
 /* BetterDiscord toasts */
