@@ -2,7 +2,7 @@
  * @name Synthesis - Main
  * @author Saltssaumure#7557
  * @description Main section of the Synthesis theme. Please download the autoupdater from https://github.com/Saltssaumure/synthesis-discord-theme/releases/tag/latest.
- * @version 1.0
+ * @version 1.1
 */
 
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
@@ -1517,7 +1517,7 @@ $toggle-on: $gold;
     }
 /* Title bar */
 .titleBar-1it3bQ::before {
-    content: var(--title-text, "Synthesis v1.0");
+    content: var(--title-text, "Synthesis v1.1");
     font-family: var(--font-display);
     font-weight: 500;
     color: var(--text-muted);
