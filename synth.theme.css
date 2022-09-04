@@ -768,63 +768,89 @@ body {
 .layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a {
   background-color: transparent;
 }
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .header-11eigE,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .header-11eigE,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .header-11eigE {
+.contentWrapper-3vHNP2 .header-11eigE,
+.contentWrapper-3vHNP2 .header-uVCAlo,
+.contentWrapper-3vHNP2 .header-2TLOnc,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-11eigE,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-uVCAlo,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-2TLOnc,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-11eigE,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-uVCAlo,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-2TLOnc {
   background-color: rgb(84, 63, 251);
   box-shadow: none;
 }
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .header-11eigE .container-1SX9VC,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .header-11eigE .container-1SX9VC,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .header-11eigE .container-1SX9VC {
+.contentWrapper-3vHNP2 .header-11eigE .container-1SX9VC,
+.contentWrapper-3vHNP2 .header-11eigE .container-2oNtJn,
+.contentWrapper-3vHNP2 .header-uVCAlo .container-1SX9VC,
+.contentWrapper-3vHNP2 .header-uVCAlo .container-2oNtJn,
+.contentWrapper-3vHNP2 .header-2TLOnc .container-1SX9VC,
+.contentWrapper-3vHNP2 .header-2TLOnc .container-2oNtJn,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-11eigE .container-1SX9VC,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-11eigE .container-2oNtJn,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-uVCAlo .container-1SX9VC,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-uVCAlo .container-2oNtJn,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-2TLOnc .container-1SX9VC,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .header-2TLOnc .container-2oNtJn,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-11eigE .container-1SX9VC,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-11eigE .container-2oNtJn,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-uVCAlo .container-1SX9VC,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-uVCAlo .container-2oNtJn,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-2TLOnc .container-1SX9VC,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .header-2TLOnc .container-2oNtJn {
   background-color: rgba(20, 6, 36, 0.8);
   border-radius: 20px;
 }
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .bodyWrapper-1eSOtW,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .listWrapper-2DwCYS,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .content-A8TzKf,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf {
+.contentWrapper-3vHNP2 .wrapper-22rqw6,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .wrapper-22rqw6,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .wrapper-22rqw6 {
+  top: 50px;
+}
+.contentWrapper-3vHNP2 .bodyWrapper-1eSOtW,
+.contentWrapper-3vHNP2 .listWrapper-2DwCYS,
+.contentWrapper-3vHNP2 .content-A8TzKf,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .bodyWrapper-1eSOtW,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .listWrapper-2DwCYS,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .content-A8TzKf {
   background-color: rgb(20, 6, 36);
 }
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
+.contentWrapper-3vHNP2 .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.contentWrapper-3vHNP2 .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.contentWrapper-3vHNP2 .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.contentWrapper-3vHNP2 .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.contentWrapper-3vHNP2 .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.contentWrapper-3vHNP2 .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
   background-color: rgba(206, 63, 251, 0.5);
 }
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .imageLoading-2uloYN,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .listWrapper-2DwCYS .imageLoading-2uloYN,
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .content-A8TzKf .imageLoading-2uloYN,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .imageLoading-2uloYN,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS .imageLoading-2uloYN,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf .imageLoading-2uloYN,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .bodyWrapper-1eSOtW .imageLoading-2uloYN,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .listWrapper-2DwCYS .imageLoading-2uloYN,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .content-A8TzKf .imageLoading-2uloYN {
+.contentWrapper-3vHNP2 .bodyWrapper-1eSOtW .imageLoading-2uloYN,
+.contentWrapper-3vHNP2 .listWrapper-2DwCYS .imageLoading-2uloYN,
+.contentWrapper-3vHNP2 .content-A8TzKf .imageLoading-2uloYN,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .imageLoading-2uloYN,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS .imageLoading-2uloYN,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf .imageLoading-2uloYN,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .imageLoading-2uloYN,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .listWrapper-2DwCYS .imageLoading-2uloYN,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .content-A8TzKf .imageLoading-2uloYN {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVRoge3asU4bMRzH8Q8OB5XoUFjKWAY6tTtVkULfISpDeYs+R9+CDlT3Du1JILHTqQx0JAt0AKlwROrgCwoUSEJQnJPy3RL5ou/PduyT/54xIK1mmeE1XmEZi5jH7KC/cQ9XuMApjvEbv/IiKwd5eKZfg1azXMQ63mDu0ZrDcYmf2M2L7PShhvcGaDXLBjbwDo2ntBuCDvbxPS+yzl0N7gxQ9fpHcapMAsf4dtdo/Beg1SyX8QnPxyA2DGf4mhfZce+XofdD1fNbJk+e6LRVOV5zHaDVLGfFabMwZrFhWMBm5YqbI7Bhcub8Q7wUXVEFqIZlLZHQY1jrTqXuCKxLt1Q+hobobKbVLOfw2fg2qafiEl8CVtVPnui8GrCS2mQEVoL4r64rLwOWUluMwFIQX4nrynxQr+XzNo3Qv81kMw2QmmmA1EwDpGYaIDXTAKmZBkjNNEBqgngCXFc6QSwu1JWLgJPUFiNwEtBObTEC7YCj1BYjcBRwKB7T1Y0ShyEvsm5BrW4c5EV22d0HdtVrOe1gj2ojq4pn+ymNhmQ/L7ITbu7EP9RjRWqLrugJkBfZFXZwPn6ngTnHTuWKW+9C1VTaFkuak8YZtm/Xih8qdG+anKP3ttjz/QvdXaqrBh/E4l+9rhr00mqWS3iPt8ieVO9+Shxgr7va3EffAF16rtusiPXkF3hm9NHp4C/+iHcijgxx3eYfS5qEazM7noMAAAAASUVORK5CYII=");
 }
-.contentWrapper-3vHNP2 .emojiPicker-6YCk8a .inspector-DFKXwB,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a .inspector-DFKXwB,
-.layer-2aCOJ3 > #emoji-picker-tab-panel .emojiPicker-6YCk8a .inspector-DFKXwB {
+.contentWrapper-3vHNP2 .inspector-DFKXwB,
+.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm > #emoji-picker-tab-panel .inspector-DFKXwB,
+.layer-2aCOJ3 > #emoji-picker-tab-panel .inspector-DFKXwB {
   background-color: rgba(20, 6, 36, 0.8);
 }
 
