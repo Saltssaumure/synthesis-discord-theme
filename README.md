@@ -5,6 +5,8 @@
 ***A vibrant neon synthwave theme built for BetterDiscord.***
 
 ![Screenshot of Synthesis Discord Theme applied to Discord desktop client](https://user-images.githubusercontent.com/29710355/187690344-9369a7a6-a424-48af-a020-bc9582b1d3ee.png)
+![Screenshot of Synthesis Discord Theme applied to Discord desktop client, with background image](https://user-images.githubusercontent.com/29710355/188300117-01b4c74f-4e0a-472c-8a3e-9c194733b185.png)
+
 
 ## Installation
 1. Install [BetterDiscord](https://betterdiscord.app/).
