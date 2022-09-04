@@ -25,11 +25,11 @@
 - **Default value:** `url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png)`.
 
 ### Tint overlay
-- **Theme setting:** change the value of `--tint-overlay` to any color. Low opacity value stronly recommended.
+- **Theme setting:** change the value of `--tint-overlay` to any color. Low opacity value strongly recommended.
 - **Default value:** `rgba(255, 165, 0, 0.1)`.
 
 ### CRT scanline colour
-- **Theme settings:** change the value of `--crt-scanline-light` and `--crt-scanline-dark` to any colour. Low opacity value stronly recommended.
+- **Theme settings:** change the value of `--crt-scanline-light` and `--crt-scanline-dark` to any colour. Low opacity value strongly recommended.
 - **Default values:** `rgba(255, 255, 255, 0.05)` and `rgba(0, 0, 0, 0.1)`.
 
 ### CRT flicker effect
