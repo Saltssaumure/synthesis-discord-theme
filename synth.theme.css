@@ -632,6 +632,33 @@ body {
           animation: var(--crt-flicker, none) 0.1s infinite alternate;
   border-radius: inherit;
 }
+.base-2jDfDU .chatContent-3KubbW .scrollableContainer-15eg7h .channelAttachmentArea-HwpkuQ .wrapper-2vIMkT {
+  border: 2px solid rgb(255, 165, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(255, 165, 0) !important;
+  background: rgba(0, 0, 128, 0.2);
+  height: 34px;
+}
+.base-2jDfDU .chatContent-3KubbW .scrollableContainer-15eg7h .channelAttachmentArea-HwpkuQ .wrapper-2vIMkT::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: linear-gradient(var(--crt-scanline-light, rgba(255, 255, 255, 0.05)) 50%, var(--crt-scanline-dark, rgba(0, 0, 0, 0.1)) 50%);
+  background-size: 100% 4px;
+  z-index: 1000;
+  pointer-events: none;
+  -webkit-animation: var(--crt-flicker, none) 0.1s infinite alternate;
+          animation: var(--crt-flicker, none) 0.1s infinite alternate;
+}
+.base-2jDfDU .chatContent-3KubbW .scrollableContainer-15eg7h .channelAttachmentArea-HwpkuQ .spoilerContainer-3wsC0k {
+  border-radius: 20px;
+}
+.base-2jDfDU .chatContent-3KubbW .scrollableContainer-15eg7h .channelAttachmentArea-HwpkuQ .spoilerContainer-3wsC0k .image-1091CL {
+  border-radius: 20px;
+}
 .base-2jDfDU .chatContent-3KubbW .cooldownWrapper-2k1jHK {
   color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -1112,6 +1139,19 @@ body {
   overflow: hidden;
   background-color: rgba(0, 0, 128, 0.3) !important;
 }
+.theme-dark .root-g14mjS.uploadModal-2ie9O_,
+.theme-light .root-g14mjS.uploadModal-2ie9O_ {
+  overflow: visible;
+}
+.theme-dark .root-g14mjS.uploadModal-2ie9O_ .icon-HW4tZ-,
+.theme-light .root-g14mjS.uploadModal-2ie9O_ .icon-HW4tZ- {
+  border-radius: 20px;
+}
+.theme-dark .root-g14mjS.uploadModal-2ie9O_ .footer-VCsJQY,
+.theme-light .root-g14mjS.uploadModal-2ie9O_ .footer-VCsJQY {
+  background-color: rgb(84, 63, 251);
+  box-shadow: none;
+}
 .theme-dark .root-g14mjS .planOptionDiscount-2nex9n,
 .theme-light .root-g14mjS .planOptionDiscount-2nex9n {
   background-color: #34ac8c;
@@ -1192,11 +1232,6 @@ body {
 .standardSidebarView-E9Pc3j .card-16VQ8C,
 .standardSidebarView-E9Pc3j .container-3jbRo5 {
   border-radius: 20px;
-}
-.standardSidebarView-E9Pc3j .select-1Ia3hD,
-.standardSidebarView-E9Pc3j .container-30qY7E,
-.standardSidebarView-E9Pc3j .input-2g-os5 {
-  border-radius: 50px;
 }
 .standardSidebarView-E9Pc3j .slider-1NC-Gf .markDash-yk2kJ- {
   background: rgb(255, 165, 0);
@@ -1606,6 +1641,12 @@ body {
 .markup-eYLPri code,
 .textContainer-36wgKK {
   background: rgba(84, 63, 251, 0.5);
+}
+
+.select-1Ia3hD,
+.container-30qY7E,
+.input-2g-os5 {
+  border-radius: 50px;
 }
 
 /* BetterDiscord toasts */
