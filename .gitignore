@@ -1,3 +1,4 @@
 test
 *.code-workspace
 *.map
+*.mdp
