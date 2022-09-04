@@ -80,7 +80,7 @@ code,
     --text-positive: #{$green};
     --channels-default: #{$gold};
     --channel-icon: #{$gold};
-    
+
     --header-primary: #{$white};
     --header-secondary: #{lighten($blurple, 20)};
 
@@ -144,8 +144,8 @@ code,
     --button-outline-brand-border-active: #{darken($blue, $button-active-darken)};
     --button-outline-brand-background-hover: #{$blue};
     --button-outline-brand-background-active: #{darken($blue, $button-active-darken)};
-    
-    // Buttons 
+
+    // Buttons
     .button-f2h6uQ,
     .bd-button:not(.bd-addon-button),
     .topPill-3DJJNV .item-3XjbnG,
@@ -227,7 +227,7 @@ code,
 .layerContainer-2v_Sit .theme-dark,
 .layerContainer-2v_Sit .theme-light {
     --background-primary: #{$darkpurple};
-    --background-secondary: #{$darkpurple}; 
+    --background-secondary: #{$darkpurple};
     --background-secondary-alt: #{transparentize($darkpurple, 0.2)};
     --background-tertiary: #{$blue};
     --background-accent: #{$pink};
@@ -250,7 +250,7 @@ code,
     --header-secondary: #{$gold};
 
     --search-popout-option-fade: linear-gradient(
-        90deg, 
+        90deg,
         transparent,
         #{$darkpurple} 80%
     );
@@ -460,7 +460,7 @@ $title-height: 48px; // Set by Discord
 
     // Channels sidebar
     .sidebar-1tnWFu {
-        margin: $sidebar-spacing 0; 
+        margin: $sidebar-spacing 0;
 
         // Header
         .header-3OsQeK {
@@ -628,7 +628,7 @@ $title-height: 48px; // Set by Discord
                 }
             }
 
-            // Chat dividers 
+            // Chat dividers
             $divider-color: $gold;
             .divider-2rZFJK {
                 --divider-color: #{$divider-color};
@@ -653,7 +653,7 @@ $title-height: 48px; // Set by Discord
                         display: none;
                     }
                 }
-                
+
                 // Date change divider
                 .content-3spvdd {
                     background: $divider-color;
@@ -701,7 +701,7 @@ $title-height: 48px; // Set by Discord
             .base-2v-uc0 {
                 border-radius: $item-spacing;
             }
-        } 
+        }
     }
 
     // Video call
@@ -771,7 +771,7 @@ $title-height: 48px; // Set by Discord
 }
 
 // Popovers
-.container-18GwIk, // Threads 
+.container-18GwIk, // Threads
 .recentMentionsPopout-2bI1ZN, // Inbox
 .messagesPopoutWrap-3zryHW, // Pinned messages
 .menu-1QACrS, // Account menu
@@ -823,42 +823,51 @@ $title-height: 48px; // Set by Discord
 
     .emojiPicker-6YCk8a {
         background-color: transparent;
+    }
 
-        // Header
-        .header-11eigE {
-            background-color: $blue;
-            box-shadow: none;
+    // Header
+    .header-11eigE,
+    .header-uVCAlo,
+    .header-2TLOnc {
+        background-color: $blue;
+        box-shadow: none;
 
-            // Search
-            .container-1SX9VC {
-                background-color: transparentize($darkpurple, 0.2);
-                border-radius: 20px;
-            }
-        }
-    
-        // Main picker
-        .bodyWrapper-1eSOtW,
-        .listWrapper-2DwCYS,
-        .content-A8TzKf {
-            background-color: $darkpurple;
-    
-            // Hovered emoji or sticker
-            .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-            .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
-                background-color: transparentize($pink, 0.5);
-            }
-            
-            // Loading emoji
-            .imageLoading-2uloYN {
-                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVRoge3asU4bMRzH8Q8OB5XoUFjKWAY6tTtVkULfISpDeYs+R9+CDlT3Du1JILHTqQx0JAt0AKlwROrgCwoUSEJQnJPy3RL5ou/PduyT/54xIK1mmeE1XmEZi5jH7KC/cQ9XuMApjvEbv/IiKwd5eKZfg1azXMQ63mDu0ZrDcYmf2M2L7PShhvcGaDXLBjbwDo2ntBuCDvbxPS+yzl0N7gxQ9fpHcapMAsf4dtdo/Beg1SyX8QnPxyA2DGf4mhfZce+XofdD1fNbJk+e6LRVOV5zHaDVLGfFabMwZrFhWMBm5YqbI7Bhcub8Q7wUXVEFqIZlLZHQY1jrTqXuCKxLt1Q+hobobKbVLOfw2fg2qafiEl8CVtVPnui8GrCS2mQEVoL4r64rLwOWUluMwFIQX4nrynxQr+XzNo3Qv81kMw2QmmmA1EwDpGYaIDXTAKmZBkjNNEBqgngCXFc6QSwu1JWLgJPUFiNwEtBObTEC7YCj1BYjcBRwKB7T1Y0ShyEvsm5BrW4c5EV22d0HdtVrOe1gj2ojq4pn+ymNhmQ/L7ITbu7EP9RjRWqLrugJkBfZFXZwPn6ngTnHTuWKW+9C1VTaFkuak8YZtm/Xih8qdG+anKP3ttjz/QvdXaqrBh/E4l+9rhr00mqWS3iPt8ieVO9+Shxgr7va3EffAF16rtusiPXkF3hm9NHp4C/+iHcijgxx3eYfS5qEazM7noMAAAAASUVORK5CYII=");
-            }
-        }
-    
-        // Emoji info
-        .inspector-DFKXwB {
+        // Search
+        .container-1SX9VC,
+        .container-2oNtJn {
             background-color: transparentize($darkpurple, 0.2);
+            border-radius: 20px;
         }
     }
+
+    // Server list
+    .wrapper-22rqw6 {
+        top: 50px;
+    }
+
+    // Main picker
+    .bodyWrapper-1eSOtW,
+    .listWrapper-2DwCYS,
+    .content-A8TzKf {
+        background-color: $darkpurple;
+
+        // Hovered emoji or sticker
+        .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+        .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
+            background-color: transparentize($pink, 0.5);
+        }
+
+        // Loading emoji
+        .imageLoading-2uloYN {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVRoge3asU4bMRzH8Q8OB5XoUFjKWAY6tTtVkULfISpDeYs+R9+CDlT3Du1JILHTqQx0JAt0AKlwROrgCwoUSEJQnJPy3RL5ou/PduyT/54xIK1mmeE1XmEZi5jH7KC/cQ9XuMApjvEbv/IiKwd5eKZfg1azXMQ63mDu0ZrDcYmf2M2L7PShhvcGaDXLBjbwDo2ntBuCDvbxPS+yzl0N7gxQ9fpHcapMAsf4dtdo/Beg1SyX8QnPxyA2DGf4mhfZce+XofdD1fNbJk+e6LRVOV5zHaDVLGfFabMwZrFhWMBm5YqbI7Bhcub8Q7wUXVEFqIZlLZHQY1jrTqXuCKxLt1Q+hobobKbVLOfw2fg2qafiEl8CVtVPnui8GrCS2mQEVoL4r64rLwOWUluMwFIQX4nrynxQr+XzNo3Qv81kMw2QmmmA1EwDpGYaIDXTAKmZBkjNNEBqgngCXFc6QSwu1JWLgJPUFiNwEtBObTEC7YCj1BYjcBRwKB7T1Y0ShyEvsm5BrW4c5EV22d0HdtVrOe1gj2ojq4pn+ymNhmQ/L7ITbu7EP9RjRWqLrugJkBfZFXZwPn6ngTnHTuWKW+9C1VTaFkuak8YZtm/Xih8qdG+anKP3ttjz/QvdXaqrBh/E4l+9rhr00mqWS3iPt8ieVO9+Shxgr7va3EffAF16rtusiPXkF3hm9NHp4C/+iHcijgxx3eYfS5qEazM7noMAAAAASUVORK5CYII=");
+        }
+    }
+
+    // Emoji info
+    .inspector-DFKXwB {
+        background-color: transparentize($darkpurple, 0.2);
+    }
+
 }
 // Server/category list
 .wrapper-22rqw6 {
@@ -871,7 +880,7 @@ $title-height: 48px; // Set by Discord
     border-radius: $item-spacing;
 }
 
-// Threads popover entry 
+// Threads popover entry
 .container-2rzKKA {
     border: 2px solid var(--background-primary);
     border-radius: 50px;
@@ -920,7 +929,7 @@ $title-height: 48px; // Set by Discord
     }
 }
 
-// Profile popout 
+// Profile popout
 .avatarWrapper-3y0KZ1 {
     left: 26px;
     top: 84px;
@@ -931,7 +940,7 @@ $title-height: 48px; // Set by Discord
     // View profile shadow
     .avatarHint-2g3Mcd {
         border-radius: 50px;
-        foreignObject { 
+        foreignObject {
             mask: none;
         }
     }
@@ -1094,7 +1103,7 @@ $title-height: 48px; // Set by Discord
             box-shadow: none;
         }
 
-        // Full user profile 
+        // Full user profile
         .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG,
         .top-K_jibn .themed-2-lozF.item-3XjbnG:active,
         .top-K_jibn .themed-2-lozF.item-3XjbnG:hover {
@@ -1133,7 +1142,7 @@ $title-height: 48px; // Set by Discord
 // User settings, server settings, channel setttings view
 .standardSidebarView-E9Pc3j {
     @include outmost-box();
-    
+
     // Scanline and tint overlay over whole view
     &::after {
         @include scanline-overlay();
@@ -1162,7 +1171,7 @@ $title-height: 48px; // Set by Discord
     .select-1Ia3hD, // Single line inputs
     .container-30qY7E, // Dropdown selectors
     .input-2g-os5 // Keybind recorders
-    { 
+    {
         border-radius: 50px;
     }
 
@@ -1312,7 +1321,7 @@ $title-height: 48px; // Set by Discord
         .wrapper-24fR1R {
             background-color: transparentize($pink, 0.9);
         }
-    } 
+    }
     // Rules Screening
     .previewContainer-1L7bG- {
         background-color: transparentize($blue, 0.7);
@@ -1348,7 +1357,7 @@ $title-height: 48px; // Set by Discord
     }
 
     // User settings section specifics
-    // My Account 
+    // My Account
     .accountProfileCard-lbN7n- {
         @include blue-box();
         background-color: transparentize($darkpurple, 0.3);
@@ -1427,7 +1436,7 @@ $title-height: 48px; // Set by Discord
                 background-color: transparentize($darkpurple, 0.3);
                 border-color: transparent;
             }
-            .lastPlayed-1jum9A, 
+            .lastPlayed-1jum9A,
             .overlayStatusText-In0YrK {
                 color: var(--header-secondary);
             }
@@ -1539,7 +1548,7 @@ $title-height: 48px; // Set by Discord
     }
     &[aria-label*="Streaming"] {
         --statusGlowColor: var(--rs-streaming-color);
-    } 
+    }
 }
 // Focused menu option
 .colorDefault-CDqZdO.focused-3qFvc8 {
