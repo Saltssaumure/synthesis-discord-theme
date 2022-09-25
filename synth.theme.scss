@@ -270,6 +270,9 @@ code,
     --search-popout-date-picker-hint-value-text: #{$white};
     --search-popout-date-picker-hint-value-background: var(--brand-experiment);
     --search-popout-date-picker-hint-value-background-hover: var(--brand-experiment-430);
+    --search-popout-date-picker-border: 1px solid var(--deprecated-text-input-border-disabled);
+
+    --deprecated-text-input-border-disabled: #{transparentize($gold, 0.5)};
 }
 
 .appMount-2yBXZl,
@@ -556,6 +559,36 @@ $title-height: 48px; // Set by Discord
                     }
                 }
 
+                // @ Mention
+                .wrapper-1ZcZW- {
+                    background: transparentize($blurple, 0.7);
+                    color: lighten($blurple, 30);
+                    &:hover {
+                        background: transparentize($blurple, 0.3);
+                        color: $white;
+                    }
+                }
+
+                // Reaction
+                .reaction-3vwAF2 {
+                    border-radius: $item-spacing;
+                    &:hover {
+                        border-color: $gold;
+                    }
+                    &.reactionMe-1PwQAc {
+                        background-color: transparentize($gold, 0.7);
+                        &:not(:hover) {
+                            border-color: transparent;
+                        }
+                        .reactionCount-26U4As {
+                            color: $gold;
+                        }
+                        &:hover .reactionCount-26U4As {
+                            color: var(--interactive-hover);
+                        }
+                    }
+                }
+
                 // Image embed
                 .imageWrapper-oMkQl4 {
                     border-radius: calc(2 * $item-spacing);
@@ -719,6 +752,10 @@ $title-height: 48px; // Set by Discord
                 border-radius: $item-spacing;
             }
         }
+        // Sticker suggestions
+        .stickerIconOffset-2zxofV {
+            @include orange-box-small();
+        }
     }
 
     // Video call
@@ -727,6 +764,11 @@ $title-height: 48px; // Set by Discord
         .gradientContainer-phMG8d {
             background-image: none;
         }
+    }
+
+    // Forum
+    .container-3wLKDe {
+        background-color: transparent;
     }
 
     // Discover servers
@@ -795,10 +837,10 @@ $title-height: 48px; // Set by Discord
 .container-2McqkF.elevationBorderHigh-3drnJX, // Search options
 .userPopout-3fydSP, // User profile
 .contentWrapper-3vHNP2, // Emoji picker
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm>#emoji-picker-tab-panel, // Emoji picker add reaction
-.layer-2aCOJ3>#emoji-picker-tab-panel,
+.layer-2aCOJ3>div>#emoji-picker-tab-panel, // Emoji picker add reaction
 .container-2O1UgZ, // User management add role selector
-.container-3ssFyj // View as role role selector
+.container-3ssFyj, // View as role role selector
+.popoutContainer-2wbmiM // Emoji and role icon info
 {
     @include blue-box();
     overflow: hidden;
@@ -833,8 +875,7 @@ $title-height: 48px; // Set by Discord
 
 // Emoji picker
 .contentWrapper-3vHNP2,
-.animatorLeft-3yvG13.fade-1ICjW8.didRender-2SiRlm>#emoji-picker-tab-panel,
-.layer-2aCOJ3>#emoji-picker-tab-panel
+.didRender-2SiRlm>#emoji-picker-tab-panel
 {
     background-color: $blue;
 
@@ -892,6 +933,16 @@ $title-height: 48px; // Set by Discord
     top: calc(50px + $sidebar-border-width);
 }
 
+// Emoji info 
+.popoutLoadingForeground-3xnRkg {
+    background-image: linear-gradient(
+        90deg,
+        $darkpurple,
+        lighten($darkpurple, 20),
+        $darkpurple
+    )
+}
+
 // Upload file entry
 .item-1OdjEX {
     border-radius: $item-spacing;
@@ -917,29 +968,84 @@ $title-height: 48px; // Set by Discord
 // Search options
 .theme-dark,
 .theme-light {
+
     // Header
     .focused-2FU0YH {
         background-color: var(--background-tertiary);
+        
     }
+    .queryContainer-ZunrLZ {
+        border-bottom-color: var(--background-tertiary);
+        color: var(--text-normal);
+        strong {
+            color: inherit;
+        }
+    }
+
     // Option item
     .option-ayUoaq {
         border-radius: $item-spacing;
     }
+
     // Calendar
     .calendarPicker-sDhzdi {
-        .react-datepicker,
-        .react-datepicker__header {
-            background-color: var(--background-floating);
-        }
-        .react-datepicker__day--disabled,
-        .react-datepicker__day--outside-month,
-        .react-datepicker__day.react-datepicker__day--disabled,
-        .react-datepicker__day.react-datepicker__day--disabled:hover {
-            background-color: var(--background-floating);
+        .react-datepicker {
+            padding: 20px calc(20px - $sidebar-border-width);
+            background-color: transparent;
+
+            .react-datepicker__navigation {
+                &.react-datepicker__navigation--next,
+                &.react-datepicker__navigation--previous {
+                    border-color: $white;
+                    border-radius: 50%;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='25'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M17.338 12.485c-4.156 4.156-8.312 8.312-12.468 12.467-1.402-1.402-2.805-2.804-4.207-4.206 2.756-2.757 5.513-5.514 8.27-8.27C6.176 9.72 3.419 6.963.663 4.207L4.87 0c-.058-.059 12.555 12.562 12.468 12.485z' clip-rule='evenodd'/%3E%3C/svg%3E");
+                }
+            }
+
+            .react-datepicker__header {
+                background-color: transparent;
+                .react-datepicker__current-month {
+                    color: var(--header-primary);
+                    border-bottom-color: var(--deprecated-text-input-border-disabled);
+                }
+                .react-datepicker__day-name {
+                    color: var(--text-normal);
+                }
+            }
+
+            .react-datepicker__week { 
+                &:last-of-type .react-datepicker__day {
+                    border-bottom-color: var(--deprecated-text-input-border-disabled);
+                }
+                .react-datepicker__day:last-of-type {
+                    border-right-color: var(--deprecated-text-input-border-disabled);
+                }
+    
+                .react-datepicker__day {
+                    color: var(--text-normal);
+                    &.react-datepicker__day--keyboard-selected,
+                    &.react-datepicker__day--selected:hover,
+                    &:hover {
+                        background-color: var(--background-modifier-hover);
+                    }
+                    &.react-datepicker__day--selected:after {
+                        background-color: $gold;
+                    }
+                }
+                .react-datepicker__day--disabled,
+                .react-datepicker__day--disabled:hover,
+                .react-datepicker__day--outside-month {
+                    color: var(--text-muted);
+                    background-color: var(--background-floating);
+                }
+            }
         }
     }
     .datePickerHint-Ir4715 {
-        .hintValue-V9hd8l {
+        .hintValue-V9hd8l,
+        .hintValue-V9hd8l:hover {
+            border: 2px solid $gold;
+            background: var(--background-modifier-selected);
             border-radius: 20px;
             padding: 0 8px;
         }
@@ -1019,9 +1125,30 @@ $title-height: 48px; // Set by Discord
     @include blue-box-small();
 }
 
-// Popouts that depend on theme-dark/light
+// Popovers that depend on theme-dark/light
 .theme-dark,
 .theme-light {
+
+    // View message reactions
+    .reactionDefault-1Sjj1f {
+        border-radius: $item-spacing;
+        &:hover {
+            background-color: var(--background-modifier-hover);
+        }
+    }
+    .reactionSelected-1aMb2K {
+        border-radius: $item-spacing;
+        background-color: var(--background-modifier-selected);
+    }
+    .reactors-1VXca7 {
+        background-color: transparent;
+        .remove-19AQn_ {
+            background-color: var(--background-modifier-hover);
+            border-radius: 50%;
+            opacity: 1;
+            color: $gold;
+        }
+    }
 
     // Server boost
     .perksModal-CLcR1c {
@@ -1082,6 +1209,19 @@ $title-height: 48px; // Set by Discord
     // Create server
     .footerSeparator-VzAYwb {
         box-shadow: none;
+    }
+
+    // Server Members role overflow
+    .overflowRolesPopout-1Puiuq {
+        @include blue-box-small();
+
+        .overflowRolesPopoutHeaderText-3HyHGv {
+            color: #{transparentize($white, 0.5)};
+        }
+
+        .overflowRolesPopoutArrow-2R7g3K {
+            background-color: $blue;
+        }
     }
 
     // Tooltips
@@ -1500,6 +1640,41 @@ $title-height: 48px; // Set by Discord
     }
     .bd-controls>.bd-addon-button:last-of-type {
         border-radius: 0 $bd-radius $bd-radius 0;
+    }
+}
+
+// Custom CSS editor
+// Floating version
+#floating-editor-window {
+    @include blue-box();
+    background: $blue;
+    z-index: 1010;
+
+    .floating-window-titlebar {
+        background: inherit;
+    }
+    .close-button:hover {
+        background: $rose;
+    }
+}
+// All versions
+#bd-editor-panel {
+    $inner-radius: calc($sidebar-spacing - $sidebar-border-width); 
+    .contentRegion-3HkfJJ & {
+        @include blue-box();
+    }
+
+    #bd-editor-controls {
+        background: $blue;
+        border-radius: $inner-radius $inner-radius 0 0;
+    
+        button {
+            border-radius: $item-spacing;
+        }
+    }
+    #bd-customcss-editor {
+        border-radius: 0 0 $inner-radius $inner-radius;
+        overflow: hidden;
     }
 }
 
