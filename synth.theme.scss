@@ -424,11 +424,16 @@ $title-height: 48px; // Set by Discord
     }
 
     // New messages pill
+    $pill-height: 6px;
     .item-2LIpTv {
-        @include unread-pill(6px);
+        @include unread-pill($pill-height);
     }
     .pill-2RsI5Q:not(.bd-selected) .item-2LIpTv {
-        height: calc(2 * 6px)!important;
+        height: calc(2 * $pill-height)!important;
+
+        &[style="opacity: 1; height: 40px; transform: none;"] {
+            height: 40px !important;
+        } 
     }
 
     // Add and explore buttons

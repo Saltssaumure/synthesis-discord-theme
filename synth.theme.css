@@ -407,6 +407,9 @@ body {
 .guilds-2JjMmN .pill-2RsI5Q:not(.bd-selected) .item-2LIpTv {
   height: 12px !important;
 }
+.guilds-2JjMmN .pill-2RsI5Q:not(.bd-selected) .item-2LIpTv[style="opacity: 1; height: 40px; transform: none;"] {
+  height: 40px !important;
+}
 .guilds-2JjMmN .circleIconButton-1VxDrg {
   color: #34ac8c;
 }
