@@ -1266,6 +1266,31 @@ $title-height: 48px; // Set by Discord
             }
         }
 
+        // Image viewer 
+        .wrapper-2bCXfR>.downloadLink-1OAglv {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
+        // with ImageUtilities plugin
+        .operations-3V47CY {
+            position: fixed;
+        }
+        .sibling-6vI7Pu .imageWrapper-oMkQl4 {
+            @include blue-box();
+        }
+
         // Nitro discount
         .planOptionDiscount-2nex9n {
             background-color: $green;
