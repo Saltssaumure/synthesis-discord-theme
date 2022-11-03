@@ -1292,6 +1292,33 @@ body {
   background-color: rgb(84, 63, 251);
   box-shadow: none;
 }
+.theme-dark .root-g14mjS .wrapper-2bCXfR > .downloadLink-1OAglv,
+.theme-light .root-g14mjS .wrapper-2bCXfR > .downloadLink-1OAglv {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  opacity: 0;
+}
+.theme-dark .root-g14mjS .wrapper-2bCXfR > .downloadLink-1OAglv:hover,
+.theme-light .root-g14mjS .wrapper-2bCXfR > .downloadLink-1OAglv:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+.theme-dark .root-g14mjS .operations-3V47CY,
+.theme-light .root-g14mjS .operations-3V47CY {
+  position: fixed;
+}
+.theme-dark .root-g14mjS .sibling-6vI7Pu .imageWrapper-oMkQl4,
+.theme-light .root-g14mjS .sibling-6vI7Pu .imageWrapper-oMkQl4 {
+  border: 5px solid rgb(84, 63, 251);
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 128) !important;
+}
 .theme-dark .root-g14mjS .planOptionDiscount-2nex9n,
 .theme-light .root-g14mjS .planOptionDiscount-2nex9n {
   background-color: #34ac8c;
