@@ -776,6 +776,13 @@ $title-height: 48px; // Set by Discord
         background-color: transparent;
     }
 
+    // Browse channels
+    .container-2IKOsH,
+    .container-1um7CU,
+    .header-3xB4vB {
+        background-color: transparent;
+    }
+
     // Discover servers
     .categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
         background-color: var(--background-modifier-selected);
@@ -1670,6 +1677,30 @@ $title-height: 48px; // Set by Discord
     }
     .bd-controls>.bd-addon-button:last-of-type {
         border-radius: 0 $bd-radius $bd-radius 0;
+    }
+}
+// App directory
+.layerContainer-2v_Sit .directoryModal-YJsOMv {
+    background: transparent;
+    // Scanline and tint overlay over whole view
+    &::after {
+        @include scanline-overlay();
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: var(--tint-overlay, rgba(255, 165, 0, 0.1));
+        top: 0;
+        left: 0;
+    }
+    .category-qFAw-K,
+    .clickable-WBCFI5,
+    .search-2RHhW6,
+    .container-2NdZr9,
+    .card-2xymMp,
+    .commandName-SDgdgz,
+    .splashImage-1iRUgw,
+    .headerBanner-ZCUdfQ {
+        border-radius: $item-spacing;
     }
 }
 
