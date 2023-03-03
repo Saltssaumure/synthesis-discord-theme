@@ -4,7 +4,7 @@
 .messagesPopoutWrap-3zryHW, // Pinned messages
 .menu-1QACrS, // Account menu
 .container-2McqkF.elevationBorderHigh-3drnJX, // Search options
-.userPopout-3fydSP, // User profile
+.userPopoutOuter-3AVBmJ, // User profile
 .contentWrapper-3vHNP2, // Emoji picker
 .didRender-2dwLEv>#emoji-picker-tab-panel, // Emoji picker add reaction
 .container-2O1UgZ, // User management add role selector
@@ -217,12 +217,8 @@
 
 // Profile popout
 .avatarWrapper-3y0KZ1 {
-    left: 26px;
-    top: 84px;
-    .avatar-2OC07D {
-        border: 0;
-        margin: 6px;
-    }
+    left: 27px;
+    top: 21px;
     // View profile shadow
     .avatarHint-2g3Mcd {
         border-radius: 50px;
@@ -231,20 +227,33 @@
         }
     }
 }
-.avatarPositionNormal-V4Mjtq {
-    top: 24px;
-}
 // with Nitro theme
-.userPopoutThemed-3BZ4by {
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU {
     padding: 0;
     overflow: hidden;
 
-    .userPopoutInnerWithTheme-71l1ON::before {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        border-radius: $sidebar-spacing;
+    &.theme-light {
+        --interactive-active: #{$darkpurple};
+        --header-primary: #{$darkpurple};
+        --header-secondary: #{$blue};
+        --text-normal: #{$darkpurple};
+    }
+
+    .userProfileInner-3F03PX {
+        max-height: calc(100vh - 64px - $outmost-spacing);
+        &::before {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: $sidebar-spacing;
+        }
+
+        .avatarPositionPremiumBanner-2nq2Fy {
+            left: 23px;
+            top: 77px;
+        }
     }
 
     // Nitro upsell banner
