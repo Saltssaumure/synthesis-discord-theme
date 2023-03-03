@@ -97,8 +97,8 @@ code,
 }
 
 // Popovers
-.layerContainer-2v_Sit .theme-dark,
-.layerContainer-2v_Sit .theme-light {
+.layerContainer-2lfOPe .theme-dark,
+.layerContainer-2lfOPe .theme-light {
     --background-primary: #{$darkpurple};
     --background-secondary: #{$darkpurple};
     --background-secondary-alt: #{transparentize($darkpurple, 0.2)};
@@ -135,6 +135,7 @@ code,
     --search-popout-option-user-nickname: var(--text-normal);
     --search-popout-option-user-username: var(--text-muted);
     --search-popout-option-filter-text: blue;
+    --search-popout-option-fade-hover: linear-gradient(to right, transparent, var(--background-modifier-hover));
     --search-popout-option-non-text-color: #{$white};
     --search-popout-option-filter-color: #{$white};
     --search-popout-option-answer-color: #{$white};

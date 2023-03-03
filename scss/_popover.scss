@@ -129,25 +129,14 @@
 }
 
 // Search options
-.theme-dark,
-.theme-light {
-
-    // Header
-    .focused-2FU0YH {
-        background-color: var(--background-tertiary);
-
-    }
-    .queryContainer-ZunrLZ {
-        border-bottom-color: var(--background-tertiary);
-        color: var(--text-normal);
-        strong {
-            color: inherit;
-        }
-    }
+.container-2McqkF.elevationBorderHigh-3drnJX {
 
     // Option item
     .option-ayUoaq {
         border-radius: $item-spacing;
+        &:hover::after {
+            background: var(--search-popout-option-fade-hover);
+        }
     }
 
     // Calendar
@@ -274,17 +263,7 @@
     border-radius: $sidebar-spacing;
 }
 
-// Inbox, pins, threads
-.header-1w9Q93,
-.header-3_zmOb,
-.footer-5ji8u1 {
-    background: $blue;
-}
-.messagesPopout-eVzQcI,
-.channelHeader-DFRX8q,
-.list-3YHPPb {
-    background: $darkpurple;
-}
+// Inbox
 .jumpButton-1V_1FA {
     border-radius: $item-spacing;
     background-color: transparent;
