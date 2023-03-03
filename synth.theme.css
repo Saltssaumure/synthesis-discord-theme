@@ -701,6 +701,9 @@ code,
   height: 100%;
   width: 100%;
 }
+.base-2jDfDU .chatContent-3KubbW .autocomplete-3NRXG8 .categoryHeader-OpJ1Ly {
+  background-color: rgb(20, 6, 36);
+}
 .base-2jDfDU .chatContent-3KubbW .autocomplete-3NRXG8 .base-2v-uc0 {
   border-radius: 10px;
 }
@@ -1028,7 +1031,7 @@ body {
 .container-2McqkF.elevationBorderHigh-3drnJX,
 .userPopout-3fydSP,
 .contentWrapper-3vHNP2,
-.layer-2aCOJ3 > div > #emoji-picker-tab-panel,
+.didRender-2dwLEv > #emoji-picker-tab-panel,
 .container-2O1UgZ,
 .container-3ssFyj,
 .popoutContainer-2wbmiM {
@@ -1036,7 +1039,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 20px 0 rgb(0, 0, 128) !important;
   overflow: hidden;
-  max-height: 739px !important;
+  max-height: calc(100vh - 64px - 30px) !important;
 }
 
 .tag-15zcD_ {
@@ -1061,19 +1064,19 @@ body {
 }
 
 .contentWrapper-3vHNP2,
-.didRender-2SiRlm > #emoji-picker-tab-panel {
+.didRender-2dwLEv > #emoji-picker-tab-panel {
   background-color: rgb(84, 63, 251);
 }
 .contentWrapper-3vHNP2 .emojiPicker-6YCk8a,
-.didRender-2SiRlm > #emoji-picker-tab-panel .emojiPicker-6YCk8a {
+.didRender-2dwLEv > #emoji-picker-tab-panel .emojiPicker-6YCk8a {
   background-color: transparent;
 }
 .contentWrapper-3vHNP2 .header-11eigE,
 .contentWrapper-3vHNP2 .header-uVCAlo,
 .contentWrapper-3vHNP2 .header-2TLOnc,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-11eigE,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-uVCAlo,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-2TLOnc {
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-11eigE,
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-uVCAlo,
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-2TLOnc {
   background-color: rgb(84, 63, 251);
   box-shadow: none;
 }
@@ -1083,25 +1086,21 @@ body {
 .contentWrapper-3vHNP2 .header-uVCAlo .container-2oNtJn,
 .contentWrapper-3vHNP2 .header-2TLOnc .container-1SX9VC,
 .contentWrapper-3vHNP2 .header-2TLOnc .container-2oNtJn,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-11eigE .container-1SX9VC,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-11eigE .container-2oNtJn,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-uVCAlo .container-1SX9VC,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-uVCAlo .container-2oNtJn,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-2TLOnc .container-1SX9VC,
-.didRender-2SiRlm > #emoji-picker-tab-panel .header-2TLOnc .container-2oNtJn {
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-11eigE .container-1SX9VC,
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-11eigE .container-2oNtJn,
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-uVCAlo .container-1SX9VC,
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-uVCAlo .container-2oNtJn,
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-2TLOnc .container-1SX9VC,
+.didRender-2dwLEv > #emoji-picker-tab-panel .header-2TLOnc .container-2oNtJn {
   background-color: rgba(20, 6, 36, 0.8);
   border-radius: 20px;
-}
-.contentWrapper-3vHNP2 .wrapper-22rqw6,
-.didRender-2SiRlm > #emoji-picker-tab-panel .wrapper-22rqw6 {
-  top: 50px;
 }
 .contentWrapper-3vHNP2 .bodyWrapper-1eSOtW,
 .contentWrapper-3vHNP2 .listWrapper-2DwCYS,
 .contentWrapper-3vHNP2 .content-A8TzKf,
-.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW,
-.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS,
-.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf {
+.didRender-2dwLEv > #emoji-picker-tab-panel .bodyWrapper-1eSOtW,
+.didRender-2dwLEv > #emoji-picker-tab-panel .listWrapper-2DwCYS,
+.didRender-2dwLEv > #emoji-picker-tab-panel .content-A8TzKf {
   background-color: rgb(20, 6, 36);
 }
 .contentWrapper-3vHNP2 .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
@@ -1110,30 +1109,29 @@ body {
 .contentWrapper-3vHNP2 .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
 .contentWrapper-3vHNP2 .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
 .contentWrapper-3vHNP2 .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
-.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
-.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
+.didRender-2dwLEv > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.didRender-2dwLEv > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.didRender-2dwLEv > #emoji-picker-tab-panel .listWrapper-2DwCYS .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.didRender-2dwLEv > #emoji-picker-tab-panel .listWrapper-2DwCYS .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.didRender-2dwLEv > #emoji-picker-tab-panel .content-A8TzKf .emojiItem-277VFM.emojiItemSelected-2Lg50V,
+.didRender-2dwLEv > #emoji-picker-tab-panel .content-A8TzKf .stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
   background-color: rgba(206, 63, 251, 0.5);
 }
 .contentWrapper-3vHNP2 .bodyWrapper-1eSOtW .imageLoading-2uloYN,
 .contentWrapper-3vHNP2 .listWrapper-2DwCYS .imageLoading-2uloYN,
 .contentWrapper-3vHNP2 .content-A8TzKf .imageLoading-2uloYN,
-.didRender-2SiRlm > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .imageLoading-2uloYN,
-.didRender-2SiRlm > #emoji-picker-tab-panel .listWrapper-2DwCYS .imageLoading-2uloYN,
-.didRender-2SiRlm > #emoji-picker-tab-panel .content-A8TzKf .imageLoading-2uloYN {
+.didRender-2dwLEv > #emoji-picker-tab-panel .bodyWrapper-1eSOtW .imageLoading-2uloYN,
+.didRender-2dwLEv > #emoji-picker-tab-panel .listWrapper-2DwCYS .imageLoading-2uloYN,
+.didRender-2dwLEv > #emoji-picker-tab-panel .content-A8TzKf .imageLoading-2uloYN {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVRoge3asU4bMRzH8Q8OB5XoUFjKWAY6tTtVkULfISpDeYs+R9+CDlT3Du1JILHTqQx0JAt0AKlwROrgCwoUSEJQnJPy3RL5ou/PduyT/54xIK1mmeE1XmEZi5jH7KC/cQ9XuMApjvEbv/IiKwd5eKZfg1azXMQ63mDu0ZrDcYmf2M2L7PShhvcGaDXLBjbwDo2ntBuCDvbxPS+yzl0N7gxQ9fpHcapMAsf4dtdo/Beg1SyX8QnPxyA2DGf4mhfZce+XofdD1fNbJk+e6LRVOV5zHaDVLGfFabMwZrFhWMBm5YqbI7Bhcub8Q7wUXVEFqIZlLZHQY1jrTqXuCKxLt1Q+hobobKbVLOfw2fg2qafiEl8CVtVPnui8GrCS2mQEVoL4r64rLwOWUluMwFIQX4nrynxQr+XzNo3Qv81kMw2QmmmA1EwDpGYaIDXTAKmZBkjNNEBqgngCXFc6QSwu1JWLgJPUFiNwEtBObTEC7YCj1BYjcBRwKB7T1Y0ShyEvsm5BrW4c5EV22d0HdtVrOe1gj2ojq4pn+ymNhmQ/L7ITbu7EP9RjRWqLrugJkBfZFXZwPn6ngTnHTuWKW+9C1VTaFkuak8YZtm/Xih8qdG+anKP3ttjz/QvdXaqrBh/E4l+9rhr00mqWS3iPt8ieVO9+Shxgr7va3EffAF16rtusiPXkF3hm9NHp4C/+iHcijgxx3eYfS5qEazM7noMAAAAASUVORK5CYII=");
 }
 .contentWrapper-3vHNP2 .inspector-DFKXwB,
-.didRender-2SiRlm > #emoji-picker-tab-panel .inspector-DFKXwB {
+.didRender-2dwLEv > #emoji-picker-tab-panel .inspector-DFKXwB {
   background-color: rgba(20, 6, 36, 0.8);
 }
 
 .wrapper-22rqw6 {
   background-color: rgba(20, 6, 36, 0.8);
-  top: 55px;
 }
 
 .popoutLoadingForeground-3xnRkg {
@@ -1284,6 +1282,18 @@ body {
 
 .messageGroupWrapper-1jf_7C {
   border-radius: 20px;
+}
+
+.header-1w9Q93,
+.header-3_zmOb,
+.footer-5ji8u1 {
+  background: rgb(84, 63, 251);
+}
+
+.messagesPopout-eVzQcI,
+.channelHeader-DFRX8q,
+.list-3YHPPb {
+  background: rgb(20, 6, 36);
 }
 
 .jumpButton-1V_1FA {
