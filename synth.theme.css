@@ -985,8 +985,8 @@ body {
   text-align: center;
 }
 
-.theme-dark .keybindShortcut-3zF1P9 .key-N5VmHN,
-.theme-light .keybindShortcut-3zF1P9 .key-N5VmHN {
+.theme-dark .combo-3PNrpQ .key-RP8gj3,
+.theme-light .combo-3PNrpQ .key-RP8gj3 {
   color: rgb(255, 255, 255);
   background-color: rgb(206, 63, 251);
   box-shadow: inset 0 -4px 0 #79039e;
@@ -1157,6 +1157,9 @@ body {
   padding-top: 0;
 }
 
+.container-2McqkF.elevationBorderHigh-3drnJX .focused-2FU0YH {
+  background: rgb(84, 63, 251);
+}
 .container-2McqkF.elevationBorderHigh-3drnJX .option-ayUoaq {
   border-radius: 10px;
 }
