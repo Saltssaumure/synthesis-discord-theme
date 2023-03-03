@@ -1029,7 +1029,7 @@ body {
 .messagesPopoutWrap-3zryHW,
 .menu-1QACrS,
 .container-2McqkF.elevationBorderHigh-3drnJX,
-.userPopout-3fydSP,
+.userPopoutOuter-3AVBmJ,
 .contentWrapper-3vHNP2,
 .didRender-2dwLEv > #emoji-picker-tab-panel,
 .container-2O1UgZ,
@@ -1240,12 +1240,8 @@ body {
 }
 
 .avatarWrapper-3y0KZ1 {
-  left: 26px;
-  top: 84px;
-}
-.avatarWrapper-3y0KZ1 .avatar-2OC07D {
-  border: 0;
-  margin: 6px;
+  left: 27px;
+  top: 21px;
 }
 .avatarWrapper-3y0KZ1 .avatarHint-2g3Mcd {
   border-radius: 50px;
@@ -1255,22 +1251,37 @@ body {
           mask: none;
 }
 
-.avatarPositionNormal-V4Mjtq {
-  top: 24px;
-}
-
-.userPopoutThemed-3BZ4by {
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU {
   padding: 0;
   overflow: hidden;
 }
-.userPopoutThemed-3BZ4by .userPopoutInnerWithTheme-71l1ON::before {
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ.theme-light,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU.theme-light {
+  --interactive-active: rgb(20, 6, 36);
+  --header-primary: rgb(20, 6, 36);
+  --header-secondary: rgb(84, 63, 251);
+  --text-normal: rgb(20, 6, 36);
+}
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ .userProfileInner-3F03PX,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU .userProfileInner-3F03PX {
+  max-height: calc(100vh - 64px - 30px);
+}
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ .userProfileInner-3F03PX::before,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU .userProfileInner-3F03PX::before {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   border-radius: 20px;
 }
-.userPopoutThemed-3BZ4by .wrapper-400BN2 {
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ .userProfileInner-3F03PX .avatarPositionPremiumBanner-2nq2Fy,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU .userProfileInner-3F03PX .avatarPositionPremiumBanner-2nq2Fy {
+  left: 23px;
+  top: 77px;
+}
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ .wrapper-400BN2,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU .wrapper-400BN2 {
   width: calc(100% - 10px);
   border-radius: 15px;
 }
