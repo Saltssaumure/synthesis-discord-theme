@@ -1,0 +1,34 @@
+// Base colour
+.appMount-2yBXZl,
+body {
+    background-color: $darkpurple;
+}
+
+// Image background
+.bg-1QIAus {
+    background: var(--background-image, url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png)) center/cover;
+}
+
+// Main view
+.container-1eFtFS {
+    @include outmost-box();
+    width: auto;
+
+    // Tint over whole main view
+    &::after {
+        @include overlay;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1005;
+        background-color: var(--tint-overlay, rgba(255, 165, 0, 0.1));
+    }
+    // Scanline overlay over server and channel sidebars
+    &::before {
+        margin: $sidebar-spacing;
+        width: calc($sidebar-width + $channels-width + $sidebar-border-width);
+        height: calc(100% - (2 * ($sidebar-spacing + $sidebar-border-width)));
+        @include orange-box();
+        @include scanline-overlay();
+    }
+}

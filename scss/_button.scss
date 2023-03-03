@@ -1,0 +1,107 @@
+.theme-dark,
+.theme-light {
+    $button-transparency: 0.3;
+    $button-disabled-transparency: 0.8;
+    $button-active-darken: 5;
+    // Secondary button
+    --button-secondary-background: #{transparentize($blue, $button-transparency)};
+    --button-secondary-background-hover: #{$blue};
+    --button-secondary-background-active: #{darken($blue, $button-active-darken)};
+    --button-secondary-background-disabled: #{transparentize($blue, $button-disabled-transparency)};
+    // Positive button
+    --button-positive-background: #{transparentize($green, $button-transparency)};
+    --button-positive-background-hover: #{$green};
+    --button-positive-background-active: #{darken($green, $button-active-darken)};
+    --button-positive-background-disabled: #{transparentize($green, $button-disabled-transparency)};
+    // Danger button
+    --button-danger-background: #{transparentize($rose, $button-transparency)};
+    --button-danger-background-hover: #{$rose};
+    --button-danger-background-active: #{darken($rose, $button-active-darken)};
+    --button-danger-background-disabled: #{transparentize($rose, $button-disabled-transparency)};
+    // Outlined button
+    --button-outline-primary-text: #{$white};
+    --button-outline-primary-text-hover: #{$white};
+    --button-outline-primary-border: #{transparentize($blue, $button-transparency)};
+    --button-outline-primary-border-hover: #{$blue};
+    --button-outline-primary-background-hover: #{$blue};
+
+    // Danger outlined button
+    --button-outline-danger-border: #{$rose};
+    --button-outline-danger-border-hover: #{$rose};
+    --button-outline-danger-border-active: #{darken($rose, $button-active-darken)};
+    --button-outline-danger-background-hover: #{$rose};
+    --button-outline-danger-background-active: #{darken($rose, $button-active-darken)};
+    // Brand outlined button (default: blurple)
+    --button-outline-brand-border: #{$blue};
+    --button-outline-brand-border-hover: #{$blue};
+    --button-outline-brand-border-active: #{darken($blue, $button-active-darken)};
+    --button-outline-brand-background-hover: #{$blue};
+    --button-outline-brand-background-active: #{darken($blue, $button-active-darken)};
+
+    // Buttons
+    .button-f2h6uQ,
+    .bd-button:not(.bd-addon-button),
+    .topPill-3DJJNV .item-3XjbnG,
+    #bd-pub-button,
+    .streamerModeEnabledBtn-2nlJTD,
+    .button-1iHNQ2 {
+        border-radius: 50px;
+    }
+
+    // More buttons
+    .lookFilled-yCfaCM,
+    .lookOutlined-3yKVGo,
+    .lookInverted-2mDUMi {
+        box-shadow: 0 0 5px 0 $darkpurple;
+    }
+
+    @mixin button($button-color) {
+        background-color: transparentize($button-color, $button-transparency);
+        &:hover {
+            background-color: $button-color;
+        }
+        &:active {
+            background-color: #{darken($button-color, $button-active-darken)};
+        }
+    }
+
+    .lookFilled-yCfaCM.colorBrand-I6CyqQ {
+        @include button($blue);
+    }
+    .lookInverted-2mDUMi.colorBrand-I6CyqQ {
+        @include button($white);
+    }
+    .bd-button,
+    #bd-pub-button {
+        @include button($blue);
+    }
+    .bd-button.bd-button-danger {
+        @include button($rose);
+    }
+    .circleIconButton-1VxDrg.selected-2r1Hvo {
+        @include button($green);
+    }
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+    .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+        @include button($blue);
+    }
+    .lookLink-15mFoz.colorLink-1Md3RZ {
+        --text-link: #{$white};
+    }
+    .lookLink-15mFoz.colorPrimary-2AuQVo {
+        color: #{$white};
+    }
+    .buttonWhite-hd8TaT {
+        border-color: transparentize($white, $button-transparency)!important;
+        &:hover,
+        &:active {
+            border-color: $white!important;
+        }
+    }
+    .streamerModeEnabledBtn-2nlJTD {
+        @include button($streamer-color);
+    }
+    .button-1_oXub.tertiary-1e-lAP:not(.disabled-184-il) {
+        @include button($blue);
+    }
+}
