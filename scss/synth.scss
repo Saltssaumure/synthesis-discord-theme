@@ -1,0 +1,24 @@
+/**
+ * @name Synthesis - Main
+ * @author Saltssaumure#7557
+ * @description Main section of the Synthesis theme. Please download the autoupdater from https://github.com/Saltssaumure/synthesis-discord-theme/releases/tag/latest.
+ * @version 1.2.1
+*/
+
+@use "top/var-scss" as *;
+@import "top/var-css";
+@import "top/mixin";
+
+@import "appdir";
+@import "bd";
+@import "button";
+@import "channels-chat";
+@import "friends";
+@import "main";
+@import "misc";
+@import "popover";
+@import "servers";
+@import "settings";
+
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter&display=swap');
