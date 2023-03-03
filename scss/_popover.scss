@@ -6,14 +6,14 @@
 .container-2McqkF.elevationBorderHigh-3drnJX, // Search options
 .userPopout-3fydSP, // User profile
 .contentWrapper-3vHNP2, // Emoji picker
-.layer-2aCOJ3>div>#emoji-picker-tab-panel, // Emoji picker add reaction
+.didRender-2dwLEv>#emoji-picker-tab-panel, // Emoji picker add reaction
 .container-2O1UgZ, // User management add role selector
 .container-3ssFyj, // View as role role selector
 .popoutContainer-2wbmiM // Emoji and role icon info
 {
     @include blue-box();
     overflow: hidden;
-    max-height: calc(764px - (2 * $sidebar-border-width) - 15px)!important;
+    max-height: calc(100vh - 64px - $outmost-spacing)!important;
 }
 
 // Create group chat select friends
@@ -44,7 +44,7 @@
 
 // Emoji picker
 .contentWrapper-3vHNP2,
-.didRender-2SiRlm>#emoji-picker-tab-panel
+.didRender-2dwLEv>#emoji-picker-tab-panel
 {
     background-color: $blue;
 
@@ -65,11 +65,6 @@
             background-color: transparentize($darkpurple, 0.2);
             border-radius: 20px;
         }
-    }
-
-    // Server list
-    .wrapper-22rqw6 {
-        top: 50px;
     }
 
     // Main picker
@@ -99,7 +94,6 @@
 // Server/category list
 .wrapper-22rqw6 {
     background-color: transparentize($darkpurple, 0.2);
-    top: calc(50px + $sidebar-border-width);
 }
 
 // Emoji info
@@ -271,7 +265,17 @@
     border-radius: $sidebar-spacing;
 }
 
-// Inbox
+// Inbox, pins, threads
+.header-1w9Q93,
+.header-3_zmOb,
+.footer-5ji8u1 {
+    background: $blue;
+}
+.messagesPopout-eVzQcI,
+.channelHeader-DFRX8q,
+.list-3YHPPb {
+    background: $darkpurple;
+}
 .jumpButton-1V_1FA {
     border-radius: $item-spacing;
     background-color: transparent;
