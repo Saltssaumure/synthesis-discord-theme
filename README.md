@@ -12,9 +12,9 @@
 1. Install [BetterDiscord](https://betterdiscord.app/).
 2. Download the theme file:
     - [GitHub](https://github.com/Saltssaumure/synthesis-discord-theme/releases/latest)
-    - [BD Store](https://betterdiscord.app/theme/Synthesis)
+    - [BD Store](https://betterdiscord.app/theme/?id=770)
 3. Place theme file in BetterDiscord's theme folder:
-    - Windows: `%appdata%/betterdiscord/themes`
+    - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
     
@@ -38,8 +38,8 @@
 - **Default value:** `none` (off).
 
 ## License
-[GNU General Public License v3.0](https://github.com/Saltssaumure/pios-discord-theme/blob/master/LICENSE.md)  
-TL;DR: Do what you want with this theme, as long as you also let others do what they want with your version.
+[GNU General Public License v3.0](https://github.com/Saltssaumure/synthesis-discord-theme/blob/main/LICENSE)  
+<span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 
 ## Questions or suggestions?
 - Post [an issue](https://github.com/Saltssaumure/synthesis-discord-theme/issues) on GitHub.
