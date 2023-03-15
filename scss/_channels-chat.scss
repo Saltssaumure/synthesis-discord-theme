@@ -1,5 +1,6 @@
 // Channels sidebar and main chat
 .base-2jDfDU {
+
     // Notice banners
     .notice-2HEN-u {
         $notice-spacing: 20px;
@@ -14,8 +15,8 @@
 
         &.colorStreamerMode-8uoRWd {
             background-color: transparentize($streamer-color, 0.4);
-            border: $notice-border-width solid lighten($streamer-color,20);
-            box-shadow: 0 0 10px 0 darken($streamer-color,20);
+            border: $notice-border-width solid lighten($streamer-color, 20);
+            box-shadow: 0 0 10px 0 darken($streamer-color, 20);
         }
     }
 
@@ -27,6 +28,7 @@
         .header-3OsQeK {
             box-shadow: none;
         }
+
         .clickable-vvKY2q .header-3OsQeK:hover,
         .selected-1GtAC5 .header-3OsQeK {
             background-color: transparent;
@@ -56,28 +58,31 @@
 
     // Top bar
     .title-31SJ6t {
+
         // Search
         .search-2Mwzzq .DraftEditor-root .DraftEditor-editorContainer {
             height: 24px;
 
             .searchFilter-2UfsDk,
-            .searchAnswer-23w-CH
-            {
+            .searchAnswer-23w-CH {
                 padding: 0 6px;
                 border: 2px solid $gold;
                 background: var(--background-modifier-selected);
                 height: 22px;
                 line-height: 18px;
             }
+
             .searchFilter-2UfsDk {
                 border-radius: 10px 0 0 10px;
             }
+
             .searchAnswer-23w-CH {
                 padding-left: 0;
                 border-radius: 0 10px 10px 0;
             }
         }
     }
+
     // Top bar shadow
     .content-1jQy2l:before,
     .chat-1-OBC7:before {
@@ -96,6 +101,7 @@
                 top: -8px;
                 background: linear-gradient(transparent, transparentize($blurple, 0.4) 40%, transparentize($blurple, 0.2));
             }
+
             // Jump to present bar
             .jumpToPresentBar-1cEnH0 {
                 background: linear-gradient(transparentize($blue, 0.2), transparentize($blue, 0.4) 60%, transparent);
@@ -121,6 +127,7 @@
                 .wrapper-1ZcZW- {
                     background: transparentize($blurple, 0.7);
                     color: lighten($blurple, 30);
+
                     &:hover {
                         background: transparentize($blurple, 0.3);
                         color: $white;
@@ -130,17 +137,22 @@
                 // Reaction
                 .reaction-3vwAF2 {
                     border-radius: $item-spacing;
+
                     &:hover {
                         border-color: $gold;
                     }
+
                     &.reactionMe-1PwQAc {
                         background-color: transparentize($gold, 0.7);
+
                         &:not(:hover) {
                             border-color: transparent;
                         }
+
                         .reactionCount-26U4As {
                             color: $gold;
                         }
+
                         &:hover .reactionCount-26U4As {
                             color: var(--interactive-hover);
                         }
@@ -158,6 +170,7 @@
 
             // Chat dividers
             $divider-color: $gold;
+
             .divider-2rZFJK {
                 --divider-color: #{$divider-color};
                 border-top: none;
@@ -193,6 +206,7 @@
                     box-shadow: 0 0 5px 1px darken($divider-color, 20);
                 }
             }
+
             .group-spacing-16 .divider-IqmEqJ {
                 margin-top: 20px;
                 margin-bottom: 30px;
@@ -212,14 +226,17 @@
 
             // Attachments
             .channelAttachmentArea-HwpkuQ {
+
                 // Options bar
                 .wrapper-2vIMkT {
                     @include orange-box-small();
                     height: 34px;
                 }
+
                 // Spoiler
                 .spoilerContainer-3wsC0k {
                     border-radius: $sidebar-spacing;
+
                     .image-1091CL {
                         border-radius: $sidebar-spacing;
                     }
@@ -227,10 +244,12 @@
             }
 
         }
+
         // Chat slowmode info
         .cooldownWrapper-2k1jHK {
-            color: transparentize($white, 0.5)!important;
+            color: transparentize($white, 0.5) !important;
         }
+
         // Chat autocomplete suggestions
         .autocomplete-3NRXG8 {
             @include orange-box();
@@ -252,6 +271,7 @@
                 border-radius: $item-spacing;
             }
         }
+
         // Sticker suggestions
         .stickerIconOffset-2zxofV {
             @include orange-box-small();
@@ -261,6 +281,7 @@
     // Video call
     .callContainer-HtHELf {
         background: transparent;
+
         .gradientContainer-phMG8d {
             background-image: none;
         }
@@ -282,14 +303,17 @@
     .categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
         background-color: var(--background-modifier-selected);
     }
+
     .pageWrapper-2PwDoS {
         background-color: transparent;
+
         // Search
         .searchBox-pyIJJj {
             border-radius: $item-spacing;
             background-color: transparent;
             box-shadow: none;
         }
+
         .select-1Ia3hD {
             border-radius: $item-spacing;
         }
@@ -305,6 +329,7 @@
     .chatTarget-3H6mpC {
         background: transparentize($darkpurple, $amount: 0.2);
     }
+
     .floating-3M3WeH {
         margin: $sidebar-spacing;
         @include blue-box();

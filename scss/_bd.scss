@@ -8,13 +8,16 @@
     .floating-window-titlebar {
         background: inherit;
     }
+
     .close-button:hover {
         background: $rose;
     }
 }
+
 // All versions
 #bd-editor-panel {
     $inner-radius: calc($sidebar-spacing - $sidebar-border-width);
+
     .contentRegion-3HkfJJ & {
         @include blue-box();
     }
@@ -27,6 +30,7 @@
             border-radius: $item-spacing;
         }
     }
+
     #bd-customcss-editor {
         border-radius: 0 0 $inner-radius $inner-radius;
         overflow: hidden;
@@ -38,25 +42,30 @@
     align-items: flex-end;
     right: 0;
 }
-    .bd-toast {
-        margin-right: 24px;
-        background-color: transparentize($blue, $amount: 0.3);
-        border-radius: 30px;
-    }
-    .bd-toast.toast-success {
-        background-color: transparentize($blurple, $amount: 0.2);
-    }
+
+.bd-toast {
+    margin-right: 24px;
+    background-color: transparentize($blue, $amount: 0.3);
+    border-radius: 30px;
+}
+
+.bd-toast.toast-success {
+    background-color: transparentize($blurple, $amount: 0.2);
+}
 
 // BD toggles
 .bd-switch {
     .bd-switch-body {
         --switch-color: #{transparentize($toggle-off, 0.2)};
+
         .bd-switch-symbol path {
             fill: $toggle-off;
         }
     }
+
     input:checked+.bd-switch-body {
         --switch-color: #{transparentize($toggle-on, 0.3)};
+
         .bd-switch-symbol path {
             fill: $toggle-on;
         }

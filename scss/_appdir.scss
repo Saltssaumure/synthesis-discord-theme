@@ -1,6 +1,7 @@
 // App directory
 .layerContainer-2v_Sit .directoryModal-YJsOMv {
     background: transparent;
+
     // Scanline and tint overlay over whole view
     &::after {
         @include scanline-overlay();
@@ -11,6 +12,7 @@
         top: 0;
         left: 0;
     }
+
     .category-qFAw-K,
     .clickable-WBCFI5,
     .search-2RHhW6,

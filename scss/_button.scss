@@ -57,9 +57,11 @@
 
     @mixin button($button-color) {
         background-color: transparentize($button-color, $button-transparency);
+
         &:hover {
             background-color: $button-color;
         }
+
         &:active {
             background-color: #{darken($button-color, $button-active-darken)};
         }
@@ -68,39 +70,50 @@
     .lookFilled-yCfaCM.colorBrand-I6CyqQ {
         @include button($blue);
     }
+
     .lookInverted-2mDUMi.colorBrand-I6CyqQ {
         @include button($white);
     }
+
     .bd-button,
     #bd-pub-button {
         @include button($blue);
     }
+
     .bd-button.bd-button-danger {
         @include button($rose);
     }
+
     .circleIconButton-1VxDrg.selected-2r1Hvo {
         @include button($green);
     }
+
     .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
     .wrapper-3kah-n:hover .childWrapper-1j_1ub {
         @include button($blue);
     }
+
     .lookLink-15mFoz.colorLink-1Md3RZ {
         --text-link: #{$white};
     }
+
     .lookLink-15mFoz.colorPrimary-2AuQVo {
         color: #{$white};
     }
+
     .buttonWhite-hd8TaT {
-        border-color: transparentize($white, $button-transparency)!important;
+        border-color: transparentize($white, $button-transparency) !important;
+
         &:hover,
         &:active {
-            border-color: $white!important;
+            border-color: $white !important;
         }
     }
+
     .streamerModeEnabledBtn-2nlJTD {
         @include button($streamer-color);
     }
+
     .button-1_oXub.tertiary-1e-lAP:not(.disabled-184-il) {
         @include button($blue);
     }
