@@ -1,30 +1,46 @@
 :root {
     --font-primary: Inter, sans-serif;
     --font-display: "Fira Code", monospace;
-    --font-code: "Fira Code",Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+    --font-code: "Fira Code", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
+
 code,
 .markup-eYLPri pre {
-  font-family: var(--font-code);
+    font-family: var(--font-code);
 }
 
 .theme-dark,
 .theme-light {
-    --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
-    --rs-medium-spacing: 0px; /* Gap between avatar and status for User popout | MUST end in px */
-    --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
-    --rs-small-width: 3px; /* Thickness of status border for members list/dms | MUST end in px */
-    --rs-medium-width: 7px; /* Thickness of status border for User popout | MUST end in px */
-    --rs-large-width: 16px; /* Thickness of status border for User profile | MUST end in px */
-    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-    --rs-online-color: #{$green}; /* Colour for online status */
-    --rs-idle-color: #{$gold}; /* Colour for idle status */
-    --rs-dnd-color: #{$rose}; /* Colour for dnd status */
-    --rs-offline-color: transparent; /* Colour for offline status */
-    --rs-streaming-color: #{$streamer-color}; /* Colour for streaming status */
-    --rs-invisible-color: transparent; /* Colour for invisible status - Note: this will only show for your own invisibility */
-    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-    --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    --rs-small-spacing: 0px;
+    /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 0px;
+    /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 0px;
+    /* Gap between avatar and status for User profiles | MUST end in px */
+    --rs-small-width: 3px;
+    /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 7px;
+    /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 16px;
+    /* Thickness of status border for User profile | MUST end in px */
+    --rs-avatar-shape: 50%;
+    /* 50% for round - 0% for square */
+    --rs-online-color: #{$green};
+    /* Colour for online status */
+    --rs-idle-color: #{$gold};
+    /* Colour for idle status */
+    --rs-dnd-color: #{$rose};
+    /* Colour for dnd status */
+    --rs-offline-color: transparent;
+    /* Colour for offline status */
+    --rs-streaming-color: #{$streamer-color};
+    /* Colour for streaming status */
+    --rs-invisible-color: transparent;
+    /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color);
+    /* Colour of the ring and phone icon when a user is on their phone |  */
+    --rs-phone-visible: none;
+    /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
 
     --background-primary: transparent;
     --background-secondary: transparent;
@@ -122,16 +138,12 @@ code,
 
     --header-secondary: #{$gold};
 
-    --search-popout-option-fade: linear-gradient(
-        90deg,
+    --search-popout-option-fade: linear-gradient(90deg,
         transparent,
-        #{$darkpurple} 80%
-    );
-    --search-popout-option-fade-hover: linear-gradient(
-        90deg,
+        #{$darkpurple} 80%);
+    --search-popout-option-fade-hover: linear-gradient(90deg,
         transparent,
-        #{transparentize($gold, 0.5)} 80%
-    );
+        #{transparentize($gold, 0.5)} 80%);
     --search-popout-option-user-nickname: var(--text-normal);
     --search-popout-option-user-username: var(--text-muted);
     --search-popout-option-filter-text: blue;
@@ -139,7 +151,7 @@ code,
     --search-popout-option-non-text-color: #{$white};
     --search-popout-option-filter-color: #{$white};
     --search-popout-option-answer-color: #{$white};
-    --search-popout-date-picker-border: 1px solid hsla(214,calc(var(--saturation-factor, 1)*9.1%),15.1%,0.3);
+    --search-popout-date-picker-border: 1px solid hsla(214, calc(var(--saturation-factor, 1)*9.1%), 15.1%, 0.3);
     --search-popout-date-picker-hint-text: #{$white};
     --search-popout-date-picker-hint-value-text: #{$white};
     --search-popout-date-picker-hint-value-background: var(--brand-experiment);

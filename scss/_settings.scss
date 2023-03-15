@@ -13,6 +13,7 @@
 
     // Settings sidebar
     .side-2ur1Qk {
+
         .item-3XjbnG,
         .background-Gjdjzm {
             border-radius: $item-spacing;
@@ -30,24 +31,30 @@
     // Bar sliders
     .slider-1NC-Gf {
         $bar-color: $pink;
+
         @mixin bar() {
             background: $bar-color;
             box-shadow: 0 0 3px 1px darken($bar-color, 20);
         }
+
         .markDash-yk2kJ- {
             background: $gold;
         }
+
         .defaultValue-19SZ-q .markValue-2U_-UG {
             color: $white;
         }
+
         .bar-1Bhnl9 {
             background: transparentize($bar-color, 0.5);
             overflow: visible;
+
             .barFill-2Bh7CX {
                 border-radius: 4px;
                 @include bar();
             }
         }
+
         .grabber-2GQyvM {
             $grabber-size: 15px;
             border: none;
@@ -68,7 +75,7 @@
 
     // Careful you have unsaved changes!
     .container-20TyK0 {
-        background-color: transparentize($green, 0.5)!important;
+        background-color: transparentize($green, 0.5) !important;
         border-radius: $sidebar-spacing;
     }
 
@@ -78,15 +85,18 @@
         border-radius: $item-spacing;
         border: 2px solid $gold;
         overflow: hidden;
+
         // Denied permission
         .deny-1GO6vI.selected-3jieYB,
         .passthrough--fbdFR.selected-3jieYB {
             background-color: transparentize($rose, 0.5);
         }
+
         // Neutral permission
         .passthrough--fbdFR.selected-3jieYB {
             background-color: transparentize($white, 0.5);
         }
+
         // Allowed permission
         .allow-1h61-Z.selected-3jieYB {
             background-color: transparentize($green, 0.5);
@@ -95,34 +105,41 @@
 
     // Server settings section specifics
     // Overview
-        // Edit server image
-        .imageUploaderIcon-2OHmFu {
-            background-color: transparentize($gold, $amount: 0.3);
-            background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3Cpath d='m13.5 8.25v4.5c0 .8284271-.6715729 1.5-1.5 1.5h-10.5c-.82842712 0-1.5-.6715729-1.5-1.5v-10.5c0-.82842712.67157288-1.5 1.5-1.5h7.5-3v1.5h-4.5v10.5h10.5v-4.5zm-5.28-.5325 2.655 3.5325h-8.25l2.0625-2.6475 1.47 1.77zm3.78-5.4675h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25v-2.25h1.5z' fill='%23fff' transform='translate(2.25 1.5)'/%3E%3C/g%3E%3C/svg%3E");
-        }
-        // Server banner with no Nitro
-        .avatarUploaderInnerSquareDisabled-3M9eJS {
-            border-radius: $sidebar-spacing;
-            background-color: transparentize($pink, 0.7);
-        }
+    // Edit server image
+    .imageUploaderIcon-2OHmFu {
+        background-color: transparentize($gold, $amount: 0.3);
+        background-image: url("data:image/svg+xml,%3Csvg height='18' viewBox='0 0 18 18' width='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='m0 0h18v18h-18z'/%3E%3Cpath d='m13.5 8.25v4.5c0 .8284271-.6715729 1.5-1.5 1.5h-10.5c-.82842712 0-1.5-.6715729-1.5-1.5v-10.5c0-.82842712.67157288-1.5 1.5-1.5h7.5-3v1.5h-4.5v10.5h10.5v-4.5zm-5.28-.5325 2.655 3.5325h-8.25l2.0625-2.6475 1.47 1.77zm3.78-5.4675h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25v-2.25h1.5z' fill='%23fff' transform='translate(2.25 1.5)'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    // Server banner with no Nitro
+    .avatarUploaderInnerSquareDisabled-3M9eJS {
+        border-radius: $sidebar-spacing;
+        background-color: transparentize($pink, 0.7);
+    }
+
     // Roles
     #roles-tab {
+
         // Role items
         .container-3EtAkD,
         .roleRow-230vCm {
             border-radius: $sidebar-spacing;
         }
+
         // Edit role page
         .page-15bX59 {
+
             // Role list
             .sidebar-3K3Z4C {
                 .titleContainer-3fPic2 {
                     padding-bottom: 0;
                 }
+
                 .scrollerBase-_bVAAt {
                     padding-top: 16px;
                 }
             }
+
             // Role details
             .contentContainer-3hXFtK {
                 .header-JUTO-g {
@@ -130,23 +147,28 @@
                     margin-left: -24px;
                     padding-left: 24px;
                 }
+
                 // Tabs
                 .top-K_jibn .brand-3g5E0C.item-3XjbnG:active,
                 .top-K_jibn .brand-3g5E0C.selected-g-kMVV.item-3XjbnG,
                 .top-K_jibn .brand-3g5E0C.item-3XjbnG:hover {
                     border-bottom-color: $gold;
                 }
+
                 // Role icon preview
                 .previewContainer-1GxmBJ {
                     background: transparentize($pink, 0.5);
+
                     .preview-3SR4Rd {
                         color: $pink;
                     }
                 }
+
                 // Role icon demo
                 .previewContainer-1xQAsw {
                     border-radius: $sidebar-spacing;
                 }
+
                 // Member with role item
                 .memberRow-1FhJgR {
                     border-radius: $item-spacing;
@@ -154,58 +176,70 @@
             }
         }
     }
+
     // Stickers
     .tier-3CS7-p {
         border-radius: $sidebar-spacing;
         overflow: hidden;
+
         .tierHeaderLocked-30MLlO {
             color: $pink;
             background-color: transparentize($pink, 0.7);
         }
+
         .tierHeaderUnlocked-1OpOLf {
             @extend .tierHeaderLocked-30MLlO;
             color: #{$white};
         }
+
         .tierBody-1d3UiS {
             background-color: transparentize($pink, 0.9);
             color: #{$white};
         }
+
         .wrapper-24fR1R {
             background-color: transparentize($pink, 0.9);
         }
     }
+
     // Rules Screening
     .previewContainer-1L7bG- {
         background-color: transparentize($blue, 0.7);
         border-radius: $sidebar-spacing;
     }
+
     // Audit Log
     .auditLog-1NVAY0 {
         border-radius: $sidebar-spacing;
         border-color: $blue;
         overflow: hidden;
+
         .headerClickable-zGQJz3,
         .headerExpanded-1-zwDr {
             background-color: transparentize($blue, 0.7);
             color: $white;
         }
+
         .changeDetails-1kMZqI {
             background-color: transparentize($blue, 0.9);
         }
     }
+
     // Overview
     .upsellContainer-2a5eMP {
         background-color: transparentize($blue, 0.7);
     }
+
     // Welcome Screen
     .previewContainer-29oeA6 {
         background-color: transparentize($blue, 0.7);
         border-radius: $sidebar-spacing;
     }
+
     // Server Boost tab
     .serverBoostTabItem-3QwA3W[aria-selected=true] {
-        color: var(--interactive-active)!important;
-        background-color: var(--background-modifier-selected)!important;
+        color: var(--interactive-active) !important;
+        background-color: var(--background-modifier-selected) !important;
     }
 
     // User settings section specifics
@@ -213,18 +247,22 @@
     .accountProfileCard-lbN7n- {
         @include blue-box();
         background-color: transparentize($darkpurple, 0.3);
+
         // Avatar
         .avatar-3mTjvZ {
             border: 0;
             margin: 7px;
         }
     }
+
     // Profiles
     #profile-customization-tab {
+
         // Preview
         .profileCustomizationPreview-2-Y173 {
             @include blue-box();
         }
+
         // User/Server Profile tabs
         .top-K_jibn .brand-3g5E0C.item-3XjbnG:hover,
         .top-K_jibn .brand-3g5E0C.item-3XjbnG:active,
@@ -232,102 +270,128 @@
             border-bottom-color: $gold;
         }
     }
+
     // Privacy & Safety DM options
     .radioBar-3w9XY- {
         border-left: 5px solid var(--radio-bar-accent-color);
     }
+
     // Devices session icons
     .sessionIcon-2fwSzb {
         background: transparentize($gold, 0.7);
+
         svg {
             color: $gold;
         }
     }
+
     // Connections account bubbles
     .inner-1lPVFp {
         border-radius: $item-spacing;
     }
+
     // Billing info card
     .codeRedemptionRedirect-2hYMSQ {
         background-color: var(--deprecated-card-bg);
         border: none;
     }
+
     // Voice & Video
     .userSettingsVoice-1fEtsL {
+
         // Voice settings
         .container-3NTP7o {
             border-radius: 20px;
-            background: $blue!important;
+            background: $blue !important;
+
             .progress-1S-TDF {
                 background-color: transparentize($darkpurple, 0.5);
             }
+
             .notches-2w7UZJ.gray-3wP137 {
                 background-image: none;
             }
         }
+
         // Video background
         .backgroundOptionInner-SSz19O,
         .backgroundOptionRing-1vvQ0C {
             border-radius: $item-spacing;
         }
     }
+
     // Registered Games
     #game-activity-tab {
+
         .notDetected-M3Ghh2,
         .nowPlaying-3UpuKc {
             border-radius: calc(2 * $item-spacing);
         }
+
         .game-2f2vPC {
             box-shadow: none;
 
             .gameName-zbZetm {
                 color: var(--header-primary);
             }
+
             .gameNameInput-2wbDJ9:focus,
             .gameNameInput-2wbDJ9:hover {
                 background-color: transparentize($darkpurple, 0.3);
                 border-color: transparent;
             }
+
             .lastPlayed-1jum9A,
             .overlayStatusText-In0YrK {
                 color: var(--header-secondary);
             }
+
             .overlayToggleIconOn-21NN2N .fill-297bdf {
                 fill: $gold;
             }
         }
     }
+
     // Game Overlay
     .wrapper-SdcMKg {
         border-radius: calc(2 * $item-spacing);
+
         .option-1QI4c9 {
             border-radius: $item-spacing;
         }
     }
+
     // BetterDiscord settings
     // Collapsible settings arrow
     .bd-settings-group.collapsible .bd-settings-title::after {
         background: $gold;
     }
+
     // Dropdown selector
     .bd-select {
         border-radius: 20px;
+
         .bd-select-options {
             @include blue-box-small();
         }
     }
+
     // Number input
     .bd-number-input {
         border-radius: 20px;
     }
+
     .bd-addon-views .bd-view-button.selected {
         background-color: $gold;
     }
+
     // Plugin/Theme buttons
     $bd-radius: 20px;
+
     .bd-controls>.bd-addon-button:first-of-type {
         border-radius: $bd-radius 0 0 $bd-radius;
     }
+
     .bd-controls>.bd-addon-button:last-of-type {
         border-radius: 0 $bd-radius $bd-radius 0;
     }

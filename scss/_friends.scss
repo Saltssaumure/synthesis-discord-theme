@@ -3,6 +3,7 @@
 .interactive-1vLZ_I {
     border-radius: $item-spacing;
 }
+
 // Active Now sidebar
 .nowPlayingColumn-1eCBCN {
     position: relative;
@@ -17,10 +18,12 @@
             border-width: 2px;
             border-radius: $item-spacing;
         }
+
         .outer-2JOHae.active-1W_Gl9,
         .outer-2JOHae.interactive-2zD88a:hover {
             background-color: transparent;
         }
+
         .inset-SbsSFp {
             background-color: transparent;
         }
@@ -34,17 +37,21 @@
         @include scanline-overlay();
     }
 }
+
 // Status indicator
 .status-12NUUC {
     &[aria-label*="Online"] rect {
         fill: var(--rs-online-color);
     }
+
     &[aria-label*="Idle"] rect {
         fill: var(--rs-idle-color);
     }
+
     &[aria-label*="Do Not Disturb"] rect {
         fill: var(--rs-dnd-color);
     }
+
     &[aria-label*="Streaming"] rect {
         fill: var(--rs-streaming-color);
     }

@@ -23,6 +23,7 @@ body {
         z-index: 1005;
         background-color: var(--tint-overlay, rgba(255, 165, 0, 0.1));
     }
+
     // Scanline overlay over server and channel sidebars
     &::before {
         margin: $sidebar-spacing;

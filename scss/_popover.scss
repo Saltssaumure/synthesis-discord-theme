@@ -1,19 +1,30 @@
 // Popovers
-.container-18GwIk, // Threads
-.recentMentionsPopout-2bI1ZN, // Inbox
-.messagesPopoutWrap-3zryHW, // Pinned messages
-.menu-1QACrS, // Account menu
-.container-2McqkF.elevationBorderHigh-3drnJX, // Search options
-.userPopoutOuter-3AVBmJ, // User profile
-.contentWrapper-3vHNP2, // Emoji picker
-.didRender-2dwLEv>#emoji-picker-tab-panel, // Emoji picker add reaction
-.container-2O1UgZ, // User management add role selector
-.container-3ssFyj, // View as role role selector
+.container-18GwIk,
+// Threads
+.recentMentionsPopout-2bI1ZN,
+// Inbox
+.messagesPopoutWrap-3zryHW,
+// Pinned messages
+.menu-1QACrS,
+// Account menu
+.container-2McqkF.elevationBorderHigh-3drnJX,
+// Search options
+.userPopoutOuter-3AVBmJ,
+// User profile
+.contentWrapper-3vHNP2,
+// Emoji picker
+.didRender-2dwLEv>#emoji-picker-tab-panel,
+// Emoji picker add reaction
+.container-2O1UgZ,
+// User management add role selector
+.container-3ssFyj,
+// View as role role selector
 .popoutContainer-2wbmiM // Emoji and role icon info
-{
+
+    {
     @include blue-box();
     overflow: hidden;
-    max-height: calc(100vh - 64px - $outmost-spacing)!important;
+    max-height: calc(100vh - 64px - $outmost-spacing) !important;
 }
 
 // Create group chat select friends
@@ -21,6 +32,7 @@
 .tag-15zcD_ {
     border-radius: 16px;
 }
+
 // Friend item
 .friend-8ZraY7 {
     border-radius: $item-spacing;
@@ -34,7 +46,8 @@
         border: 2px solid $gold;
 
         &.checked-1pZh2h {
-            border-color: $gold!important;
+            border-color: $gold !important;
+
             path {
                 fill: $gold;
             }
@@ -44,8 +57,7 @@
 
 // Emoji picker
 .contentWrapper-3vHNP2,
-.didRender-2dwLEv>#emoji-picker-tab-panel
-{
+.didRender-2dwLEv>#emoji-picker-tab-panel {
     background-color: $blue;
 
     .emojiPicker-6YCk8a {
@@ -91,6 +103,7 @@
     }
 
 }
+
 // Server/category list
 .wrapper-22rqw6 {
     background-color: transparentize($darkpurple, 0.2);
@@ -98,12 +111,10 @@
 
 // Emoji info
 .popoutLoadingForeground-3xnRkg {
-    background-image: linear-gradient(
-        90deg,
-        $darkpurple,
-        lighten($darkpurple, 20),
-        $darkpurple
-    )
+    background-image: linear-gradient(90deg,
+            $darkpurple,
+            lighten($darkpurple, 20),
+            $darkpurple )
 }
 
 // Upload file entry
@@ -138,6 +149,7 @@
     // Option item
     .option-ayUoaq {
         border-radius: $item-spacing;
+
         &:hover::after {
             background: var(--search-popout-option-fade-hover);
         }
@@ -150,6 +162,7 @@
             background-color: transparent;
 
             .react-datepicker__navigation {
+
                 &.react-datepicker__navigation--next,
                 &.react-datepicker__navigation--previous {
                     border-color: $white;
@@ -160,10 +173,12 @@
 
             .react-datepicker__header {
                 background-color: transparent;
+
                 .react-datepicker__current-month {
                     color: var(--header-primary);
                     border-bottom-color: var(--deprecated-text-input-border-disabled);
                 }
+
                 .react-datepicker__day-name {
                     color: var(--text-normal);
                 }
@@ -173,21 +188,25 @@
                 &:last-of-type .react-datepicker__day {
                     border-bottom-color: var(--deprecated-text-input-border-disabled);
                 }
+
                 .react-datepicker__day:last-of-type {
                     border-right-color: var(--deprecated-text-input-border-disabled);
                 }
 
                 .react-datepicker__day {
                     color: var(--text-normal);
+
                     &.react-datepicker__day--keyboard-selected,
                     &.react-datepicker__day--selected:hover,
                     &:hover {
                         background-color: var(--background-modifier-hover);
                     }
+
                     &.react-datepicker__day--selected:after {
                         background-color: $gold;
                     }
                 }
+
                 .react-datepicker__day--disabled,
                 .react-datepicker__day--disabled:hover,
                 .react-datepicker__day--outside-month {
@@ -197,7 +216,9 @@
             }
         }
     }
+
     .datePickerHint-Ir4715 {
+
         .hintValue-V9hd8l,
         .hintValue-V9hd8l:hover {
             border: 2px solid $gold;
@@ -212,14 +233,17 @@
 .avatarWrapper-3y0KZ1 {
     left: 27px;
     top: 21px;
+
     // View profile shadow
     .avatarHint-2g3Mcd {
         border-radius: 50px;
+
         foreignObject {
             mask: none;
         }
     }
 }
+
 // with Nitro theme
 .userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ,
 .userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU {
@@ -235,6 +259,7 @@
 
     .userProfileInner-3F03PX {
         max-height: calc(100vh - 64px - $outmost-spacing);
+
         &::before {
             width: 100%;
             height: 100%;
@@ -271,6 +296,7 @@
 .jumpButton-1V_1FA {
     border-radius: $item-spacing;
     background-color: transparent;
+
     .text-2ifC_x {
         color: lighten($blurple, 20);
     }
@@ -297,16 +323,20 @@
     // View message reactions
     .reactionDefault-1Sjj1f {
         border-radius: $item-spacing;
+
         &:hover {
             background-color: var(--background-modifier-hover);
         }
     }
+
     .reactionSelected-1aMb2K {
         border-radius: $item-spacing;
         background-color: var(--background-modifier-selected);
     }
+
     .reactors-1VXca7 {
         background-color: transparent;
+
         .remove-19AQn_ {
             background-color: var(--background-modifier-hover);
             border-radius: 50%;
@@ -322,6 +352,7 @@
         .progressBar-20NUv9 {
             .barBackground-unEPDT {
                 background: transparentize($pink, 0.5);
+
                 .barSecondary-VouwoY {
                     background: $pink;
                 }
@@ -330,13 +361,16 @@
             .tierMarkerBackground-G8FoN4 {
                 background: transparentize($pink, 0.7);
             }
+
             .tierMarkerInProgress-2Tdxjz {
-                background: transparentize($pink, 0.5)!important;
+                background: transparentize($pink, 0.5) !important;
             }
+
             .tierMarkerAccomplished-1SkbEJ {
-                background: $pink!important;
+                background: $pink !important;
                 box-shadow: 0 0 3px 1px darken($pink, 20);
             }
+
             .tierMarkerLabelText-1wk8KK {
                 border-radius: 20px;
                 padding-left: 8px;
@@ -346,17 +380,21 @@
         .tierWrapper-CsnudO {
             border-radius: $sidebar-spacing;
             overflow: hidden;
+
             .tierHeaderLocked-3ItHYn {
                 background: $blue;
                 color: $white;
+
                 .tierLock-1uBqZ0 {
                     color: inherit;
                 }
             }
+
             .tierBody-3ju-rc {
                 background-color: transparentize($blue, 0.5);
             }
         }
+
         .perk-19D_HN {
             border-radius: $item-spacing;
             background-color: transparentize($blue, 0.5);
@@ -366,6 +404,7 @@
     // Add registered game
     .addGamePopout-2SKNIV {
         @include blue-box-small();
+
         .divider-_0um2u {
             border-top: none;
         }
@@ -401,6 +440,7 @@
         }
 
         .tooltipContent-Nejnvh {
+
             .activityIcon-vfIBet,
             .activityIcon-vfIBet {
                 color: $white;
@@ -412,14 +452,16 @@
     .root-g14mjS {
         @include blue-box();
         overflow: hidden;
-        background-color: transparentize($darkblue, 0.7)!important;
+        background-color: transparentize($darkblue, 0.7) !important;
 
         // Image upload
         &.uploadModal-2ie9O_ {
             overflow: visible;
+
             .icon-HW4tZ- {
                 border-radius: $sidebar-spacing;
             }
+
             .footer-VCsJQY {
                 background-color: $blue;
                 box-shadow: none;
@@ -443,10 +485,12 @@
                 text-decoration: none;
             }
         }
+
         // with ImageUtilities plugin
         .operations-3V47CY {
             position: fixed;
         }
+
         .sibling-6vI7Pu .imageWrapper-oMkQl4 {
             @include blue-box();
         }
@@ -468,9 +512,11 @@
         .top-K_jibn .themed-2-lozF.item-3XjbnG:hover {
             border-bottom-color: $gold;
         }
+
         .profileBanner-2zIsK7 {
             opacity: 70%;
         }
+
         .listRow-2nO1T6 {
             border-radius: $item-spacing;
         }
@@ -481,6 +527,7 @@
             background: transparent;
             border: 2px solid var(--modal-background);
         }
+
         .bd-addon-error:hover {
             border-color: $pink;
         }
@@ -489,8 +536,10 @@
         .input-3r5zZY {
             border-radius: $sidebar-spacing;
         }
+
         .result-u66Ywh {
             border-radius: $item-spacing;
+
             .wrapper-2olG5t {
                 border-radius: 10px;
             }
