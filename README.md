@@ -17,7 +17,7 @@
     - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
     - Linux: `~/.config/BetterDiscord/themes`
-    
+
 ## Customisation
 
 ### Background image
