@@ -1,0 +1,162 @@
+// Misc stuff
+
+// Windows title bar
+.titleBar-1it3bQ {
+    .alignCenter-14kD11 {
+        border-radius: 0 0 $item-spacing $item-spacing;
+    }
+
+    &::before {
+        content: var(--title-text, "Synthesis v1.2");
+        font-family: var(--font-display);
+        font-weight: 500;
+        color: var(--text-muted);
+        text-shadow: 0 0 5px $gold;
+        position: absolute;
+        top: -4px;
+        left: 0;
+        height: 18px;
+        padding: 4px;
+        line-height: 23px;
+        font-size: 14px;
+        letter-spacing: 0;
+        z-index: 1;
+    }
+}
+
+.wordmark-2u86JB {
+    display: none;
+}
+
+// Fade in/out scrollers
+.scrollerBase-_bVAAt:not(.scroller-1bVxF5):not(.popout-1KHNAq) {
+    mask-image: linear-gradient(transparent, black 5%, black 95%, transparent);
+}
+
+// Status glow
+.wrapper-1VLyxH {
+    box-shadow: 0 0 10px var(--statusGlowColor);
+
+    &[aria-label*="Online"] {
+        --statusGlowColor: var(--rs-online-color);
+    }
+
+    &[aria-label*="Idle"] {
+        --statusGlowColor: var(--rs-idle-color);
+    }
+
+    &[aria-label*="Do Not Disturb"] {
+        --statusGlowColor: var(--rs-dnd-color);
+    }
+
+    &[aria-label*="Streaming"] {
+        --statusGlowColor: var(--rs-streaming-color);
+    }
+}
+
+// Focused menu option
+.colorDefault-CDqZdO.focused-3qFvc8 {
+    background-color: transparentize($pink, 0.7);
+}
+
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
+    background-color: transparentize($pink, 0.5);
+}
+
+// Toggles
+.container-2nx-BQ {
+    background-color: transparentize($toggle-off, 0.2) !important;
+
+    path {
+        fill: $toggle-off !important;
+    }
+}
+
+.checked-25WXMf {
+    background-color: transparentize($toggle-on, 0.3) !important;
+
+    path {
+        fill: $toggle-on !important;
+    }
+}
+
+// Bot tag
+.px-MnE_OR.botTag-7aX5WZ {
+    border-radius: 20px;
+    padding-right: 5px;
+
+    .botText-1fD6Qk {
+        line-height: 20px;
+    }
+}
+
+// Code block
+.markup-eYLPri code,
+.textContainer-36wgKK {
+    background: transparentize($blue, 0.5);
+}
+
+// Inputs
+.select-1Ia3hD,
+// Single line inputs
+.container-30qY7E,
+// Dropdown selectors
+.input-2g-os5 // Keybind recorders
+
+    {
+    border-radius: 50px;
+}
+
+// Channel/user group name
+.container-q97qHp {
+    text-align: center;
+}
+
+// Misc needs theme-dark/light
+.theme-dark,
+.theme-light {
+
+    // Keybinds
+    .combo-3PNrpQ .key-RP8gj3 {
+        color: $white;
+        background-color: $pink;
+        box-shadow: inset 0 -4px 0 darken($pink, 30);
+        border: 1px solid darken($pink, 30);
+        border-radius: 20px;
+    }
+
+    // Spoiler text
+    .spoilerText-27bIiA {
+        background: transparentize($blue, 0.5);
+
+        &.hidden-3B-Rum {
+            @extend .spoilerText-27bIiA;
+
+            &:hover {
+                background: $blue;
+            }
+        }
+    }
+
+    // Spotify/game invite
+    .invite-3uuHYQ {
+        border-radius: $sidebar-spacing;
+        background-color: transparentize($blue, 0.7);
+        border: none;
+
+        .header-1Fx4D1 {
+            color: var(--header-secondary);
+        }
+
+        .partyMemberEmpty-GtlQ_s,
+        .moreUsers-3PdGZN {
+            background: $darkpurple;
+            color: $white;
+            opacity: 0.5
+        }
+
+        .artwork-28Cmnt {
+            border-radius: $item-spacing;
+        }
+    }
+}

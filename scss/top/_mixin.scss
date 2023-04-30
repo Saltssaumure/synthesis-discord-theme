@@ -1,0 +1,81 @@
+@mixin overlay {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+@mixin scanline-overlay() {
+    @include overlay();
+    background-image: linear-gradient(var(--crt-scanline-light, rgba(255, 255, 255, 0.05)) 50%,
+            var(--crt-scanline-dark, rgba(0, 0, 0, 0.1)) 50%);
+    background-size: 100% 4px;
+    z-index: 1000;
+    pointer-events: none;
+    animation: var(--crt-flicker, none) 0.1s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+@mixin outmost-box() {
+    border: $outmost-border-width solid #{$blurple};
+    margin: $outmost-spacing;
+    margin-top: 10px;
+    border-radius: $outmost-spacing;
+    box-shadow: 0 0 30px 0 $gold inset, 0 0 20px 0 $darkblue;
+    background: transparentize($darkblue, 0.7);
+}
+
+@mixin box($radius, $border-color, $border-size, $shadow-color, $shadow-size) {
+    border: $border-size solid $border-color;
+    border-radius: $radius;
+    box-shadow: 0 0 $shadow-size 0 $shadow-color !important;
+}
+
+@mixin medium-box($border-color, $shadow-color, $shadow-size) {
+    @include box($sidebar-spacing, $border-color, $sidebar-border-width, $shadow-color, $shadow-size);
+}
+
+@mixin small-box($border-color, $shadow-color, $shadow-size) {
+    @include box($item-spacing, $border-color, 2px, $shadow-color, 10px);
+
+    &::after {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        @include scanline-overlay();
+    }
+}
+
+@mixin orange-box() {
+    @include medium-box($gold, $gold, 10px);
+}
+
+@mixin blue-box() {
+    @include medium-box($blue, $darkblue, 20px);
+}
+
+@mixin orange-box-small() {
+    @include small-box($gold, $gold, 10px);
+    background: transparentize($darkblue, 0.8);
+}
+
+@mixin blue-box-small() {
+    @include small-box($blue, $darkblue, 10px);
+    background: transparentize($darkpurple, 0.3);
+}
+
+@mixin unread-pill($pill-size) {
+    width: calc(2 * $pill-size);
+    height: calc(2 * $pill-size);
+    margin-left: calc(0px - $pill-size);
+    border-radius: 0 $pill-size $pill-size 0;
+    background-color: $gold;
+}

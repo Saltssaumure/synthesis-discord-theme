@@ -1,0 +1,71 @@
+// Image embed
+.imageWrapper-oMkQl4 {
+    border-radius: calc(2 * $item-spacing);
+
+    // Gif label
+    .imageAccessory-2yA7Kb {
+        $tag-spacing: 12px;
+        top: $tag-spacing;
+        right: $tag-spacing;
+
+        .gifTag-1TvtGO {
+            border-top-right-radius: calc((2 * $item-spacing) - $tag-spacing);
+        }
+    }
+}
+
+.embedFull-1HGV2S,
+// Link embed
+.wrapper-1HIH0j,
+// Invite embed
+.embedSpotify-1rDvOE,
+// Spotify embed
+.wrapperAudio-1Bzv_Z // Audio embed
+
+    {
+    border-radius: calc(2 * $item-spacing);
+    background-color: transparentize($gold, 0.7);
+}
+
+// Link embed
+.embedFull-1HGV2S {
+    .embedThumbnail-2nTasl .imageWrapper-oMkQl4 {
+        border-radius: $item-spacing;
+    }
+
+    &::after {
+        height: 100%;
+        width: calc(100% + 4px);
+        left: -4px;
+        border-radius: inherit;
+        @include scanline-overlay();
+    }
+}
+
+// Audio embed
+.audioControls-3fmemK {
+    border-radius: $item-spacing;
+}
+
+// Spoiler embed
+.spoilerContainer-3wsC0k {
+    border-radius: calc(2 * $item-spacing);
+}
+
+// Attachment embed
+.footer-GXWBBp {
+    background-color: transparentize($blue, 0.2);
+}
+
+// Gift embed
+.giftCodeContainer-3ObH0O {
+    .tile-2mmK5T {
+        background-color: transparentize($blue, 0.7);
+        border-radius: calc(2 * $item-spacing);
+
+        .invalidPoop--w1123,
+        .description-X8_53U {
+            background-color: transparent;
+        }
+    }
+}
