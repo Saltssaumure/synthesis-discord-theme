@@ -8,7 +8,7 @@
         width: 100%;
         height: 100%;
         border-radius: calc($outmost-spacing - $outmost-border-width);
-        background-color: var(--tint-overlay, rgba(255, 165, 0, 0.1));
+        background-color: var(--synth-overlay-color, rgba(255, 165, 0, 0.1));
     }
 
     // Settings sidebar

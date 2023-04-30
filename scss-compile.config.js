@@ -8,6 +8,6 @@ export default {
         /** The name of your theme repository. */
         repo: "synthesis-discord-theme",
         /** The version of your theme. */
-        version: "1.2.1"
+        version: "1.2.2"
     }
 };

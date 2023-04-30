@@ -6,7 +6,7 @@ body {
 
 // Image background
 .bg-1QIAus {
-    background: var(--background-image, url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png)) center/cover;
+    background: var(--synth-bg-image, url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif)) center/cover;
 }
 
 // Main view
@@ -21,7 +21,7 @@ body {
         height: 100%;
         pointer-events: none;
         z-index: 1005;
-        background-color: var(--tint-overlay, rgba(255, 165, 0, 0.1));
+        background-color: var(--synth-overlay-color, rgba(255, 165, 0, 0.1));
     }
 
     // Scanline overlay over server and channel sidebars

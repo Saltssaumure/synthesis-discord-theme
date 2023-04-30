@@ -2,8 +2,8 @@
  * @name Synthesis
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
- * @description A vibrant neon synthwave theme, with a selection of handmade background images, and customisable CRT monitor scanlines.
- * @version 1.1.1
+ * @description A vibrant neon synthwave theme.
+ * @version 1.2.2
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/synthesis-discord-theme
  * @donate https://ko-fi.com/saltssaumure
@@ -27,10 +27,11 @@ Join Salt's Discord Themes server! https://discord.gg/uy8nKQVatp
 
 @import url("https://saltssaumure.github.io/synthesis-discord-theme/synth.min.css");
 
+/* See https://github.com/Saltssaumure/synthesis-discord-theme/blob/main/README.md for customisation settings. */
 :root {
-    --background-image: url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.png); /* Background image. Values: any image link encased in url(). See GitHub readme for recommended images! */
-    --tint-overlay: rgba(255, 165, 0, 0.1); /* Tint over the whole "viewport". Default: rgba(255, 165, 0, 0.1). */
-    --crt-scanline-light: rgba(255, 255, 255, 0.05); /* CRT monitor light scanline stripe tone. Default: rgba(255, 255, 255, 0.05). */
-    --crt-scanline-dark: rgba(0, 0, 0, 0.1); /* CRT monitor dark scanline stripe tone. Default: rgba(0, 0, 0, 0.1). */
-    --crt-flicker: none; /* CRT monitor overlay flickering, may be performance heavy. Values: flicker (on) or none (off). */
+    --synth-bg-image:       url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif); 
+    --synth-overlay-color:  rgba(255, 165, 0, 0.1);
+    --crt-scanline-light:   rgba(255, 255, 255, 0.05);
+    --crt-scanline-dark:    rgba(0, 0, 0, 0.1);
+    --crt-flicker:          none;   /* This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
 }
