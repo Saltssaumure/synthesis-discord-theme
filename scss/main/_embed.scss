@@ -1,3 +1,6 @@
+@use "../top/vars" as *;
+@use "../top/tint";
+
 // Image embed
 .imageWrapper-oMkQl4 {
     border-radius: calc(2 * $item-spacing);
@@ -21,8 +24,7 @@
 .embedSpotify-1rDvOE,
 // Spotify embed
 .wrapperAudio-1Bzv_Z // Audio embed
-
-    {
+{
     border-radius: calc(2 * $item-spacing);
     background-color: transparentize($gold, 0.7);
 }
@@ -38,7 +40,7 @@
         width: calc(100% + 4px);
         left: -4px;
         border-radius: inherit;
-        @include scanline-overlay();
+        @include tint.scanline-overlay();
     }
 }
 
@@ -51,7 +53,6 @@
 .spoilerContainer-3wsC0k {
     border-radius: calc(2 * $item-spacing);
 }
-
 // Attachment embed
 .footer-GXWBBp {
     background-color: transparentize($blue, 0.2);
@@ -67,5 +68,27 @@
         .description-X8_53U {
             background-color: transparent;
         }
+    }
+}
+
+// Spotify/game invite
+.invite-3uuHYQ {
+    border-radius: $sidebar-spacing;
+    background-color: transparentize($blue, 0.7);
+    border: none;
+
+    .header-1Fx4D1 {
+        color: var(--header-secondary);
+    }
+
+    .partyMemberEmpty-GtlQ_s,
+    .moreUsers-3PdGZN {
+        background: $darkpurple;
+        color: $white;
+        opacity: 0.5;
+    }
+
+    .artwork-28Cmnt {
+        border-radius: $item-spacing;
     }
 }

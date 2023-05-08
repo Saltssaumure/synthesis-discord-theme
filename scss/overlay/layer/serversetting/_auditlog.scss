@@ -1,0 +1,18 @@
+@use "../../../top/vars" as *;
+
+// Audit Log
+.auditLog-1NVAY0 {
+    border-radius: $sidebar-spacing;
+    border-color: $blue;
+    overflow: hidden;
+
+    .headerClickable-zGQJz3,
+    .headerExpanded-1-zwDr {
+        background-color: transparentize($blue, 0.7);
+        color: $white;
+    }
+
+    .changeDetails-1kMZqI {
+        background-color: transparentize($blue, 0.9);
+    }
+}

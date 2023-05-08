@@ -1,0 +1,22 @@
+@use "../top/vars" as *;
+
+// Status glow
+.wrapper-1VLyxH {
+    box-shadow: 0 0 10px var(--statusGlowColor);
+
+    &[aria-label*="Online"] {
+        --statusGlowColor: var(--rs-online-color);
+    }
+
+    &[aria-label*="Idle"] {
+        --statusGlowColor: var(--rs-idle-color);
+    }
+
+    &[aria-label*="Do Not Disturb"] {
+        --statusGlowColor: var(--rs-dnd-color);
+    }
+
+    &[aria-label*="Streaming"] {
+        --statusGlowColor: var(--rs-streaming-color);
+    }
+}

@@ -1,0 +1,26 @@
+@use "../../../top/vars" as *;
+
+// Stickers
+.tier-3CS7-p {
+    border-radius: $sidebar-spacing;
+    overflow: hidden;
+
+    .tierHeaderLocked-30MLlO {
+        color: $pink;
+        background-color: transparentize($pink, 0.7);
+    }
+
+    .tierHeaderUnlocked-1OpOLf {
+        @extend .tierHeaderLocked-30MLlO;
+        color: #{$white};
+    }
+
+    .tierBody-1d3UiS {
+        background-color: transparentize($pink, 0.9);
+        color: #{$white};
+    }
+
+    .wrapper-24fR1R {
+        background-color: transparentize($pink, 0.9);
+    }
+}

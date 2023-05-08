@@ -1,0 +1,10 @@
+@use "../top/box";
+
+// with ImageUtilities plugin
+.operations-3V47CY {
+    position: fixed;
+}
+
+.sibling-6vI7Pu .imageWrapper-oMkQl4 {
+    @include box.blue();
+}

@@ -1,0 +1,28 @@
+@use "../top/vars" as *;
+
+// Inputs
+.select-1Ia3hD,
+// Single line inputs
+.container-30qY7E,
+// Dropdown selectors
+.input-2g-os5 // Keybind recorders
+{
+    border-radius: 50px;
+}
+
+// Toggles
+.container-2nx-BQ {
+    background-color: transparentize($toggle-off, 0.2) !important;
+
+    path {
+        fill: $toggle-off !important;
+    }
+}
+
+.checked-25WXMf {
+    background-color: transparentize($toggle-on, 0.3) !important;
+
+    path {
+        fill: $toggle-on !important;
+    }
+}

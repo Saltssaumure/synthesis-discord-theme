@@ -1,0 +1,189 @@
+@use "../top/vars" as *;
+@use "../top/tint";
+@use "../top/box";
+
+// Main chat
+.chatContent-3KubbW {
+    .messagesWrapper-RpOMA3 {
+        margin-bottom: 4px;
+
+        // New messages bar
+        .newMessagesBar-1hF-9G {
+            min-height: 30px;
+            top: -8px;
+            background: linear-gradient(transparent, transparentize($blurple, 0.4) 40%, transparentize($blurple, 0.2));
+        }
+
+        // Jump to present bar
+        .jumpToPresentBar-1cEnH0 {
+            background: linear-gradient(transparentize($blue, 0.2), transparentize($blue, 0.4) 60%, transparent);
+        }
+
+        // Chat message
+        .messageListItem-ZZ7v6g {
+            margin-left: 17px;
+
+            // Options bar
+            .wrapper-2vIMkT {
+                @include box.orange-small();
+                height: 34px;
+
+                &::before {
+                    height: 100%;
+                    width: 100%;
+                    @include tint.scanline-overlay();
+                }
+            }
+
+            // @ Mention
+            .wrapper-1ZcZW- {
+                background: transparentize($blurple, 0.7);
+                color: lighten($blurple, 30);
+
+                &:hover {
+                    background: transparentize($blurple, 0.3);
+                    color: $white;
+                }
+            }
+
+            // Reaction
+            .reaction-3vwAF2 {
+                border-radius: $item-spacing;
+
+                &:hover {
+                    border-color: $gold;
+                }
+
+                &.reactionMe-1PwQAc {
+                    background-color: transparentize($gold, 0.7);
+
+                    &:not(:hover) {
+                        border-color: transparent;
+                    }
+
+                    .reactionCount-26U4As {
+                        color: $gold;
+                    }
+
+                    &:hover .reactionCount-26U4As {
+                        color: var(--interactive-hover);
+                    }
+                }
+            }
+
+            @import "_embed";
+
+            // Thread
+            .container-3i3IzO {
+                border-radius: $item-spacing;
+                background-color: transparentize($gold, 0.7);
+            }
+        }
+
+        // Chat dividers
+        $divider-color: $gold;
+
+        .divider-2rZFJK {
+            --divider-color: #{$divider-color};
+            border-top: none;
+            background-color: $divider-color;
+            height: 2px;
+            border-radius: 5px;
+            box-shadow: 0 0 3px 1px darken($divider-color, 20);
+            justify-content: center;
+
+            // New message divider pill
+            .unreadPill-3nEWYM {
+                border-radius: $item-spacing;
+                color: darken($divider-color, 30);
+                padding: 2px 10px;
+                right: auto;
+                top: -5px;
+                text-transform: capitalize;
+                box-shadow: 0 0 5px 1px darken($divider-color, 20);
+
+                .unreadPillCap-2-iI4h {
+                    display: none;
+                }
+            }
+
+            // Date change divider
+            .content-3spvdd {
+                background: $divider-color;
+                color: darken($divider-color, 30);
+                padding: 2px 10px;
+                font-size: 10px;
+                line-height: 9px;
+                font-weight: 700;
+                box-shadow: 0 0 5px 1px darken($divider-color, 20);
+            }
+        }
+
+        .group-spacing-16 .divider-IqmEqJ {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    // Chat text area
+    .scrollableContainer-15eg7h {
+        @include box.orange();
+
+        &::before {
+            height: calc(100% - (2 * $sidebar-border-width));
+            width: calc(100% - (2 * $sidebar-border-width));
+            @include tint.scanline-overlay();
+            border-radius: inherit;
+        }
+
+        // Attachments
+        .channelAttachmentArea-HwpkuQ {
+            // Options bar
+            .wrapper-2vIMkT {
+                @include box.orange-small();
+                height: 34px;
+            }
+
+            // Spoiler
+            .spoilerContainer-3wsC0k {
+                border-radius: $sidebar-spacing;
+
+                .image-1091CL {
+                    border-radius: $sidebar-spacing;
+                }
+            }
+        }
+    }
+
+    // Chat slowmode info
+    .cooldownWrapper-2k1jHK {
+        color: transparentize($white, 0.5) !important;
+    }
+
+    // Chat autocomplete suggestions
+    .autocomplete-3NRXG8 {
+        @include box.orange();
+        background-color: $darkpurple;
+
+        &::before {
+            @include tint.scanline-overlay();
+            height: 100%;
+            width: 100%;
+        }
+
+        // Group
+        .categoryHeader-OpJ1Ly {
+            background-color: $darkpurple;
+        }
+
+        // Option
+        .base-2v-uc0 {
+            border-radius: $item-spacing;
+        }
+    }
+
+    // Sticker suggestions
+    .stickerIconOffset-2zxofV {
+        @include box.orange-small();
+    }
+}

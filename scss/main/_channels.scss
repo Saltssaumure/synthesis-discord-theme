@@ -1,0 +1,38 @@
+@use "../top/vars" as *;
+@use "../top/pill";
+
+// Channels sidebar
+.sidebar-1tnWFu {
+    margin: $sidebar-spacing 0;
+
+    // Header
+    .header-3OsQeK {
+        box-shadow: none;
+    }
+
+    .clickable-vvKY2q .header-3OsQeK:hover,
+    .selected-1GtAC5 .header-3OsQeK {
+        background-color: transparent;
+    }
+
+    // New messages pill
+    .unread-36eUEm {
+        @include pill.unread(6px);
+        top: calc(50% - 3px);
+    }
+
+    // Channel
+    .content-1gYQeQ,
+    .layout-1qmrhw,
+    .content-1Tgc42 {
+        border-radius: $item-spacing;
+    }
+
+    // Self button
+    .withTagAsButton-OsgQ9L,
+    .withTagless-10ooWt {
+        border-radius: 30px;
+        margin-bottom: 4px;
+        margin-right: 4px;
+    }
+}

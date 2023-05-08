@@ -1,8 +1,12 @@
+@use "../top/vars" as *;
+@use "../top/pill";
+@use "../top/box";
+
 // Servers sidebar
 .guilds-2JjMmN {
     margin: $sidebar-spacing;
     margin-right: 0;
-    @include orange-box();
+    @include box.orange();
 
     .platform-osx & .scroller-3X7KbA,
     .platform-win & .scroller-3X7KbA {
@@ -13,7 +17,7 @@
     $pill-height: 6px;
 
     .item-2LIpTv {
-        @include unread-pill($pill-height);
+        @include pill.unread($pill-height);
     }
 
     .pill-2RsI5Q:not(.bd-selected) .item-2LIpTv {

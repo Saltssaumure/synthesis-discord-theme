@@ -1,0 +1,33 @@
+@use "../top/vars" as *;
+
+// Top bar
+.title-31SJ6t {
+    // Search
+    .search-2Mwzzq .DraftEditor-root .DraftEditor-editorContainer {
+        height: 24px;
+
+        .searchFilter-2UfsDk,
+        .searchAnswer-23w-CH {
+            padding: 0 6px;
+            border: 2px solid $gold;
+            background: var(--background-modifier-selected);
+            height: 22px;
+            line-height: 18px;
+        }
+
+        .searchFilter-2UfsDk {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .searchAnswer-23w-CH {
+            padding-left: 0;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
+
+// Top bar shadow
+.content-1jQy2l:before,
+.chat-1-OBC7:before {
+    display: none;
+}

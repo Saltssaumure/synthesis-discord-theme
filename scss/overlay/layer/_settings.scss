@@ -1,0 +1,98 @@
+@use "channelsetting/permissions";
+
+@use "serversetting/auditlog";
+@use "serversetting/overview";
+@use "serversetting/roles";
+@use "serversetting/serverbooststatus";
+@use "serversetting/stickers";
+@use "serversetting/welcomescreen";
+
+@use "usersetting/billing";
+@use "usersetting/connections";
+@use "usersetting/devices";
+@use "usersetting/gameoverlay";
+@use "usersetting/myaccount";
+@use "usersetting/privacyandsafety";
+@use "usersetting/profiles";
+@use "usersetting/registeredgames";
+@use "usersetting/voiceandvideo";
+
+@use "../../top/vars" as *;
+@use "../../top/tint";
+@use "../../top/box";
+@use "../../top/slider";
+
+// Settings
+.standardSidebarView-E9Pc3j {
+    @include box.outmost();
+
+    // Scanline and tint overlay over whole view
+    &::after {
+        @include tint.scanline-overlay();
+        width: 100%;
+        height: 100%;
+        border-radius: calc($outmost-spacing - $outmost-border-width);
+        background-color: var(--synth-overlay-color, rgba(255, 165, 0, 0.1));
+    }
+
+    // Settings sidebar
+    .side-2ur1Qk {
+        .item-3XjbnG,
+        .background-Gjdjzm {
+            border-radius: $item-spacing;
+        }
+    }
+
+    // Large menu items and info cards
+    .item-2idW98,
+    .radioBar-3w9XY-,
+    .card-16VQ8C,
+    .container-3jbRo5 {
+        border-radius: calc(2 * $item-spacing);
+    }
+
+    // Bar sliders
+    .slider-1NC-Gf {
+
+        .markDash-yk2kJ- {
+            background: $gold;
+        }
+
+        .defaultValue-19SZ-q .markValue-2U_-UG {
+            color: $white;
+        }
+
+        .bar-1Bhnl9 {
+            background: transparentize($pink, 0.5);
+            overflow: visible;
+
+            .barFill-2Bh7CX {
+                border-radius: 4px;
+                @include slider.bar($pink);
+            }
+        }
+
+        .grabber-2GQyvM {
+            $grabber-size: 15px;
+            border: none;
+            height: $grabber-size;
+            width: $grabber-size;
+            margin-top: calc(0px - ($grabber-size / 2));
+            margin-left: calc(0px - ($grabber-size / 2));
+            border-radius: 50%;
+            @include slider.bar($pink);
+        }
+    }
+
+    // Remove item x bubble
+    .default-1Tkeeg {
+        background-color: var(--status-danger);
+        background-image: url(https://discord.com/assets/eb69ec9fdd30653a3ade1ab501a7cd3d.svg);
+    }
+
+    // Careful you have unsaved changes!
+    .container-20TyK0 {
+        background-color: transparentize($green, 0.5) !important;
+        border-radius: $sidebar-spacing;
+    }
+}

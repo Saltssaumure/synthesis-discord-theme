@@ -1,0 +1,11 @@
+@use "../../top/vars" as *;
+
+// Inbox
+.jumpButton-1V_1FA {
+    border-radius: $item-spacing;
+    background-color: transparent;
+
+    .text-2ifC_x {
+        color: lighten($blurple, 20);
+    }
+}

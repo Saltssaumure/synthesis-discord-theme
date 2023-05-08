@@ -1,3 +1,7 @@
+@use "../top/vars" as *;
+@use "../top/box";
+@use "../top/tint";
+
 // Friends view
 // DM list
 .interactive-1vLZ_I {
@@ -9,7 +13,7 @@
     position: relative;
     margin: 0 $sidebar-spacing $sidebar-spacing 0;
     height: auto;
-    @include orange-box();
+    @include box.orange();
 
     .scroller-hE2gWq {
         border: none;
@@ -34,7 +38,7 @@
         width: 100%;
         top: 0;
         border-radius: calc($sidebar-spacing - $sidebar-border-width);
-        @include scanline-overlay();
+        @include tint.scanline-overlay();
     }
 }
 

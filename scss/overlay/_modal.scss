@@ -1,0 +1,18 @@
+@use "modal/createserver";
+@use "modal/deletemessage";
+@use "modal/image";
+@use "modal/serverboost";
+@use "modal/serverswitcher";
+@use "modal/uploadimage";
+@use "modal/userprofile";
+@use "modal/viewreactions";
+
+@use "../top/vars" as *;
+@use "../top/box";
+
+// Modals
+.root-g14mjS {
+    @include box.blue();
+    overflow: hidden;
+    background-color: transparentize($darkblue, 0.7) !important;
+}

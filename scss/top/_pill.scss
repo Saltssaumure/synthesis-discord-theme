@@ -1,0 +1,9 @@
+@use "vars" as *;
+
+@mixin unread($pill-size) {
+    width: calc(2 * $pill-size);
+    height: calc(2 * $pill-size);
+    margin-left: calc(0px - $pill-size);
+    border-radius: 0 $pill-size $pill-size 0;
+    background-color: $gold;
+}

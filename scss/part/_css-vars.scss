@@ -1,16 +1,11 @@
+@use "../top/vars" as *;
+
 :root {
     --font-primary: Inter, sans-serif;
     --font-display: "Fira Code", monospace;
-    --font-code: "Fira Code", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-}
+    --font-code: "Fira Code", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+        "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
-code,
-.markup-eYLPri pre {
-    font-family: var(--font-code);
-}
-
-.theme-dark,
-.theme-light {
     --rs-small-spacing: 0px;
     /* Gap between avatar and status for members list/dms | MUST end in px */
     --rs-medium-spacing: 0px;
@@ -41,7 +36,15 @@ code,
     /* Colour of the ring and phone icon when a user is on their phone |  */
     --rs-phone-visible: none;
     /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+}
 
+code,
+.markup-eYLPri pre {
+    font-family: var(--font-code);
+}
+
+.theme-dark,
+.theme-light {
     --background-primary: transparent;
     --background-secondary: transparent;
     --background-secondary-alt: transparent;
@@ -138,12 +141,8 @@ code,
 
     --header-secondary: #{$gold};
 
-    --search-popout-option-fade: linear-gradient(90deg,
-        transparent,
-        #{$darkpurple} 80%);
-    --search-popout-option-fade-hover: linear-gradient(90deg,
-        transparent,
-        #{transparentize($gold, 0.5)} 80%);
+    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$darkpurple} 80%);
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{transparentize($gold, 0.5)} 80%);
     --search-popout-option-user-nickname: var(--text-normal);
     --search-popout-option-user-username: var(--text-muted);
     --search-popout-option-filter-text: blue;
@@ -151,7 +150,7 @@ code,
     --search-popout-option-non-text-color: #{$white};
     --search-popout-option-filter-color: #{$white};
     --search-popout-option-answer-color: #{$white};
-    --search-popout-date-picker-border: 1px solid hsla(214, calc(var(--saturation-factor, 1)*9.1%), 15.1%, 0.3);
+    --search-popout-date-picker-border: 1px solid hsla(214, calc(var(--saturation-factor, 1) * 9.1%), 15.1%, 0.3);
     --search-popout-date-picker-hint-text: #{$white};
     --search-popout-date-picker-hint-value-text: #{$white};
     --search-popout-date-picker-hint-value-background: var(--brand-experiment);
