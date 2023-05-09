@@ -1,7 +1,7 @@
 [backgroundless]: https://user-images.githubusercontent.com/29710355/187690344-9369a7a6-a424-48af-a020-bc9582b1d3ee.png
-[backgrounded]: https://user-images.githubusercontent.com/29710355/188302911-efd255ea-77f6-4f62-9aea-37159406e7f3.png    
+[backgrounded]: https://user-images.githubusercontent.com/29710355/188302911-efd255ea-77f6-4f62-9aea-37159406e7f3.png
 
-[css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+[css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb
 [discord]:          https://discord.gg/uy8nKQVatp
 
 [BetterDiscord]:    https://betterdiscord.app/
@@ -62,12 +62,23 @@
 
 ## Customisation
 
-| Description                | Variable name                                 | Valid values                                                        | Default value                                                                          |
-| -------------------------- | --------------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Background image           | `--synth-bg-image`                            | Any image link encased in `url()`. [Suggested images][backgrounds]. | `url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif)` |
-| Overlay tint colour        | `--synth-overlay-color`                       | Any [colour][css-color]. Low opacity value recommended.             | `rgba(255, 165, 0, 0.1)`                                                               |
-| CRT scanline colour        | `--crt-scanline-light`, `--crt-scanline-dark` | Any [colour][css-color]. Low opacity value recommended.             | `rgba(255, 255, 255, 0.05)`, `rgba(0, 0, 0, 0.1)`                                      |
-| &#9888; CRT flicker effect | `--crt-flicker`                               | `flicker` (on) or `none` (off)                                      | `none`                                                                                 |
+| Description                | Variable name                           | Valid values                                                        | Default value                                                                          |
+| -------------------------- | --------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Background image           | `--synth-background-image`              | Any image link encased in `url()`. [Suggested images][backgrounds]. | `url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif)` |
+| Overlay tint colour        | `--synth-overlay-color`                 | Space-separated [`RGB`][css-color] value.                           | `255 165 0  `                                                                          |
+| CRT scanline colour        | `--synth-crt-light`, `--synth-crt-dark` | Space-separated [`RGB`][css-color] value.                           | `255 255 255`, `0   0   0`                                                             |
+| &#9888; CRT flicker effect | `--synth-crt-flicker`                   | `flicker` (on) or `none` (off)                                      | `none`                                                                                 |
+| Background colour          | `--synth-color-background`              | Space-separated [`RGB`][css-color] value.                           | `20  6   36 `                                                                          |
+| Foreground colour          | `--synth-color-foreground`              | Space-separated [`RGB`][css-color] value.                           | `255 165 0  `                                                                          |
+| Shadow colour              | `--synth-color-shadow`                  | Space-separated [`RGB`][css-color] value.                           | `0   0   128`                                                                          |
+| Button colour              | `--synth-color-button`                  | Space-separated [`RGB`][css-color] value.                           | `84  63  251`                                                                          |
+| Highlight colour           | `--synth-color-pop`                     | Space-separated [`RGB`][css-color] value.                           | `206 63  251`                                                                          |
+| Discord colour             | `--synth-color-blurple`                 | Space-separated [`RGB`][css-color] value.                           | `88  101 242`                                                                          |
+| Text colour                | `--synth-color-text`                    | Space-separated [`RGB`][css-color] value.                           | `255 255 255`                                                                          |
+| DND colour                 | `--synth-color-red`                     | Space-separated [`RGB`][css-color] value.                           | `243 67  131`                                                                          |
+| Idle colour                | `--synth-color-yellow`                  | Space-separated [`RGB`][css-color] value.                           | `255 165 0  `                                                                          |
+| Online colour              | `--synth-color-green`                   | Space-separated [`RGB`][css-color] value.                           | `52  172 140`                                                                          |
+| Streaming colour           | `--synth-color-twitch`                  | Space-separated [`RGB`][css-color] value.                           | `89  54  149`                                                                          |
 
 &#9888; This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy.
 
@@ -78,7 +89,7 @@
 
 ### Replugged
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-2. Copy and paste lines 15-22 of [`Synthesis.theme.css`][.theme.css].
+2. Copy and paste lines 15-35 of [`Synthesis.theme.css`][.theme.css].
 3. Edit the variable values and apply changes.
 
 ### Vencord
@@ -87,7 +98,7 @@
 #### Recommended method
 1. Open `Settings` > `Vencord` > `Vencord`.
 2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
-3. Copy and paste lines 15-22 of [`Synthesis.theme.css`][.theme.css].
+3. Copy and paste lines 15-35 of [`Synthesis.theme.css`][.theme.css].
 4. Edit the variable values.
 
 ## License

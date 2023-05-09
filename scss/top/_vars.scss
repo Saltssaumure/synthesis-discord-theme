@@ -14,9 +14,9 @@ $title-height: 48px; // Set by Discord
 // Must NOT be wrapped in rgb() or transparentize() to work
 $background-image:  var(--synth-background-image);  // url(https://i.imgur.com/0jX0Y0g.png);
 $overlay-color:     var(--synth-overlay-color);     // rgb($gold / 0.1)
-$scanline-light:    var(--crt-scanline-light);      // rgb($white / 0.05)
-$scanline-dark:     var(--crt-scanline-dark);       // rgb($black / 0.1)
-$flicker:           var(--crt-flicker);             // none;
+$scanline-light:    var(--synth-crt-light);         // rgb($white / 0.05)
+$scanline-dark:     var(--synth-crt-dark);          // rgb($black / 0.1)
+$flicker:           var(--synth-crt-flicker);       // none;
 
 // Must be wrapped in rgb() or transparentize() to work
 $color-background:  var(--synth-color-background);  // $purple
