@@ -24,15 +24,15 @@
 
 // Settings
 .standardSidebarView-E9Pc3j {
-    @include box.outmost();
+    @include box.outmost;
 
     // Scanline and tint overlay over whole view
     &::after {
-        @include tint.scanline-overlay();
+        @include tint.scanline-overlay;
         width: 100%;
         height: 100%;
         border-radius: calc($outmost-spacing - $outmost-border-width);
-        background-color: var(--synth-overlay-color, rgba(255, 165, 0, 0.1));
+        background-color: $overlay-color;
     }
 
     // Settings sidebar

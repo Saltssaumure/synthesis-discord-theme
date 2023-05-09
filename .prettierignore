@@ -9,3 +9,7 @@ LICENSE
 
 *.min.css
 *.theme.css
+
+_css-default.scss
+_css-vars.scss
+_vars.scss
