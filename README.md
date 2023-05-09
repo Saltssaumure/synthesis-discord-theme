@@ -13,7 +13,7 @@
 
 [shield-bd-dl]:     https://img.shields.io/github/downloads/Saltssaumure/synthesis-discord-theme/Synthesis.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
 [shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/synthesis-discord-theme/net.saltssaumure.Synthesis.asar?color=purple&label=Replugged%20downloads&style=flat-square
-[shield-repo-size]: https://img.shields.io/github/repo-size/saltssaumure/synthesis-discord-theme?style=flat-square "Total size"
+[shield-repo-size]: https://img.shields.io/github/repo-size/Saltssaumure/synthesis-discord-theme?style=flat-square "Total size"
 
 [license]:          https://github.com/Saltssaumure/synthesis-discord-theme/blob/main/LICENSE
 [issues]:           https://github.com/Saltssaumure/synthesis-discord-theme/issues
@@ -65,6 +65,7 @@
 | Description                | Variable name                           | Valid values                                                        | Default value                                                                          |
 | -------------------------- | --------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Background image           | `--synth-background-image`              | Any image link encased in `url()`. [Suggested images][backgrounds]. | `url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif)` |
+| Backdrop opacity           | `--synth-backdrop-opacity`              | A number `0`-`1`.                                                   | `0.3`                                                                                  |
 | Overlay tint colour        | `--synth-overlay-color`                 | Space-separated [`RGB`][css-color] value.                           | `255 165 0  `                                                                          |
 | CRT scanline colour        | `--synth-crt-light`, `--synth-crt-dark` | Space-separated [`RGB`][css-color] value.                           | `255 255 255`, `0   0   0`                                                             |
 | &#9888; CRT flicker effect | `--synth-crt-flicker`                   | `flicker` (on) or `none` (off)                                      | `none`                                                                                 |
@@ -89,7 +90,7 @@
 
 ### Replugged
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-2. Copy and paste lines 15-35 of [`Synthesis.theme.css`][.theme.css].
+2. Copy and paste lines 15-36 of [`Synthesis.theme.css`][.theme.css].
 3. Edit the variable values and apply changes.
 
 ### Vencord
@@ -98,7 +99,7 @@
 #### Recommended method
 1. Open `Settings` > `Vencord` > `Vencord`.
 2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
-3. Copy and paste lines 15-35 of [`Synthesis.theme.css`][.theme.css].
+3. Copy and paste lines 15-36 of [`Synthesis.theme.css`][.theme.css].
 4. Edit the variable values.
 
 ## License
