@@ -12,7 +12,7 @@
 
 // Modals
 .root-g14mjS {
-    @include box.blue();
+    @include box.blue;
     overflow: hidden;
-    background-color: transparentize($darkblue, 0.7) !important;
+    background-color: transparentize($color-shadow, 0.7) !important;
 }

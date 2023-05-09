@@ -6,24 +6,24 @@
 
     .progressBar-20NUv9 {
         .barBackground-unEPDT {
-            background: transparentize($pink, 0.5);
+            background: transparentize($color-pop, 0.5);
 
             .barSecondary-VouwoY {
-                background: $pink;
+                background: rgb($color-pop);
             }
         }
 
         .tierMarkerBackground-G8FoN4 {
-            background: transparentize($pink, 0.7);
+            background: transparentize($color-pop, 0.7);
         }
 
         .tierMarkerInProgress-2Tdxjz {
-            background: transparentize($pink, 0.5) !important;
+            background: transparentize($color-pop, 0.5) !important;
         }
 
         .tierMarkerAccomplished-1SkbEJ {
-            background: $pink !important;
-            box-shadow: 0 0 3px 1px darken($pink, 20);
+            background: $color-pop !important;
+            box-shadow: 0 0 3px 1px rgb($color-pop);
         }
 
         .tierMarkerLabelText-1wk8KK {
@@ -37,8 +37,8 @@
         overflow: hidden;
 
         .tierHeaderLocked-3ItHYn {
-            background: $blue;
-            color: $white;
+            background: rgb($color-button);
+            color: rgb($color-text);
 
             .tierLock-1uBqZ0 {
                 color: inherit;
@@ -46,12 +46,12 @@
         }
 
         .tierBody-3ju-rc {
-            background-color: transparentize($blue, 0.5);
+            background-color: transparentize($color-button, 0.5);
         }
     }
 
     .perk-19D_HN {
         border-radius: $item-spacing;
-        background-color: transparentize($blue, 0.5);
+        background-color: transparentize($color-button, 0.5);
     }
 }

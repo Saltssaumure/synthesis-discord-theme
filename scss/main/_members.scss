@@ -7,7 +7,7 @@
     position: relative;
     margin: 0 $sidebar-spacing $sidebar-spacing 0;
     height: auto;
-    @include box.orange();
+    @include box.orange;
 
     // MemberCount plugin
     #MemberCount {

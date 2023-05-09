@@ -16,7 +16,7 @@
 
         .gameNameInput-2wbDJ9:focus,
         .gameNameInput-2wbDJ9:hover {
-            background-color: transparentize($darkpurple, 0.3);
+            background-color: transparentize($color-background, 0.3);
             border-color: transparent;
         }
 
@@ -26,7 +26,7 @@
         }
 
         .overlayToggleIconOn-21NN2N .fill-297bdf {
-            fill: $gold;
+            fill: rgb($color-foreground);
         }
     }
 }

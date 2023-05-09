@@ -26,7 +26,7 @@
 .wrapperAudio-1Bzv_Z // Audio embed
 {
     border-radius: calc(2 * $item-spacing);
-    background-color: transparentize($gold, 0.7);
+    background-color: transparentize($color-foreground, 0.7);
 }
 
 // Link embed
@@ -55,13 +55,13 @@
 }
 // Attachment embed
 .footer-GXWBBp {
-    background-color: transparentize($blue, 0.2);
+    background-color: transparentize($color-button, 0.2);
 }
 
 // Gift embed
 .giftCodeContainer-3ObH0O {
     .tile-2mmK5T {
-        background-color: transparentize($blue, 0.7);
+        background-color: transparentize($color-button, 0.7);
         border-radius: calc(2 * $item-spacing);
 
         .invalidPoop--w1123,
@@ -74,7 +74,7 @@
 // Spotify/game invite
 .invite-3uuHYQ {
     border-radius: $sidebar-spacing;
-    background-color: transparentize($blue, 0.7);
+    background-color: transparentize($color-button, 0.7);
     border: none;
 
     .header-1Fx4D1 {
@@ -83,8 +83,8 @@
 
     .partyMemberEmpty-GtlQ_s,
     .moreUsers-3PdGZN {
-        background: $darkpurple;
-        color: $white;
+        background: rgb($color-background);
+        color: rgb($color-text);
         opacity: 0.5;
     }
 

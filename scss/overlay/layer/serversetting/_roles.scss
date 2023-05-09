@@ -24,7 +24,7 @@
         // Role details
         .contentContainer-3hXFtK {
             .header-JUTO-g {
-                background: linear-gradient($darkpurple 92%, transparent);
+                background: linear-gradient($color-background 92%, transparent);
                 margin-left: -24px;
                 padding-left: 24px;
             }
@@ -33,15 +33,15 @@
             .top-K_jibn .brand-3g5E0C.item-3XjbnG:active,
             .top-K_jibn .brand-3g5E0C.selected-g-kMVV.item-3XjbnG,
             .top-K_jibn .brand-3g5E0C.item-3XjbnG:hover {
-                border-bottom-color: $gold;
+                border-bottom-color: rgb($color-foreground);
             }
 
             // Role icon preview
             .previewContainer-1GxmBJ {
-                background: transparentize($pink, 0.5);
+                background: transparentize($color-pop, 0.5);
 
                 .preview-3SR4Rd {
-                    color: $pink;
+                    color: rgb($color-pop);
                 }
             }
 

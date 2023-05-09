@@ -1,47 +1,47 @@
 @use "../top/vars" as *;
+@use "../top/button";
 
-.theme-dark,
-.theme-light {
+.appMount-2yBXZl {
     $button-transparency: 0.3;
     $button-disabled-transparency: 0.8;
     $button-active-darken: 5;
     // Secondary button
-    --button-secondary-background: #{transparentize($blue, $button-transparency)};
-    --button-secondary-background-hover: #{$blue};
-    --button-secondary-background-active: #{darken($blue, $button-active-darken)};
-    --button-secondary-background-disabled: #{transparentize($blue, $button-disabled-transparency)};
+    --button-secondary-background: #{transparentize($color-button, $button-transparency)};
+    --button-secondary-background-hover: #{rgb($color-button)};
+    --button-secondary-background-active: #{rgb($color-button)};
+    --button-secondary-background-disabled: #{transparentize($color-button, $button-disabled-transparency)};
     // Positive button
-    --button-positive-background: #{transparentize($green, $button-transparency)};
-    --button-positive-background-hover: #{$green};
-    --button-positive-background-active: #{darken($green, $button-active-darken)};
-    --button-positive-background-disabled: #{transparentize($green, $button-disabled-transparency)};
+    --button-positive-background: #{transparentize($color-green, $button-transparency)};
+    --button-positive-background-hover: #{rgb($color-green)};
+    --button-positive-background-active: #{rgb($color-green)};
+    --button-positive-background-disabled: #{transparentize($color-green, $button-disabled-transparency)};
     // Danger button
-    --button-danger-background: #{transparentize($rose, $button-transparency)};
-    --button-danger-background-hover: #{$rose};
-    --button-danger-background-active: #{darken($rose, $button-active-darken)};
-    --button-danger-background-disabled: #{transparentize($rose, $button-disabled-transparency)};
+    --button-danger-background: #{transparentize($color-red, $button-transparency)};
+    --button-danger-background-hover: #{rgb($color-red)};
+    --button-danger-background-active: #{rgb($color-red)};
+    --button-danger-background-disabled: #{transparentize($color-red, $button-disabled-transparency)};
     // Outlined button
-    --button-outline-primary-text: #{$white};
-    --button-outline-primary-text-hover: #{$white};
-    --button-outline-primary-border: #{transparentize($blue, $button-transparency)};
-    --button-outline-primary-border-hover: #{$blue};
-    --button-outline-primary-background-hover: #{$blue};
+    --button-outline-primary-text: #{rgb($color-text)};
+    --button-outline-primary-text-hover: #{rgb($color-text)};
+    --button-outline-primary-border: #{transparentize($color-button, $button-transparency)};
+    --button-outline-primary-border-hover: #{rgb($color-button)};
+    --button-outline-primary-background-hover: #{rgb($color-button)};
 
     // Danger outlined button
-    --button-outline-danger-border: #{$rose};
-    --button-outline-danger-border-hover: #{$rose};
-    --button-outline-danger-border-active: #{darken($rose, $button-active-darken)};
-    --button-outline-danger-background-hover: #{$rose};
-    --button-outline-danger-background-active: #{darken($rose, $button-active-darken)};
+    --button-outline-danger-border: #{rgb($color-red)};
+    --button-outline-danger-border-hover: #{rgb($color-red)};
+    --button-outline-danger-border-active: #{rgb($color-red)};
+    --button-outline-danger-background-hover: #{rgb($color-red)};
+    --button-outline-danger-background-active: #{rgb($color-red)};
     // Brand outlined button (default: blurple)
-    --button-outline-brand-border: #{$blue};
-    --button-outline-brand-border-hover: #{$blue};
-    --button-outline-brand-border-active: #{darken($blue, $button-active-darken)};
-    --button-outline-brand-background-hover: #{$blue};
-    --button-outline-brand-background-active: #{darken($blue, $button-active-darken)};
+    --button-outline-brand-border: #{rgb($color-button)};
+    --button-outline-brand-border-hover: #{rgb($color-button)};
+    --button-outline-brand-border-active: #{rgb($color-button)};
+    --button-outline-brand-background-hover: #{rgb($color-button)};
+    --button-outline-brand-background-active: #{rgb($color-button)};
 
     // Buttons
-    .button-f2h6uQ,
+    .button-ejjZWC,
     .bd-button:not(.bd-addon-button),
     .topPill-3DJJNV .item-3XjbnG,
     #bd-pub-button,
@@ -51,72 +51,60 @@
     }
 
     // More buttons
-    .lookFilled-yCfaCM,
+    .lookFilled-1H2Jvj,
     .lookOutlined-3yKVGo,
     .lookInverted-2mDUMi {
-        box-shadow: 0 0 5px 0 $darkpurple;
+        box-shadow: 0 0 5px 0 rgb($color-background);
     }
 
-    @mixin button($button-color) {
-        background-color: transparentize($button-color, $button-transparency);
-
-        &:hover {
-            background-color: $button-color;
-        }
-
-        &:active {
-            background-color: #{darken($button-color, $button-active-darken)};
-        }
-    }
-
-    .lookFilled-yCfaCM.colorBrand-I6CyqQ {
-        @include button($blue);
+    .lookFilled-1H2Jvj.colorBrand-I6CyqQ {
+        @include button.button($color-button);
     }
 
     .lookInverted-2mDUMi.colorBrand-I6CyqQ {
-        @include button($white);
+        @include button.button($color-text);
     }
 
     .bd-button,
     #bd-pub-button {
-        @include button($blue);
+        @include button.button($color-button);
     }
 
     .bd-button.bd-button-danger {
-        @include button($rose);
+        @include button.button($color-red);
     }
 
     .circleIconButton-1VxDrg.selected-2r1Hvo {
-        @include button($green);
+        @include button.button($color-green);
     }
 
     .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
     .wrapper-3kah-n:hover .childWrapper-1j_1ub {
-        @include button($blue);
+        @include button.button($color-button);
     }
 
     .lookLink-15mFoz.colorLink-1Md3RZ {
-        --text-link: #{$white};
+        --text-link: #{rgb($color-text)};
     }
 
     .lookLink-15mFoz.colorPrimary-2AuQVo {
-        color: #{$white};
+        color: #{rgb($color-text)};
     }
 
     .buttonWhite-hd8TaT {
-        border-color: transparentize($white, $button-transparency) !important;
+        border-color: transparentize($color-text, $button-transparency) !important;
 
         &:hover,
         &:active {
-            border-color: $white !important;
+            border-color: $color-text !important;
         }
     }
 
     .streamerModeEnabledBtn-2nlJTD {
-        @include button($streamer-color);
+        @include button.button($color-twitch);
     }
 
     .button-1_oXub.tertiary-1e-lAP:not(.disabled-184-il) {
-        @include button($blue);
+        @include button.button($color-button);
     }
 }

@@ -6,21 +6,21 @@
     overflow: hidden;
 
     .tierHeaderLocked-30MLlO {
-        color: $pink;
-        background-color: transparentize($pink, 0.7);
+        color: rgb($color-pop);
+        background-color: transparentize($color-pop, 0.7);
     }
 
     .tierHeaderUnlocked-1OpOLf {
         @extend .tierHeaderLocked-30MLlO;
-        color: #{$white};
+        color: #{$color-text};
     }
 
     .tierBody-1d3UiS {
-        background-color: transparentize($pink, 0.9);
-        color: #{$white};
+        background-color: transparentize($color-pop, 0.9);
+        color: #{$color-text};
     }
 
     .wrapper-24fR1R {
-        background-color: transparentize($pink, 0.9);
+        background-color: transparentize($color-pop, 0.9);
     }
 }

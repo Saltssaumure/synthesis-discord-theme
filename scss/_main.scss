@@ -16,7 +16,7 @@
 // Base colour
 .appMount-2yBXZl,
 body {
-    background-color: rgb($purple);
+    background-color: $color-background;
 }
 
 // Image background
@@ -26,7 +26,7 @@ body {
 
 // Main view
 .container-1eFtFS {
-    @include box.outmost();
+    @include box.outmost;
     width: auto;
 
     // Tint over whole main view
@@ -42,9 +42,9 @@ body {
     // Scanline overlay over server and channel sidebars
     &::before {
         margin: $sidebar-spacing;
-        width: calc($sidebar-width + $channels-width + $sidebar-border-width);
+        width: $sidebar-width + $channels-width + $sidebar-border-width;
         height: calc(100% - (2 * ($sidebar-spacing + $sidebar-border-width)));
-        @include box.orange();
-        @include tint.scanline-overlay();
+        @include box.orange;
+        @include tint.scanline-overlay;
     }
 }

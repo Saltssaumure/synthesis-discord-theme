@@ -55,20 +55,20 @@
     .slider-1NC-Gf {
 
         .markDash-yk2kJ- {
-            background: $gold;
+            background: rgb($color-foreground);
         }
 
         .defaultValue-19SZ-q .markValue-2U_-UG {
-            color: $white;
+            color: rgb($color-text);
         }
 
         .bar-1Bhnl9 {
-            background: transparentize($pink, 0.5);
+            background: transparentize($color-pop, 0.5);
             overflow: visible;
 
             .barFill-2Bh7CX {
                 border-radius: 4px;
-                @include slider.bar($pink);
+                @include slider.bar($color-pop);
             }
         }
 
@@ -80,7 +80,7 @@
             margin-top: calc(0px - ($grabber-size / 2));
             margin-left: calc(0px - ($grabber-size / 2));
             border-radius: 50%;
-            @include slider.bar($pink);
+            @include slider.bar($color-pop);
         }
     }
 
@@ -92,7 +92,7 @@
 
     // Careful you have unsaved changes!
     .container-20TyK0 {
-        background-color: transparentize($green, 0.5) !important;
+        background-color: transparentize($color-green, 0.5) !important;
         border-radius: $sidebar-spacing;
     }
 }

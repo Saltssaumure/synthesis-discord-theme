@@ -33,7 +33,7 @@
 // View as role role selector
 .popoutContainer-2wbmiM // Emoji and role icon info
 {
-    @include box.blue();
+    @include box.blue;
     overflow: hidden;
     max-height: calc(100vh - 64px - $outmost-spacing) !important;
 }

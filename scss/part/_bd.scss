@@ -4,8 +4,8 @@
 // Custom CSS editor
 // Floating version
 #floating-editor-window {
-    @include box.blue();
-    background: $blue;
+    @include box.blue;
+    background: rgb($color-button);
     z-index: 1010;
 
     .floating-window-titlebar {
@@ -13,7 +13,7 @@
     }
 
     .close-button:hover {
-        background: $rose;
+        background: rgb($color-red);
     }
 }
 
@@ -22,11 +22,11 @@
     $inner-radius: calc($sidebar-spacing - $sidebar-border-width);
 
     .contentRegion-3HkfJJ & {
-        @include box.blue();
+        @include box.blue;
     }
 
     #bd-editor-controls {
-        background: $blue;
+        background: rgb($color-button);
         border-radius: $inner-radius $inner-radius 0 0;
 
         button {
@@ -48,29 +48,29 @@
 
 .bd-toast {
     margin-right: 24px;
-    background-color: transparentize($blue, $amount: 0.3);
+    background-color: transparentize($color-button, $amount: 0.3);
     border-radius: 30px;
 }
 
 .bd-toast.toast-success {
-    background-color: transparentize($blurple, $amount: 0.2);
+    background-color: transparentize($color-blurple, $amount: 0.2);
 }
 
 // BD toggles
 .bd-switch {
     .bd-switch-body {
-        --switch-color: #{transparentize($toggle-off, 0.2)};
+        --switch-color: #{transparentize($color-toggle-off, 0.2)};
 
         .bd-switch-symbol path {
-            fill: $toggle-off;
+            fill: rgb($color-toggle-off);
         }
     }
 
     input:checked + .bd-switch-body {
-        --switch-color: #{transparentize($toggle-on, 0.3)};
+        --switch-color: #{transparentize($color-toggle-on, 0.3)};
 
         .bd-switch-symbol path {
-            fill: $toggle-on;
+            fill: rgb($color-toggle-on);
         }
     }
 }
@@ -78,7 +78,7 @@
 // BetterDiscord settings
 // Collapsible settings arrow
 .bd-settings-group.collapsible .bd-settings-title::after {
-    background: $gold;
+    background: rgb($color-foreground);
 }
 
 // Dropdown selector
@@ -86,7 +86,7 @@
     border-radius: 20px;
 
     .bd-select-options {
-        @include box.blue-small();
+        @include box.blue-small;
     }
 }
 
@@ -96,7 +96,7 @@
 }
 
 .bd-addon-views .bd-view-button.selected {
-    background-color: $gold;
+    background-color: rgb($color-foreground);
 }
 
 // Plugin/Theme buttons
@@ -118,5 +118,5 @@ $bd-radius: 20px;
 }
 
 .bd-addon-error:hover {
-    border-color: $pink;
+    border-color: rgb($color-pop);
 }

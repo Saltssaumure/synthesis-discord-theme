@@ -1,20 +1,12 @@
 @use "../top/vars" as *;
 
 // Tooltips
-.tooltipPrimary-3qLMbS {
-    $tooltip-color: transparentize($pink, 0.2);
-    background-color: $tooltip-color;
+.appMount-2yBXZl .tooltip-33Jwqe {
+    background-color: transparentize($color-pop, 0.2);
     border-radius: 20px;
-    box-shadow: 0 0 5px 0 darken($color: $tooltip-color, $amount: 5);
+    box-shadow: 0 0 5px 0 rgb($color-pop);
 
-    .tooltipPointer-3L49xb {
-        border-top-color: $tooltip-color;
-    }
-
-    .tooltipContent-Nejnvh {
-        .activityIcon-vfIBet,
-        .activityIcon-vfIBet {
-            color: $white;
-        }
+    .tooltipPointer-sMBQqe {
+        border-top-color: rgb($color-pop);
     }
 }

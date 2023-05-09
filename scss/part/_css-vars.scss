@@ -1,5 +1,4 @@
 @use "../top/vars" as *;
-@use "../top/color";
 
 :root {
     --font-primary: Inter, sans-serif;
@@ -15,34 +14,14 @@
     --rs-medium-width:      7px; // Thickness of status border for User popout | MUST end in px
     --rs-large-width:       16px; // Thickness of status border for User profile | MUST end in px
     --rs-avatar-shape:      50%; // 50% for round - 0% for square
-    --rs-online-color:      var(--synth-color-green); // Colour for online status
-    --rs-idle-color:        var(--synth-color-yellow); // Colour for idle status
-    --rs-dnd-color:         var(--synth-color-red); // Colour for dnd status
+    --rs-online-color:      rgb(#{$color-green}); // Colour for online status
+    --rs-idle-color:        rgb(#{$color-yellow}); // Colour for idle status
+    --rs-dnd-color:         rgb(#{$color-red}); // Colour for dnd status
     --rs-offline-color:     transparent; // Colour for offline status
-    --rs-streaming-color:   var(--synth-color-twitch); // Colour for streaming status
+    --rs-streaming-color:   rgb(#{$color-twitch}); // Colour for streaming status
     --rs-invisible-color:   transparent; // Colour for invisible status - Note: this will only show for your own invisibility
-    --rs-phone-color:       var(--synth-color-green); // Colour of the ring and phone icon when a user is on their phone |
+    --rs-phone-color:       rgb(#{$color-green}); // Colour of the ring and phone icon when a user is on their phone |
     --rs-phone-visible:     none; // Visibility of the phone icon next to a users avatar. | block = visible | none = hidden
-
-    // Defaults, can be overridden by .theme.css
-    --synth-background-image:   url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif); 
-    --synth-overlay-color:      rgb($gold / 0.1);
-    --crt-scanline-light:       rgb($white / 0.05);
-    --crt-scanline-dark:        rgb($black / 0.1);
-    --crt-flicker:              none;   /* This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
-
-    --synth-color-background:   rgb($purple);
-    --synth-color-foreground:   rgb($gold);
-    --synth-color-shadow:       rgb($darkblue); 
-    --synth-color-button:       rgb($blue); 
-    --synth-color-pop:          rgb($pink); 
-    --synth-color-blurple:      rgb($blurple);
-    --synth-color-text:         rgb($white); 
-
-    --synth-color-red:          rgb($red);
-    --synth-color-yellow:       rgb($yellow);
-    --synth-color-green:        rgb($green);
-    --synth-color-twitch:       rgb($twitch);
 }
 
 code,
@@ -62,62 +41,62 @@ code,
     --background-mobile-primary: transparent;
     --background-mobile-secondary: transparent;
 
-    --channeltextarea-background: #{rgb($purple, 0.5)};
-    --channel-text-area-placeholder: #{rgb($white, 0.5)};
-    --modal-background: #{$purple};
-    --modal-footer-background: #{$blue};
+    --channeltextarea-background: #{transparentize($color-background, 0.5)};
+    --channel-text-area-placeholder: #{transparentize($color-text, 0.5)};
+    --modal-background: rgb(#{$color-background});
+    --modal-footer-background: rgb(#{$color-button});
 
-    --background-modifier-hover: #{rgb($gold, 0.4)};
-    --background-modifier-active: #{rgb($gold, 0.3)};
-    --background-modifier-selected: #{rgb($gold, 0.5)};
-    --background-modifier-accent: #{rgb($gold, 0.5)};
+    --background-modifier-hover: #{transparentize($color-foreground, 0.4)};
+    --background-modifier-active: #{transparentize($color-foreground, 0.3)};
+    --background-modifier-selected: #{transparentize($color-foreground, 0.5)};
+    --background-modifier-accent: #{transparentize($color-foreground, 0.5)};
 
-    --deprecated-card-bg: #{rgb($purple, 0.3)};
-    --deprecated-card-editable-bg: #{rgb($purple, 0.3)};
-    --deprecated-text-input-bg: #{rgb($purple, 0.3)};
+    --deprecated-card-bg: #{transparentize($color-background, 0.3)};
+    --deprecated-card-editable-bg: #{transparentize($color-background, 0.3)};
+    --deprecated-text-input-bg: #{transparentize($color-background, 0.3)};
     --deprecated-text-input-border: transparent;
     --deprecated-store-bg: transparent;
 
-    --text-normal: #{$white};
-    --text-muted: #{$gold};
-    --text-link: #{lighten($gold, 20)};
-    --text-positive: #{$green};
-    --channels-default: #{$gold};
-    --channel-icon: #{$gold};
+    --text-normal: rgb(#{$color-text});
+    --text-muted: rgb(#{$color-foreground});
+    --text-link: rgb(#{$color-foreground});
+    --text-positive: rgb(#{$color-green});
+    --channels-default: rgb(#{$color-foreground});
+    --channel-icon: rgb(#{$color-foreground});
 
-    --header-primary: #{$white};
-    --header-secondary: #{lighten($blurple, 20)};
+    --header-primary: rgb(#{$color-text});
+    --header-secondary: rgb(#{$color-blurple});
 
-    --interactive-normal: #{$gold};
-    --interactive-hover: #{$white};
-    --interactive-active: #{$white};
-    --interactive-muted: #{$pink};
+    --interactive-normal: rgb(#{$color-foreground});
+    --interactive-hover: rgb(#{$color-text});
+    --interactive-active: rgb(#{$color-text});
+    --interactive-muted: rgb(#{$color-pop});
 
-    --input-background: #{rgb($purple, 0.3)};
-    --input-placeholder-text: #{rgb($white, 0.5)};
+    --input-background: #{transparentize($color-background, 0.3)};
+    --input-placeholder-text: #{transparentize($color-text, 0.5)};
 
-    --scrollbar-thin-thumb: #{$blue};
+    --scrollbar-thin-thumb: rgb(#{$color-button});
     --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #{$blurple};
-    --scrollbar-auto-track: #{rgb($blue, 0.5)};
-    --scrollbar-auto-scrollbar-color-thumb: #{$blurple};
-    --scrollbar-auto-scrollbar-color-track: #{rgb($blue, 0.5)};
+    --scrollbar-auto-thumb: rgb(#{$color-blurple});
+    --scrollbar-auto-track: #{transparentize($color-button, 0.5)};
+    --scrollbar-auto-scrollbar-color-thumb: rgb(#{$color-blurple});
+    --scrollbar-auto-scrollbar-color-track: #{transparentize($color-button, 0.5)};
 
     $status-transparency: 0.5;
-    --status-danger: #{$red};
-    --status-danger-background: #{rgb($red, $status-transparency)};
-    --status-positive: #{$green};
-    --status-positive-background: #{rgb($green, $status-transparency)};
-    --status-warning: #{$gold};
-    --status-warning-background: #{rgb($gold, $status-transparency)};
+    --status-danger: rgb(#{$color-red});
+    --status-danger-background: #{transparentize($color-red, $status-transparency)};
+    --status-positive: rgb(#{$color-green});
+    --status-positive-background: #{transparentize($color-green, $status-transparency)};
+    --status-warning: rgb(#{$color-yellow});
+    --status-warning-background: #{transparentize($color-yellow, $status-transparency)};
 
     // Profile preview and popout
     .profileColors-3Y0XaR {
-        // --profile-body-background-color: #{$purple};
-        --profile-gradient-primary-color: #{rgb($purple, 0.2)};
-        --profile-gradient-secondary-color: #{rgb($purple, 0.5)};
-        --profile-body-background-color: #{rgb($purple, 0.2)};
-        --profile-body-divider-color: #{$gold};
+        // --profile-body-background-color: rgb(#{$color-background};
+        --profile-gradient-primary-color: #{transparentize($color-background, 0.2)};
+        --profile-gradient-secondary-color: #{transparentize($color-background, 0.5)};
+        --profile-body-background-color: #{transparentize($color-background, 0.2)};
+        --profile-body-divider-color: rgb(#{$color-foreground});
         --profile-body-divider-opacity: 0.5;
     }
 }
@@ -125,44 +104,39 @@ code,
 // Popovers
 .layerContainer-2lfOPe .theme-dark,
 .layerContainer-2lfOPe .theme-light {
-    --background-primary: #{$purple};
-    --background-secondary: #{$purple};
-    --background-secondary-alt: #{rgb($purple, 0.2)};
-    --background-tertiary: #{$blue};
-    --background-accent: #{$pink};
-    --background-floating: #{$purple};
+    --background-primary: rgb(#{$color-background});
+    --background-secondary: rgb(#{$color-background});
+    --background-secondary-alt: #{transparentize($color-background, 0.2)};
+    --background-tertiary: rgb(#{$color-button});
+    --background-accent: rgb(#{$color-pop});
+    --background-floating: rgb(#{$color-background});
 
-    --background-modifier-hover: #{rgb($gold, 0.5)};
-    --background-modifier-active: #{rgb($gold, 0.5)};
-    --background-modifier-selected: #{rgb($gold, 0.5)};
-    --background-modifier-accent: #{rgb($gold, 0.5)};
+    --background-modifier-hover: #{transparentize($color-foreground, 0.5)};
+    --background-modifier-active: #{transparentize($color-foreground, 0.5)};
+    --background-modifier-selected: #{transparentize($color-foreground, 0.5)};
+    --background-modifier-accent: #{transparentize($color-foreground, 0.5)};
 
     --text-normal: inherit;
     --text-muted: inherit;
     --channels-default: inherit;
 
-    --interactive-normal: #{$white};
-    --interactive-hover: #{$white};
-    --interactive-active: #{$white};
-    --interactive-muted: #{$pink};
+    --interactive-normal: rgb(#{$color-text});
+    --interactive-hover: rgb(#{$color-text});
+    --interactive-active: rgb(#{$color-text});
+    --interactive-muted: rgb(#{$color-pop});
 
-    --header-secondary: #{$gold};
+    --header-secondary: rgb(#{$color-foreground});
 
-    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$purple} 80%);
-    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{rgb($gold, 0.5)} 80%);
+    --search-popout-option-fade: linear-gradient(90deg, transparent, rgb(#{$color-background}) 80%);
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{transparentize($color-foreground, 0.5)} 80%);
     --search-popout-option-user-nickname: var(--text-normal);
     --search-popout-option-user-username: var(--text-muted);
-    --search-popout-option-filter-text: blue;
     --search-popout-option-fade-hover: linear-gradient(to right, transparent, var(--background-modifier-hover));
-    --search-popout-option-non-text-color: #{$white};
-    --search-popout-option-filter-color: #{$white};
-    --search-popout-option-answer-color: #{$white};
-    --search-popout-date-picker-border: 1px solid hsla(214, calc(var(--saturation-factor, 1) * 9.1%), 15.1%, 0.3);
-    --search-popout-date-picker-hint-text: #{$white};
-    --search-popout-date-picker-hint-value-text: #{$white};
-    --search-popout-date-picker-hint-value-background: var(--brand-experiment);
-    --search-popout-date-picker-hint-value-background-hover: var(--brand-experiment-430);
-    --search-popout-date-picker-border: 1px solid var(--deprecated-text-input-border-disabled);
+    --search-popout-option-non-text-color: rgb(#{$color-text});
+    --search-popout-option-filter-color: rgb(#{$color-text});
+    --search-popout-option-answer-color: rgb(#{$color-text});
+    --search-popout-date-picker-hint-text: rgb(#{$color-text});
+    --search-popout-date-picker-hint-value-text: rgb(#{$color-text});
 
-    --deprecated-text-input-border-disabled: #{rgb($gold, 0.5)};
+    --deprecated-text-input-border-disabled: #{transparentize($color-foreground, 0.5)};
 }

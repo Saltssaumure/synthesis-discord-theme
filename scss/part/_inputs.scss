@@ -12,17 +12,17 @@
 
 // Toggles
 .container-2nx-BQ {
-    background-color: transparentize($toggle-off, 0.2) !important;
+    background-color: transparentize($color-toggle-off, 0.2) !important;
 
     path {
-        fill: $toggle-off !important;
+        fill: $color-toggle-off !important;
     }
 }
 
 .checked-25WXMf {
-    background-color: transparentize($toggle-on, 0.3) !important;
+    background-color: transparentize($color-toggle-on, 0.3) !important;
 
     path {
-        fill: $toggle-on !important;
+        fill: $color-toggle-on !important;
     }
 }

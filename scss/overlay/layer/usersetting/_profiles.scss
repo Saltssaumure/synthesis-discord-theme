@@ -5,13 +5,13 @@
 #profile-customization-tab {
     // Preview
     .profileCustomizationPreview-2-Y173 {
-        @include box.blue();
+        @include box.blue;
     }
 
     // User/Server Profile tabs
     .top-K_jibn .brand-3g5E0C.item-3XjbnG:hover,
     .top-K_jibn .brand-3g5E0C.item-3XjbnG:active,
     .top-K_jibn .brand-3g5E0C.selected-g-kMVV.item-3XjbnG {
-        border-bottom-color: $gold;
+        border-bottom-color: rgb($color-foreground);
     }
 }

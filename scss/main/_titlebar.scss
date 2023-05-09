@@ -11,7 +11,7 @@
         font-family: var(--font-display);
         font-weight: 500;
         color: var(--text-muted);
-        text-shadow: 0 0 5px $gold;
+        text-shadow: 0 0 5px rgb($color-foreground);
         position: absolute;
         top: -4px;
         left: 0;

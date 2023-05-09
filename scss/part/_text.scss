@@ -3,18 +3,18 @@
 // Code block
 .markup-eYLPri code,
 .textContainer-36wgKK {
-    background: transparentize($blue, 0.5);
+    background: transparentize($color-button, 0.5);
 }
 
 // Spoiler text
 .spoilerText-27bIiA {
-    background: transparentize($blue, 0.5);
+    background: transparentize($color-button, 0.5);
 
     &.hidden-3B-Rum {
         @extend .spoilerText-27bIiA;
 
         &:hover {
-            background: $blue;
+            background: rgb($color-button);
         }
     }
 }

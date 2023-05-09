@@ -6,22 +6,21 @@
     display: block;
 }
 
-@mixin scanline-overlay() {
-    @include overlay();
-    background-image: linear-gradient(var(--crt-scanline-light, rgba(255, 255, 255, 0.05)) 50%,
-            var(--crt-scanline-dark, rgba(0, 0, 0, 0.1)) 50%);
+@mixin scanline-overlay {
+    @include overlay;
+    background-image: linear-gradient($scanline-light 50%, $scanline-dark 50%);
     background-size: 100% 4px;
     z-index: 1000;
     pointer-events: none;
-    animation: var(--crt-flicker, none) 0.1s infinite alternate;
-}
+    animation: $flicker 0.1s infinite alternate;
 
-@keyframes flicker {
-    0% {
-        background-color: transparent;
-    }
+    @keyframes flicker {
+        0% {
+            background-color: transparent;
+        }
 
-    100% {
-        background-color: rgba(0, 0, 0, 0.05);
+        100% {
+            background-color: $scanline-dark;
+        }
     }
 }

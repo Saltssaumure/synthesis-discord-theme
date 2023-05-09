@@ -16,13 +16,13 @@
 
     .checkbox-f1HnKB {
         border-radius: 50%;
-        border: 2px solid $gold;
+        border: 2px solid rgb($color-foreground);
 
         &.checked-1pZh2h {
-            border-color: $gold !important;
+            border-color: $color-foreground !important;
 
             path {
-                fill: $gold;
+                fill: rgb($color-foreground);
             }
         }
     }

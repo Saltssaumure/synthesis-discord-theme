@@ -3,9 +3,9 @@
 // Small menu popover
 // Focused menu option
 .colorDefault-CDqZdO.focused-3qFvc8 {
-    background-color: transparentize($pink, 0.7);
+    background-color: transparentize($color-pop, 0.7);
 }
 
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-    background-color: transparentize($pink, 0.5);
+    background-color: transparentize($color-pop, 0.5);
 }

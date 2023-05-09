@@ -6,7 +6,7 @@
 .guilds-2JjMmN {
     margin: $sidebar-spacing;
     margin-right: 0;
-    @include box.orange();
+    @include box.orange;
 
     .platform-osx & .scroller-3X7KbA,
     .platform-win & .scroller-3X7KbA {
@@ -30,10 +30,10 @@
 
     // Add and explore buttons
     .circleIconButton-1VxDrg {
-        color: $green;
+        color: rgb($color-green);
     }
 
     .circleIconButton-1VxDrg.selected-2r1Hvo {
-        color: $white;
+        color: rgb($color-text);
     }
 }

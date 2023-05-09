@@ -1,0 +1,13 @@
+@use "vars" as *;
+
+@mixin button($BUTTONCOLOR, $TRANSPARENCY: 0.3) {
+    background-color: transparentize($BUTTONCOLOR, $TRANSPARENCY);
+
+    &:hover {
+        background-color: rgb($BUTTONCOLOR);
+    }
+
+    &:active {
+        background-color: rgb($BUTTONCOLOR);
+    }
+}

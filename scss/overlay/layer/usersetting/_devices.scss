@@ -2,9 +2,9 @@
 
 // Devices session icons
 .sessionIcon-2fwSzb {
-    background: transparentize($gold, 0.7);
+    background: transparentize($color-foreground, 0.7);
 
     svg {
-        color: $gold;
+        color: rgb($color-foreground);
     }
 }

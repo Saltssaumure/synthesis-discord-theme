@@ -11,12 +11,12 @@
         .newMessagesBar-1hF-9G {
             min-height: 30px;
             top: -8px;
-            background: linear-gradient(transparent, transparentize($blurple, 0.4) 40%, transparentize($blurple, 0.2));
+            background: linear-gradient(transparent, transparentize($color-blurple, 0.4) 40%, transparentize($color-blurple, 0.2));
         }
 
         // Jump to present bar
         .jumpToPresentBar-1cEnH0 {
-            background: linear-gradient(transparentize($blue, 0.2), transparentize($blue, 0.4) 60%, transparent);
+            background: linear-gradient(transparentize($color-button, 0.2), transparentize($color-button, 0.4) 60%, transparent);
         }
 
         // Chat message
@@ -25,7 +25,7 @@
 
             // Options bar
             .wrapper-2vIMkT {
-                @include box.orange-small();
+                @include box.orange-small;
                 height: 34px;
 
                 &::before {
@@ -37,12 +37,12 @@
 
             // @ Mention
             .wrapper-1ZcZW- {
-                background: transparentize($blurple, 0.7);
-                color: lighten($blurple, 30);
+                background: transparentize($color-blurple, 0.7);
+                color: rgb($color-blurple);
 
                 &:hover {
-                    background: transparentize($blurple, 0.3);
-                    color: $white;
+                    background: transparentize($color-blurple, 0.3);
+                    color: rgb($color-text);
                 }
             }
 
@@ -51,18 +51,18 @@
                 border-radius: $item-spacing;
 
                 &:hover {
-                    border-color: $gold;
+                    border-color: rgb($color-foreground);
                 }
 
                 &.reactionMe-1PwQAc {
-                    background-color: transparentize($gold, 0.7);
+                    background-color: transparentize($color-foreground, 0.7);
 
                     &:not(:hover) {
                         border-color: transparent;
                     }
 
                     .reactionCount-26U4As {
-                        color: $gold;
+                        color: rgb($color-foreground);
                     }
 
                     &:hover .reactionCount-26U4As {
@@ -76,31 +76,28 @@
             // Thread
             .container-3i3IzO {
                 border-radius: $item-spacing;
-                background-color: transparentize($gold, 0.7);
+                background-color: transparentize($color-foreground, 0.7);
             }
         }
 
         // Chat dividers
-        $divider-color: $gold;
-
         .divider-2rZFJK {
-            --divider-color: #{$divider-color};
             border-top: none;
-            background-color: $divider-color;
+            background-color: rgb($color-foreground);
             height: 2px;
             border-radius: 5px;
-            box-shadow: 0 0 3px 1px darken($divider-color, 20);
+            box-shadow: 0 0 3px 1px rgb($color-foreground);
             justify-content: center;
 
             // New message divider pill
             .unreadPill-3nEWYM {
                 border-radius: $item-spacing;
-                color: darken($divider-color, 30);
+                color: rgb($color-foreground);
                 padding: 2px 10px;
                 right: auto;
                 top: -5px;
                 text-transform: capitalize;
-                box-shadow: 0 0 5px 1px darken($divider-color, 20);
+                box-shadow: 0 0 5px 1px rgb($color-foreground);
 
                 .unreadPillCap-2-iI4h {
                     display: none;
@@ -109,13 +106,13 @@
 
             // Date change divider
             .content-3spvdd {
-                background: $divider-color;
-                color: darken($divider-color, 30);
+                background: rgb($color-foreground);
+                color: rgb($color-foreground);
                 padding: 2px 10px;
                 font-size: 10px;
                 line-height: 9px;
                 font-weight: 700;
-                box-shadow: 0 0 5px 1px darken($divider-color, 20);
+                box-shadow: 0 0 5px 1px rgb($color-foreground);
             }
         }
 
@@ -127,7 +124,7 @@
 
     // Chat text area
     .scrollableContainer-15eg7h {
-        @include box.orange();
+        @include box.orange;
 
         &::before {
             height: calc(100% - (2 * $sidebar-border-width));
@@ -140,7 +137,7 @@
         .channelAttachmentArea-HwpkuQ {
             // Options bar
             .wrapper-2vIMkT {
-                @include box.orange-small();
+                @include box.orange-small;
                 height: 34px;
             }
 
@@ -157,13 +154,13 @@
 
     // Chat slowmode info
     .cooldownWrapper-2k1jHK {
-        color: transparentize($white, 0.5) !important;
+        color: transparentize($color-text, 0.5) !important;
     }
 
     // Chat autocomplete suggestions
     .autocomplete-3NRXG8 {
-        @include box.orange();
-        background-color: $darkpurple;
+        @include box.orange;
+        background-color: rgb($color-background);
 
         &::before {
             @include tint.scanline-overlay();
@@ -173,7 +170,7 @@
 
         // Group
         .categoryHeader-OpJ1Ly {
-            background-color: $darkpurple;
+            background-color: rgb($color-background);
         }
 
         // Option
@@ -184,6 +181,6 @@
 
     // Sticker suggestions
     .stickerIconOffset-2zxofV {
-        @include box.orange-small();
+        @include box.orange-small;
     }
 }

@@ -22,10 +22,10 @@
     overflow: hidden;
 
     &.theme-light {
-        --interactive-active: #{$darkpurple};
-        --header-primary: #{$darkpurple};
-        --header-secondary: #{$blue};
-        --text-normal: #{$darkpurple};
+        --interactive-active: #{$color-background};
+        --header-primary: #{$color-background};
+        --header-secondary: #{$color-button};
+        --text-normal: #{$color-background};
     }
 
     .userProfileInner-3F03PX {

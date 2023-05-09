@@ -9,46 +9,32 @@ $sidebar-width: 72px; // Set by Discord
 $channels-width: 240px; // Set by Discord
 $title-height: 48px; // Set by Discord
 
-// ---- Colour ----
+// ---- CSS vars to SCSS vars ----
 
-// Palette
-$pink: 206 63 251;
-$gold: 255 165 0;
-$blue: 84 63 251;
-$blurple: 88 101 242;
-$purple: 20 6 36;
-$darkblue: 0 0 128;
+// Must NOT be wrapped in rgb() or transparentize() to work
+$background-image:  var(--synth-background-image);  // url(https://i.imgur.com/0jX0Y0g.png);
+$overlay-color:     var(--synth-overlay-color);     // rgb($gold / 0.1)
+$scanline-light:    var(--crt-scanline-light);      // rgb($white / 0.05)
+$scanline-dark:     var(--crt-scanline-dark);       // rgb($black / 0.1)
+$flicker:           var(--crt-flicker);             // none;
 
-$white: 255 255 255;
-$black: 0 0 0;
+// Must be wrapped in rgb() or transparentize() to work
+$color-background:  var(--synth-color-background);  // $purple
+$color-foreground:  var(--synth-color-foreground);  // $gold
+$color-shadow:      var(--synth-color-shadow);      // $darkblue
+$color-button:      var(--synth-color-button);      // $blue
+$color-pop:         var(--synth-color-pop);         // $pink
+$color-blurple:     var(--synth-color-blurple);     // $blurple
+$color-text:        var(--synth-color-text);        // $white
 
-// Status
-$red: 243 67 131;
-$yellow: $gold;
-$green: 52 172 140;
-$twitch: 89 54 149;
+$color-red:         var(--synth-color-red);         // $red
+$color-yellow:      var(--synth-color-yellow);      // $yellow
+$color-green:       var(--synth-color-green);       // $green
+$color-twitch:      var(--synth-color-twitch);      // $twitch
 
-// Toggle
-$toggle-off: $blue;
-$toggle-on: $gold;
+$color-toggle-off:  var(--synth-color-button);      // $blue
+$color-toggle-on:   var(--synth-color-foreground);  // $gold
 
-// ---- Defaults ----
-
-$background-image:  var(--synth-background-image);
-$overlay-color:     var(--synth-overlay-color);
-$scanline-light:    var(--crt-scanline-light);
-$scanline-dark:     var(--crt-scanline-dark);
-$flicker:           var(--crt-flicker);
-
-$color-background:  var(--synth-color-background);
-$color-foreground:  var(--synth-color-foreground);
-$color-shadow:      var(--synth-color-shadow);
-$color-button:      var(--synth-color-button);
-$color-pop:         var(--synth-color-pop);
-$color-blurple:     var(--synth-color-blurple);
-$color-text:        var(--synth-color-text);
-
-$color-red:         var(--synth-color-red);
-$color-yellow:      var(--synth-color-yellow);
-$color-green:       var(--synth-color-green);
-$color-twitch:      var(--synth-color-twitch);
+@function transparentize($color, $amount) {
+    @return rgb($color / (1 - $amount));
+}
