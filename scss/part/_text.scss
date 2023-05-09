@@ -1,0 +1,25 @@
+@use "../top/vars" as *;
+
+// Code block
+.markup-eYLPri code,
+.textContainer-36wgKK {
+    background: transparentize($color-button, 0.5);
+}
+
+// Spoiler text
+.spoilerText-27bIiA {
+    background: transparentize($color-button, 0.5);
+
+    &.hidden-3B-Rum {
+        @extend .spoilerText-27bIiA;
+
+        &:hover {
+            background: rgb($color-button);
+        }
+    }
+}
+
+// Channel/user group name
+.container-q97qHp {
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+@use "../../top/vars" as *;
+
+// Profile popout
+.avatarWrapper-3y0KZ1 {
+    left: 27px;
+    top: 21px;
+
+    // View profile shadow
+    .avatarHint-2g3Mcd {
+        border-radius: 50px;
+
+        foreignObject {
+            mask: none;
+        }
+    }
+}
+
+// with Nitro theme
+.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ,
+.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU {
+    padding: 0;
+    overflow: hidden;
+
+    &.theme-light {
+        --interactive-active: #{$color-background};
+        --header-primary: #{$color-background};
+        --header-secondary: #{$color-button};
+        --text-normal: #{$color-background};
+    }
+
+    .userProfileInner-3F03PX {
+        max-height: calc(100vh - 64px - $outmost-spacing);
+
+        &::before {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: $sidebar-spacing;
+        }
+
+        .avatarPositionPremiumBanner-2nq2Fy {
+            left: 23px;
+            top: 77px;
+        }
+    }
+
+    // Nitro upsell banner
+    .wrapper-400BN2 {
+        width: calc(100% - (2 * $sidebar-border-width));
+        border-radius: calc($sidebar-spacing - $sidebar-border-width);
+    }
+}

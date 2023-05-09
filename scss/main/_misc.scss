@@ -1,0 +1,50 @@
+@use "../top/vars" as *;
+@use "../top/box";
+@use "../top/pill";
+
+// Video call
+.callContainer-HtHELf {
+    background: transparent;
+
+    .gradientContainer-phMG8d {
+        background-image: none;
+    }
+}
+
+// Forum
+.container-3wLKDe {
+    background-color: transparent;
+}
+
+// Browse channels
+.container-2IKOsH,
+.container-1um7CU,
+.header-3xB4vB {
+    background-color: transparent;
+}
+
+// Discover servers
+.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
+    background-color: var(--background-modifier-selected);
+}
+
+.pageWrapper-2PwDoS {
+    background-color: transparent;
+
+    // Search
+    .searchBox-pyIJJj {
+        border-radius: $item-spacing;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .select-1Ia3hD {
+        border-radius: $item-spacing;
+    }
+}
+
+// Server home
+.background-fkKrXt,
+.headerBarInner-2pcZSM:after {
+    background: transparent;
+}

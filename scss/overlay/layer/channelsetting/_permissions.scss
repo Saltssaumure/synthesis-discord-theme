@@ -1,0 +1,24 @@
+@use "../../../top/vars" as *;
+
+// Channel permissions
+.group-LWHoGI {
+    border-radius: $item-spacing;
+    border: 2px solid rgb($color-foreground);
+    overflow: hidden;
+
+    // Denied permission
+    .deny-1GO6vI.selected-3jieYB,
+    .passthrough--fbdFR.selected-3jieYB {
+        background-color: transparentize($color-red, 0.5);
+    }
+
+    // Neutral permission
+    .passthrough--fbdFR.selected-3jieYB {
+        background-color: transparentize($color-text, 0.5);
+    }
+
+    // Allowed permission
+    .allow-1h61-Z.selected-3jieYB {
+        background-color: transparentize($color-green, 0.5);
+    }
+}

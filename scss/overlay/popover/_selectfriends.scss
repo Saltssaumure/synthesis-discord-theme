@@ -1,0 +1,29 @@
+@use "../../top/vars" as *;
+
+// Create group chat select friends
+// Search entry
+.tag-15zcD_ {
+    border-radius: 16px;
+}
+
+// Friend item
+.friend-8ZraY7 {
+    border-radius: $item-spacing;
+
+    &.friendSelected-3cwmD7 {
+        background-color: var(--background-modifier-hover);
+    }
+
+    .checkbox-f1HnKB {
+        border-radius: 50%;
+        border: 2px solid rgb($color-foreground);
+
+        &.checked-1pZh2h {
+            border-color: $color-foreground !important;
+
+            path {
+                fill: rgb($color-foreground);
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@use "../../../top/vars" as *;
+
+// Voice & Video
+.userSettingsVoice-1fEtsL {
+    // Voice settings
+    .container-3NTP7o {
+        border-radius: 20px;
+        background: $color-button !important;
+
+        .progress-1S-TDF {
+            background-color: transparentize($color-background, 0.5);
+        }
+
+        .notches-2w7UZJ.gray-3wP137 {
+            background-image: none;
+        }
+    }
+
+    // Video background
+    .backgroundOptionInner-SSz19O,
+    .backgroundOptionRing-1vvQ0C {
+        border-radius: $item-spacing;
+    }
+}

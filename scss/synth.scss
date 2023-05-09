@@ -1,17 +1,7 @@
-@use "top/var-scss" as *;
-@import "top/var-css";
-@import "top/mixin";
-
-@import "appdir";
-@import "bd";
-@import "button";
-@import "channels-chat";
-@import "friends";
-@import "main";
-@import "misc";
-@import "popover";
-@import "servers";
-@import "settings";
+@use "main";
+@use "overlay";
+@use "part";
+@use "plugin";
 
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter&display=swap");

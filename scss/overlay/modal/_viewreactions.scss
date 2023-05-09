@@ -1,0 +1,26 @@
+@use "../../top/vars" as *;
+
+// View message reactions
+.reactionDefault-1Sjj1f {
+    border-radius: $item-spacing;
+
+    &:hover {
+        background-color: var(--background-modifier-hover);
+    }
+}
+
+.reactionSelected-1aMb2K {
+    border-radius: $item-spacing;
+    background-color: var(--background-modifier-selected);
+}
+
+.reactors-1VXca7 {
+    background-color: transparent;
+
+    .remove-19AQn_ {
+        background-color: var(--background-modifier-hover);
+        border-radius: 50%;
+        opacity: 1;
+        color: rgb($color-foreground);
+    }
+}

@@ -1,0 +1,20 @@
+@use "../top/vars" as *;
+
+// Notice banners
+.notice-2HEN-u {
+    $notice-spacing: 20px;
+    $notice-border-width: 5px;
+
+    position: absolute;
+    right: $notice-spacing;
+    width: calc(100% - $channels-width - 36px - (2 * ($notice-spacing + $notice-border-width)));
+    // border-radius: 0 0 $notice-spacing $notice-spacing;
+    top: $title-height;
+    border-radius: $notice-spacing;
+
+    &.colorStreamerMode-8uoRWd {
+        background-color: rgb($color-twitch / 0.4);
+        border: $notice-border-width solid rgb($color-twitch);
+        box-shadow: 0 0 10px 0 rgb($color-twitch);
+    }
+}

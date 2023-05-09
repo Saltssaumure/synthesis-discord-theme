@@ -1,0 +1,12 @@
+@use "../../top/vars" as *;
+@use "../../top/box";
+
+// Thread floater (narrow screens)
+.chatTarget-3H6mpC {
+    background: transparentize($color-background, $amount: 0.2);
+}
+
+.floating-3M3WeH {
+    margin: $sidebar-spacing;
+    @include box.blue;
+}

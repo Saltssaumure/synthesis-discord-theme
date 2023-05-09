@@ -1,0 +1,26 @@
+@use "vars" as *;
+
+@mixin overlay {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+@mixin scanline-overlay {
+    @include overlay;
+    background-image: linear-gradient($scanline-light 50%, $scanline-dark 50%);
+    background-size: 100% 4px;
+    z-index: 1000;
+    pointer-events: none;
+    animation: $flicker 0.1s infinite alternate;
+
+    @keyframes flicker {
+        0% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: $scanline-dark;
+        }
+    }
+}

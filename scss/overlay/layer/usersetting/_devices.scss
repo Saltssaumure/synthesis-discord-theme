@@ -1,0 +1,10 @@
+@use "../../../top/vars" as *;
+
+// Devices session icons
+.sessionIcon-2fwSzb {
+    background: transparentize($color-foreground, 0.7);
+
+    svg {
+        color: rgb($color-foreground);
+    }
+}

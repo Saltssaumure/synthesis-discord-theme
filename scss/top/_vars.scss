@@ -1,0 +1,40 @@
+// ---- Size ----
+
+$outmost-spacing: 30px;
+$outmost-border-width: 10px;
+$sidebar-spacing: 20px;
+$sidebar-border-width: 5px;
+$item-spacing: 10px;
+$sidebar-width: 72px; // Set by Discord
+$channels-width: 240px; // Set by Discord
+$title-height: 48px; // Set by Discord
+
+// ---- CSS vars to SCSS vars ----
+
+// Must NOT be wrapped in rgb() or transparentize() to work
+$background-image:  var(--synth-background-image);  // url(https://i.imgur.com/0jX0Y0g.png);
+$overlay-color:     var(--synth-overlay-color);     // rgb($gold / 0.1)
+$scanline-light:    var(--synth-crt-light);         // rgb($white / 0.05)
+$scanline-dark:     var(--synth-crt-dark);          // rgb($black / 0.1)
+$flicker:           var(--synth-crt-flicker);       // none;
+
+// Must be wrapped in rgb() or transparentize() to work
+$color-background:  var(--synth-color-background);  // $purple
+$color-foreground:  var(--synth-color-foreground);  // $gold
+$color-shadow:      var(--synth-color-shadow);      // $darkblue
+$color-button:      var(--synth-color-button);      // $blue
+$color-pop:         var(--synth-color-pop);         // $pink
+$color-blurple:     var(--synth-color-blurple);     // $blurple
+$color-text:        var(--synth-color-text);        // $white
+
+$color-red:         var(--synth-color-red);         // $red
+$color-yellow:      var(--synth-color-yellow);      // $yellow
+$color-green:       var(--synth-color-green);       // $green
+$color-twitch:      var(--synth-color-twitch);      // $twitch
+
+$color-toggle-off:  var(--synth-color-button);      // $blue
+$color-toggle-on:   var(--synth-color-foreground);  // $gold
+
+@function transparentize($color, $amount) {
+    @return rgb($color / (1 - $amount));
+}

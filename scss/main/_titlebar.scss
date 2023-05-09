@@ -1,0 +1,29 @@
+@use "../top/vars" as *;
+
+// Windows title bar
+.titleBar-1it3bQ {
+    .alignCenter-14kD11 {
+        border-radius: 0 0 $item-spacing $item-spacing;
+    }
+
+    &::before {
+        content: var(--title-text, "Synthesis v1.2");
+        font-family: var(--font-display);
+        font-weight: 500;
+        color: var(--text-muted);
+        text-shadow: 0 0 5px rgb($color-foreground);
+        position: absolute;
+        top: -4px;
+        left: 0;
+        height: 18px;
+        padding: 4px;
+        line-height: 23px;
+        font-size: 14px;
+        letter-spacing: 0;
+        z-index: 1;
+    }
+}
+
+.wordmark-2u86JB {
+    display: none;
+}

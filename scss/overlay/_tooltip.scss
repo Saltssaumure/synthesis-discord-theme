@@ -1,0 +1,12 @@
+@use "../top/vars" as *;
+
+// Tooltips
+.appMount-2yBXZl .tooltip-33Jwqe {
+    background-color: transparentize($color-pop, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgb($color-pop);
+
+    .tooltipPointer-sMBQqe {
+        border-top-color: rgb($color-pop);
+    }
+}
