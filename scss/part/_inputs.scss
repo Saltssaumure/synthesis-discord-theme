@@ -1,28 +1,29 @@
 @use "../top/vars" as *;
 
 // Inputs
-.select-1Ia3hD,
 // Single line inputs
-.container-30qY7E,
+.inputDefault-Ciwd-S,
 // Dropdown selectors
-.input-2g-os5 // Keybind recorders
+.select-Zz0IcO,
+// Keybind recorders
+.container-30qY7E
 {
     border-radius: 50px;
 }
 
 // Toggles
-.container-2nx-BQ {
+.container-1QtPKm {
     background-color: transparentize($color-toggle-off, 0.2) !important;
 
     path {
-        fill: $color-toggle-off !important;
+        fill: rgb($color-toggle-on) !important;
     }
 }
 
-.checked-25WXMf {
+.checked-16gMAN {
     background-color: transparentize($color-toggle-on, 0.3) !important;
 
     path {
-        fill: $color-toggle-on !important;
+        fill: rgb($color-toggle-on) !important;
     }
 }
