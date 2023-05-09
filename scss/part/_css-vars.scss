@@ -31,112 +31,111 @@ code,
 
 .theme-dark,
 .theme-light {
-    --background-primary: transparent;
-    --background-secondary: transparent;
-    --background-secondary-alt: transparent;
-    --background-tertiary: transparent;
-    --background-accent: transparent;
-    --background-floating: transparent;
-    --background-nested-floating: transparent;
-    --background-mobile-primary: transparent;
-    --background-mobile-secondary: transparent;
+    --background-primary:           transparent;
+    --background-secondary:         transparent;
+    --background-secondary-alt:     transparent;
+    --background-tertiary:          transparent;
+    --background-accent:            transparent;
+    --background-floating:          transparent;
+    --background-nested-floating:   transparent;
+    --background-mobile-primary:    transparent;
+    --background-mobile-secondary:  transparent;
 
-    --channeltextarea-background: #{transparentize($color-background, 0.5)};
-    --channel-text-area-placeholder: #{transparentize($color-text, 0.5)};
-    --modal-background: rgb(#{$color-background});
-    --modal-footer-background: rgb(#{$color-button});
+    --channeltextarea-background:       #{transparentize($color-background, 0.5)};
+    --channel-text-area-placeholder:    #{transparentize($color-text, 0.5)};
+    --modal-background:                 rgb(#{$color-background});
+    --modal-footer-background:          rgb(#{$color-button});
 
-    --background-modifier-hover: #{transparentize($color-foreground, 0.4)};
-    --background-modifier-active: #{transparentize($color-foreground, 0.3)};
+    --background-modifier-hover:    #{transparentize($color-foreground, 0.4)};
+    --background-modifier-active:   #{transparentize($color-foreground, 0.3)};
     --background-modifier-selected: #{transparentize($color-foreground, 0.5)};
-    --background-modifier-accent: #{transparentize($color-foreground, 0.5)};
+    --background-modifier-accent:   #{transparentize($color-foreground, 0.5)};
 
-    --deprecated-card-bg: #{transparentize($color-background, 0.3)};
-    --deprecated-card-editable-bg: #{transparentize($color-background, 0.3)};
-    --deprecated-text-input-bg: #{transparentize($color-background, 0.3)};
+    --deprecated-card-bg:           #{transparentize($color-background, 0.3)};
+    --deprecated-card-editable-bg:  #{transparentize($color-background, 0.3)};
+    --deprecated-text-input-bg:     #{transparentize($color-background, 0.3)};
     --deprecated-text-input-border: transparent;
-    --deprecated-store-bg: transparent;
+    --deprecated-store-bg:          transparent;
 
-    --text-normal: rgb(#{$color-text});
-    --text-muted: rgb(#{$color-foreground});
-    --text-link: rgb(#{$color-foreground});
-    --text-positive: rgb(#{$color-green});
+    --text-normal:      rgb(#{$color-text});
+    --text-muted:       rgb(#{$color-foreground});
+    --text-link:        rgb(#{$color-foreground});
+    --text-positive:    rgb(#{$color-green});
     --channels-default: rgb(#{$color-foreground});
-    --channel-icon: rgb(#{$color-foreground});
+    --channel-icon:     rgb(#{$color-foreground});
 
-    --header-primary: rgb(#{$color-text});
+    --header-primary:   rgb(#{$color-text});
     --header-secondary: rgb(#{$color-blurple});
 
-    --interactive-normal: rgb(#{$color-foreground});
-    --interactive-hover: rgb(#{$color-text});
-    --interactive-active: rgb(#{$color-text});
-    --interactive-muted: rgb(#{$color-pop});
+    --interactive-normal:   rgb(#{$color-foreground});
+    --interactive-hover:    rgb(#{$color-text});
+    --interactive-active:   rgb(#{$color-text});
+    --interactive-muted:    rgb(#{$color-pop});
 
-    --input-background: #{transparentize($color-background, 0.3)};
-    --input-placeholder-text: #{transparentize($color-text, 0.5)};
+    --input-background:         #{transparentize($color-background, 0.3)};
+    --input-placeholder-text:   #{transparentize($color-text, 0.5)};
 
-    --scrollbar-thin-thumb: rgb(#{$color-button});
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: rgb(#{$color-blurple});
-    --scrollbar-auto-track: #{transparentize($color-button, 0.5)};
+    --scrollbar-thin-thumb:                 rgb(#{$color-button});
+    --scrollbar-thin-track:                 transparent;
+    --scrollbar-auto-thumb:                 rgb(#{$color-blurple});
+    --scrollbar-auto-track:                 #{transparentize($color-button, 0.5)};
     --scrollbar-auto-scrollbar-color-thumb: rgb(#{$color-blurple});
     --scrollbar-auto-scrollbar-color-track: #{transparentize($color-button, 0.5)};
 
-    $status-transparency: 0.5;
-    --status-danger: rgb(#{$color-red});
-    --status-danger-background: #{transparentize($color-red, $status-transparency)};
-    --status-positive: rgb(#{$color-green});
-    --status-positive-background: #{transparentize($color-green, $status-transparency)};
-    --status-warning: rgb(#{$color-yellow});
-    --status-warning-background: #{transparentize($color-yellow, $status-transparency)};
+    --status-danger:                rgb(#{$color-red});
+    --status-danger-background:     #{transparentize($color-red, $status-transparency)};
+    --status-positive:              rgb(#{$color-green});
+    --status-positive-background:   #{transparentize($color-green, $status-transparency)};
+    --status-warning:               rgb(#{$color-yellow});
+    --status-warning-background:    #{transparentize($color-yellow, $status-transparency)};
 
     // Profile preview and popout
     .profileColors-3Y0XaR {
         // --profile-body-background-color: rgb(#{$color-background};
-        --profile-gradient-primary-color: #{transparentize($color-background, 0.2)};
+        --profile-gradient-primary-color:   #{transparentize($color-background, 0.2)};
         --profile-gradient-secondary-color: #{transparentize($color-background, 0.5)};
-        --profile-body-background-color: #{transparentize($color-background, 0.2)};
-        --profile-body-divider-color: rgb(#{$color-foreground});
-        --profile-body-divider-opacity: 0.5;
+        --profile-body-background-color:    #{transparentize($color-background, 0.2)};
+        --profile-body-divider-color:       rgb(#{$color-foreground});
+        --profile-body-divider-opacity:     0.5;
     }
 }
 
 // Popovers
 .layerContainer-2lfOPe .theme-dark,
 .layerContainer-2lfOPe .theme-light {
-    --background-primary: rgb(#{$color-background});
-    --background-secondary: rgb(#{$color-background});
+    --background-primary:       rgb(#{$color-background});
+    --background-secondary:     rgb(#{$color-background});
     --background-secondary-alt: #{transparentize($color-background, 0.2)};
-    --background-tertiary: rgb(#{$color-button});
-    --background-accent: rgb(#{$color-pop});
-    --background-floating: rgb(#{$color-background});
+    --background-tertiary:      rgb(#{$color-button});
+    --background-accent:        rgb(#{$color-pop});
+    --background-floating:      rgb(#{$color-background});
 
-    --background-modifier-hover: #{transparentize($color-foreground, 0.5)};
-    --background-modifier-active: #{transparentize($color-foreground, 0.5)};
+    --background-modifier-hover:    #{transparentize($color-foreground, 0.5)};
+    --background-modifier-active:   #{transparentize($color-foreground, 0.5)};
     --background-modifier-selected: #{transparentize($color-foreground, 0.5)};
-    --background-modifier-accent: #{transparentize($color-foreground, 0.5)};
+    --background-modifier-accent:   #{transparentize($color-foreground, 0.5)};
 
-    --text-normal: inherit;
-    --text-muted: inherit;
+    --text-normal:      inherit;
+    --text-muted:       inherit;
     --channels-default: inherit;
 
-    --interactive-normal: rgb(#{$color-text});
-    --interactive-hover: rgb(#{$color-text});
-    --interactive-active: rgb(#{$color-text});
-    --interactive-muted: rgb(#{$color-pop});
+    --interactive-normal:   rgb(#{$color-text});
+    --interactive-hover:    rgb(#{$color-text});
+    --interactive-active:   rgb(#{$color-text});
+    --interactive-muted:    rgb(#{$color-pop});
 
-    --header-secondary: rgb(#{$color-foreground});
+    --header-secondary:     rgb(#{$color-foreground});
 
-    --search-popout-option-fade: linear-gradient(90deg, transparent, rgb(#{$color-background}) 80%);
-    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{transparentize($color-foreground, 0.5)} 80%);
-    --search-popout-option-user-nickname: var(--text-normal);
-    --search-popout-option-user-username: var(--text-muted);
-    --search-popout-option-fade-hover: linear-gradient(to right, transparent, var(--background-modifier-hover));
-    --search-popout-option-non-text-color: rgb(#{$color-text});
-    --search-popout-option-filter-color: rgb(#{$color-text});
-    --search-popout-option-answer-color: rgb(#{$color-text});
-    --search-popout-date-picker-hint-text: rgb(#{$color-text});
-    --search-popout-date-picker-hint-value-text: rgb(#{$color-text});
+    --search-popout-option-fade:                linear-gradient(90deg, transparent, rgb(#{$color-background}) 80%);
+    --search-popout-option-fade-hover:          linear-gradient(90deg, transparent, #{transparentize($color-foreground, 0.5)} 80%);
+    --search-popout-option-user-nickname:       var(--text-normal);
+    --search-popout-option-user-username:       var(--text-muted);
+    --search-popout-option-fade-hover:          linear-gradient(to right, transparent, var(--background-modifier-hover));
+    --search-popout-option-non-text-color:      rgb(#{$color-text});
+    --search-popout-option-filter-color:        rgb(#{$color-text});
+    --search-popout-option-answer-color:        rgb(#{$color-text});
+    --search-popout-date-picker-hint-text:      rgb(#{$color-text});
+    --search-popout-date-picker-hint-value-text:rgb(#{$color-text});
 
     --deprecated-text-input-border-disabled: #{transparentize($color-foreground, 0.5)};
 }

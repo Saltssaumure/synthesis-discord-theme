@@ -1,12 +1,12 @@
 @use "vars" as *;
 @use "tint";
 
-@mixin outmost() {
+@mixin outmost {
     @include box($outmost-spacing, $color-blurple, $outmost-border-width, $color-shadow, 0);
     box-shadow: 0 0 30px 0 rgb($color-foreground) inset, 0 0 20px 0 rgb($color-shadow);
     margin: $outmost-spacing;
     margin-top: 10px;
-    background: transparentize($color-shadow, 0.7);
+    background: rgb($color-shadow / $backdrop-opacity);
 }
 
 @mixin box($RADIUS, $BORDERCOLOR, $BORDERSIZE, $SHADOWCOLOR, $SHADOWSIZE) {
