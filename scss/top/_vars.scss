@@ -1,3 +1,5 @@
+// ---- Size ----
+
 $outmost-spacing: 30px;
 $outmost-border-width: 10px;
 $sidebar-spacing: 20px;
@@ -7,15 +9,46 @@ $sidebar-width: 72px; // Set by Discord
 $channels-width: 240px; // Set by Discord
 $title-height: 48px; // Set by Discord
 
-$white: rgb(255, 255, 255);
-$pink: rgb(206, 63, 251);
-$rose: #f34383;
-$green: #34ac8c;
-$gold: rgb(255, 165, 0);
-$blue: rgb(84, 63, 251);
-$blurple: rgb(88, 101, 242);
-$darkpurple: rgb(20, 6, 36);
-$darkblue: rgb(0, 0, 128);
-$streamer-color: hsl(262, 46.8%, 39.8%);
+// ---- Colour ----
+
+// Palette
+$pink: 206 63 251;
+$gold: 255 165 0;
+$blue: 84 63 251;
+$blurple: 88 101 242;
+$purple: 20 6 36;
+$darkblue: 0 0 128;
+
+$white: 255 255 255;
+$black: 0 0 0;
+
+// Status
+$red: 243 67 131;
+$yellow: $gold;
+$green: 52 172 140;
+$twitch: 89 54 149;
+
+// Toggle
 $toggle-off: $blue;
 $toggle-on: $gold;
+
+// ---- Defaults ----
+
+$background-image:  var(--synth-background-image);
+$overlay-color:     var(--synth-overlay-color);
+$scanline-light:    var(--crt-scanline-light);
+$scanline-dark:     var(--crt-scanline-dark);
+$flicker:           var(--crt-flicker);
+
+$color-background:  var(--synth-color-background);
+$color-foreground:  var(--synth-color-foreground);
+$color-shadow:      var(--synth-color-shadow);
+$color-button:      var(--synth-color-button);
+$color-pop:         var(--synth-color-pop);
+$color-blurple:     var(--synth-color-blurple);
+$color-text:        var(--synth-color-text);
+
+$color-red:         var(--synth-color-red);
+$color-yellow:      var(--synth-color-yellow);
+$color-green:       var(--synth-color-green);
+$color-twitch:      var(--synth-color-twitch);

@@ -16,12 +16,12 @@
 // Base colour
 .appMount-2yBXZl,
 body {
-    background-color: $darkpurple;
+    background-color: rgb($purple);
 }
 
 // Image background
 .bg-1QIAus {
-    background: var(--synth-bg-image, url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif)) center/cover;
+    background: $background-image center/cover;
 }
 
 // Main view
@@ -36,7 +36,7 @@ body {
         height: 100%;
         pointer-events: none;
         z-index: 1005;
-        background-color: var(--synth-overlay-color, rgba(255, 165, 0, 0.1));
+        background-color: $overlay-color;
     }
 
     // Scanline overlay over server and channel sidebars

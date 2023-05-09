@@ -1,4 +1,5 @@
 @use "../top/vars" as *;
+@use "../top/color";
 
 :root {
     --font-primary: Inter, sans-serif;
@@ -6,36 +7,42 @@
     --font-code: "Fira Code", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
         "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
-    --rs-small-spacing: 0px;
-    /* Gap between avatar and status for members list/dms | MUST end in px */
-    --rs-medium-spacing: 0px;
-    /* Gap between avatar and status for User popout | MUST end in px */
-    --rs-large-spacing: 0px;
-    /* Gap between avatar and status for User profiles | MUST end in px */
-    --rs-small-width: 3px;
-    /* Thickness of status border for members list/dms | MUST end in px */
-    --rs-medium-width: 7px;
-    /* Thickness of status border for User popout | MUST end in px */
-    --rs-large-width: 16px;
-    /* Thickness of status border for User profile | MUST end in px */
-    --rs-avatar-shape: 50%;
-    /* 50% for round - 0% for square */
-    --rs-online-color: #{$green};
-    /* Colour for online status */
-    --rs-idle-color: #{$gold};
-    /* Colour for idle status */
-    --rs-dnd-color: #{$rose};
-    /* Colour for dnd status */
-    --rs-offline-color: transparent;
-    /* Colour for offline status */
-    --rs-streaming-color: #{$streamer-color};
-    /* Colour for streaming status */
-    --rs-invisible-color: transparent;
-    /* Colour for invisible status - Note: this will only show for your own invisibility */
-    --rs-phone-color: var(--rs-online-color);
-    /* Colour of the ring and phone icon when a user is on their phone |  */
-    --rs-phone-visible: none;
-    /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    // RadialStatus
+    --rs-small-spacing:     0px; // Gap between avatar and status for members list/dms | MUST end in px
+    --rs-medium-spacing:    0px; // Gap between avatar and status for User popout | MUST end in px
+    --rs-large-spacing:     0px; // Gap between avatar and status for User profiles | MUST end in px
+    --rs-small-width:       3px; // Thickness of status border for members list/dms | MUST end in px
+    --rs-medium-width:      7px; // Thickness of status border for User popout | MUST end in px
+    --rs-large-width:       16px; // Thickness of status border for User profile | MUST end in px
+    --rs-avatar-shape:      50%; // 50% for round - 0% for square
+    --rs-online-color:      var(--synth-color-green); // Colour for online status
+    --rs-idle-color:        var(--synth-color-yellow); // Colour for idle status
+    --rs-dnd-color:         var(--synth-color-red); // Colour for dnd status
+    --rs-offline-color:     transparent; // Colour for offline status
+    --rs-streaming-color:   var(--synth-color-twitch); // Colour for streaming status
+    --rs-invisible-color:   transparent; // Colour for invisible status - Note: this will only show for your own invisibility
+    --rs-phone-color:       var(--synth-color-green); // Colour of the ring and phone icon when a user is on their phone |
+    --rs-phone-visible:     none; // Visibility of the phone icon next to a users avatar. | block = visible | none = hidden
+
+    // Defaults, can be overridden by .theme.css
+    --synth-background-image:   url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif); 
+    --synth-overlay-color:      rgb($gold / 0.1);
+    --crt-scanline-light:       rgb($white / 0.05);
+    --crt-scanline-dark:        rgb($black / 0.1);
+    --crt-flicker:              none;   /* This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
+
+    --synth-color-background:   rgb($purple);
+    --synth-color-foreground:   rgb($gold);
+    --synth-color-shadow:       rgb($darkblue); 
+    --synth-color-button:       rgb($blue); 
+    --synth-color-pop:          rgb($pink); 
+    --synth-color-blurple:      rgb($blurple);
+    --synth-color-text:         rgb($white); 
+
+    --synth-color-red:          rgb($red);
+    --synth-color-yellow:       rgb($yellow);
+    --synth-color-green:        rgb($green);
+    --synth-color-twitch:       rgb($twitch);
 }
 
 code,
@@ -55,19 +62,19 @@ code,
     --background-mobile-primary: transparent;
     --background-mobile-secondary: transparent;
 
-    --channeltextarea-background: #{transparentize($darkpurple, 0.5)};
-    --channel-text-area-placeholder: #{transparentize($white, 0.5)};
-    --modal-background: #{$darkpurple};
+    --channeltextarea-background: #{rgb($purple, 0.5)};
+    --channel-text-area-placeholder: #{rgb($white, 0.5)};
+    --modal-background: #{$purple};
     --modal-footer-background: #{$blue};
 
-    --background-modifier-hover: #{transparentize($gold, 0.4)};
-    --background-modifier-active: #{transparentize($gold, 0.3)};
-    --background-modifier-selected: #{transparentize($gold, 0.5)};
-    --background-modifier-accent: #{transparentize($gold, 0.5)};
+    --background-modifier-hover: #{rgb($gold, 0.4)};
+    --background-modifier-active: #{rgb($gold, 0.3)};
+    --background-modifier-selected: #{rgb($gold, 0.5)};
+    --background-modifier-accent: #{rgb($gold, 0.5)};
 
-    --deprecated-card-bg: #{transparentize($darkpurple, 0.3)};
-    --deprecated-card-editable-bg: #{transparentize($darkpurple, 0.3)};
-    --deprecated-text-input-bg: #{transparentize($darkpurple, 0.3)};
+    --deprecated-card-bg: #{rgb($purple, 0.3)};
+    --deprecated-card-editable-bg: #{rgb($purple, 0.3)};
+    --deprecated-text-input-bg: #{rgb($purple, 0.3)};
     --deprecated-text-input-border: transparent;
     --deprecated-store-bg: transparent;
 
@@ -86,30 +93,30 @@ code,
     --interactive-active: #{$white};
     --interactive-muted: #{$pink};
 
-    --input-background: #{transparentize($darkpurple, 0.3)};
-    --input-placeholder-text: #{transparentize($white, 0.5)};
+    --input-background: #{rgb($purple, 0.3)};
+    --input-placeholder-text: #{rgb($white, 0.5)};
 
     --scrollbar-thin-thumb: #{$blue};
     --scrollbar-thin-track: transparent;
     --scrollbar-auto-thumb: #{$blurple};
-    --scrollbar-auto-track: #{transparentize($blue, 0.5)};
+    --scrollbar-auto-track: #{rgb($blue, 0.5)};
     --scrollbar-auto-scrollbar-color-thumb: #{$blurple};
-    --scrollbar-auto-scrollbar-color-track: #{transparentize($blue, 0.5)};
+    --scrollbar-auto-scrollbar-color-track: #{rgb($blue, 0.5)};
 
     $status-transparency: 0.5;
-    --status-danger: #{$rose};
-    --status-danger-background: #{transparentize($rose, $status-transparency)};
+    --status-danger: #{$red};
+    --status-danger-background: #{rgb($red, $status-transparency)};
     --status-positive: #{$green};
-    --status-positive-background: #{transparentize($green, $status-transparency)};
+    --status-positive-background: #{rgb($green, $status-transparency)};
     --status-warning: #{$gold};
-    --status-warning-background: #{transparentize($gold, $status-transparency)};
+    --status-warning-background: #{rgb($gold, $status-transparency)};
 
     // Profile preview and popout
     .profileColors-3Y0XaR {
-        // --profile-body-background-color: #{$darkpurple};
-        --profile-gradient-primary-color: #{transparentize($darkpurple, 0.2)};
-        --profile-gradient-secondary-color: #{transparentize($darkpurple, 0.5)};
-        --profile-body-background-color: #{transparentize($darkpurple, 0.2)};
+        // --profile-body-background-color: #{$purple};
+        --profile-gradient-primary-color: #{rgb($purple, 0.2)};
+        --profile-gradient-secondary-color: #{rgb($purple, 0.5)};
+        --profile-body-background-color: #{rgb($purple, 0.2)};
         --profile-body-divider-color: #{$gold};
         --profile-body-divider-opacity: 0.5;
     }
@@ -118,17 +125,17 @@ code,
 // Popovers
 .layerContainer-2lfOPe .theme-dark,
 .layerContainer-2lfOPe .theme-light {
-    --background-primary: #{$darkpurple};
-    --background-secondary: #{$darkpurple};
-    --background-secondary-alt: #{transparentize($darkpurple, 0.2)};
+    --background-primary: #{$purple};
+    --background-secondary: #{$purple};
+    --background-secondary-alt: #{rgb($purple, 0.2)};
     --background-tertiary: #{$blue};
     --background-accent: #{$pink};
-    --background-floating: #{$darkpurple};
+    --background-floating: #{$purple};
 
-    --background-modifier-hover: #{transparentize($gold, 0.5)};
-    --background-modifier-active: #{transparentize($gold, 0.5)};
-    --background-modifier-selected: #{transparentize($gold, 0.5)};
-    --background-modifier-accent: #{transparentize($gold, 0.5)};
+    --background-modifier-hover: #{rgb($gold, 0.5)};
+    --background-modifier-active: #{rgb($gold, 0.5)};
+    --background-modifier-selected: #{rgb($gold, 0.5)};
+    --background-modifier-accent: #{rgb($gold, 0.5)};
 
     --text-normal: inherit;
     --text-muted: inherit;
@@ -141,8 +148,8 @@ code,
 
     --header-secondary: #{$gold};
 
-    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$darkpurple} 80%);
-    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{transparentize($gold, 0.5)} 80%);
+    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$purple} 80%);
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{rgb($gold, 0.5)} 80%);
     --search-popout-option-user-nickname: var(--text-normal);
     --search-popout-option-user-username: var(--text-muted);
     --search-popout-option-filter-text: blue;
@@ -157,5 +164,5 @@ code,
     --search-popout-date-picker-hint-value-background-hover: var(--brand-experiment-430);
     --search-popout-date-picker-border: 1px solid var(--deprecated-text-input-border-disabled);
 
-    --deprecated-text-input-border-disabled: #{transparentize($gold, 0.5)};
+    --deprecated-text-input-border-disabled: #{rgb($gold, 0.5)};
 }
