@@ -1,17 +1,24 @@
 // ---- Size ----
 
-$outmost-spacing: 30px;
-$outmost-border-width: 10px;
-$sidebar-spacing: 20px;
-$sidebar-border-width: 5px;
-$item-spacing: 10px;
-$sidebar-width: 72px; // Set by Discord
-$channels-width: 240px; // Set by Discord
-$title-height: 48px; // Set by Discord
+$size-max:      9999px;
+$size-l:        30px;
+$size-m:        20px;
+$size-s:        10px;
+$size-xs:       5px;
+
+$outmost-spacing:       $size-l;
+$outmost-border-width:  $size-s;
+$sidebar-spacing:       $size-m;
+$sidebar-border-width:  $size-xs;
+$item-spacing:          $size-s;
 
 // ---- Misc ----
 
 $status-transparency: 0.5;
+
+$sidebar-width:     72px;   // Set by Discord
+$channels-width:    240px;  // Set by Discord
+$title-height:      48px;   // Set by Discord
 
 // ---- CSS vars to SCSS vars ----
 

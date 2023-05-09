@@ -1,14 +1,13 @@
 @use "../top/vars" as *;
 
 // Inputs
-// Single line inputs
 .inputDefault-Ciwd-S,
 // Dropdown selectors
 .select-Zz0IcO,
 // Keybind recorders
 .container-30qY7E
 {
-    border-radius: 50px;
+    border-radius: $size-m;
 }
 
 // Toggles
