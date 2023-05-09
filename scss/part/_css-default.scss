@@ -3,9 +3,9 @@
 // Defaults, can be overridden by .theme.css
 :root {
     --synth-background-image:   url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif);
-    --synth-overlay-color:      rgb(#{$gold} / 0.1);
-    --synth-crt-light:          rgb(#{$white} / 0.05);
-    --synth-crt-dark:           rgb(#{$black} / 0.1);
+    --synth-overlay-color:      #{$gold};
+    --synth-crt-light:          #{$white};
+    --synth-crt-dark:           #{$black};
     --synth-crt-flicker:        none;   /* This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
 
     --synth-color-background:   #{$purple};
