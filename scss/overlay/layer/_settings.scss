@@ -36,10 +36,9 @@
     }
 
     // Settings sidebar
-    .side-2ur1Qk {
-        .item-3XjbnG,
-        .background-Gjdjzm {
-            border-radius: $item-spacing;
+    .sidebar-nqHbhN {
+        .item-2GWPIy {
+            border-radius: $size-s;
         }
     }
 
@@ -48,38 +47,37 @@
     .radioBar-3w9XY-,
     .card-16VQ8C,
     .container-3jbRo5 {
-        border-radius: calc(2 * $item-spacing);
+        border-radius: $size-m;
     }
 
     // Bar sliders
-    .slider-1NC-Gf {
-
-        .markDash-yk2kJ- {
+    .slider-1mmyV6 {
+        .markDash-1ATsxA {
             background: rgb($color-foreground);
         }
 
-        .defaultValue-19SZ-q .markValue-2U_-UG {
+        .defaultValue-1-QxQ0 .markValue-21gAVC {
             color: rgb($color-text);
         }
 
-        .bar-1Bhnl9 {
+        .bar-2H7Q9u {
             background: transparentize($color-pop, 0.5);
             overflow: visible;
 
-            .barFill-2Bh7CX {
-                border-radius: 4px;
+            .barFill-3RgCsY {
+                border-radius: $size-xs;
                 @include slider.bar($color-pop);
             }
         }
 
-        .grabber-2GQyvM {
+        .grabber-3R-Rx9 {
             $grabber-size: 15px;
             border: none;
             height: $grabber-size;
             width: $grabber-size;
-            margin-top: calc(0px - ($grabber-size / 2));
-            margin-left: calc(0px - ($grabber-size / 2));
-            border-radius: 50%;
+            margin-top: calc($grabber-size / -2);
+            margin-left: calc($grabber-size / -2);
+            border-radius: $grabber-size;
             @include slider.bar($color-pop);
         }
     }
@@ -93,6 +91,6 @@
     // Careful you have unsaved changes!
     .container-20TyK0 {
         background-color: transparentize($color-green, 0.5) !important;
-        border-radius: $sidebar-spacing;
+        border-radius: $size-m;
     }
 }
