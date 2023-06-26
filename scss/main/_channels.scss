@@ -18,7 +18,6 @@
     // New messages pill
     .unread-36eUEm {
         @include pill.unread(6px);
-        top: calc(50% - 3px);
     }
 
     // Channel

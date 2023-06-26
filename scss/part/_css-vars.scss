@@ -45,6 +45,7 @@ code,
     --channel-text-area-placeholder:    #{transparentize($color-text, 0.5)};
     --modal-background:                 rgb(#{$color-background});
     --modal-footer-background:          rgb(#{$color-button});
+    --home-background:                  transparent;
 
     --background-modifier-hover:    #{transparentize($color-foreground, 0.4)};
     --background-modifier-active:   #{transparentize($color-foreground, 0.3)};

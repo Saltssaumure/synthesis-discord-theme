@@ -1,0 +1,30 @@
+@use "../top/vars" as *;
+
+// with DB's DisplayServersAsChannels plugin
+.styledGuildsAsChannels-DNHtg_ {
+    .container-1eFtFS {
+        &::before {
+            width: $channels-width + $channels-width + $sidebar-border-width;
+        }
+    }
+
+    .childWrapper-1j_1ub {
+        border-radius: $size-s;
+    }
+
+    .wrapper-1_HaEi {
+        // Unread pill
+        .wrapper-z5ab_q {
+            transform: none;
+        }
+
+        .circleIconButton-1VxDrg,
+        .expandedFolderBackground-1kSAf6
+        .folder-241Joy,
+        .guildsError-YJjW3A,
+        .placeholderMask-2FHNZU,
+        .wrapper-3kah-n {
+            border-radius: $size-s;
+        }
+    }
+}
