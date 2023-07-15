@@ -1,6 +1,32 @@
 @use "../../top/vars" as *;
 
 // Profile popout
+.userPopoutOuter-1OHwPL {
+    position: relative;
+}
+.userPopoutInner-nv9Y92 {
+    max-height: calc(100vh - $outmost-spacing);
+
+    .banner-1YaD3N {
+        mask-image: linear-gradient(black, black 60%, transparent);
+    }
+
+    .overlayBackground-2aa7wt {
+        border-radius: $size-s;
+    }
+    .profileBadges-2pItdR {
+        border-radius: $size-s;
+    }
+    .role-2TIOKu {
+        border-radius: $size-s;
+        border: 0;
+    }
+    .messageInputContainer-24qqTx {
+        border: 0;
+    }
+}
+
+// View profile
 .avatarWrapper-3y0KZ1 {
     left: 27px;
     top: 21px;
@@ -16,19 +42,34 @@
 }
 
 // with Nitro theme
-.userProfileOuterThemed-3EfHmv.userPopoutOuter-3AVBmJ,
-.userProfileOuterThemed-3EfHmv.userProfileOuter-1K_BYU {
+.userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL,
+.userProfileOuterThemed-2BgJCM.userProfileOuter-2tQwNf {
     padding: 0;
+}
+
+.userProfileOuterThemed-2BgJCM {
     overflow: hidden;
 
     &.theme-light {
-        --interactive-active: #{$color-background};
-        --header-primary: #{$color-background};
-        --header-secondary: #{$color-button};
-        --text-normal: #{$color-background};
+        --channel-text-area-placeholder: rgb(#{$color-background} / 0.5);
+        :is(
+                .defaultColor-1GKx81,
+                .defaultColor-1EVLSt,
+                .userTagUsernameBase-267ALn,
+                .discordIcon-32mgeP,
+                .textarea-_59yqs,
+                .input-3O04eu,
+                .customStatus-19KW6v,
+                :is(.activityProfile-1712BN, .activityProfileV2-1N7pee, .activityUserPopout-2MzGCj, .activityUserPopoutV2-3eKqzY)
+                    :is(.activityName-3YXl6e, .content-tXPNDw, .details-2-ciHo, .name-1-Q7l2, .nameNormal-2fPMD2, .nameWrap-3TyM52),
+                .themed-1LCNAV .textLeft-1Noen0,
+                .themed-1LCNAV .textRight-2IW704
+            ) {
+            color: rgb($color-background);
+        }
     }
 
-    .userProfileInner-3F03PX {
+    .userProfileInner-1ngKnf {
         max-height: calc(100vh - 64px - $outmost-spacing);
 
         &::before {
@@ -39,15 +80,13 @@
             border-radius: $sidebar-spacing;
         }
 
-        .avatarPositionPremiumBanner-2nq2Fy {
+        .avatarPositionPremiumBanner-2EAbSH {
             left: 23px;
             top: 77px;
         }
-    }
 
-    // Nitro upsell banner
-    .wrapper-400BN2 {
-        width: calc(100% - (2 * $sidebar-border-width));
-        border-radius: calc($sidebar-spacing - $sidebar-border-width);
+        .buttonColor-_0gSD_ {
+            background-color: rgb($color-button);
+        }
     }
 }
