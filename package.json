@@ -1,16 +1,17 @@
 {
     "name": "synthesis-discord-theme",
-    "version": "1.3.5",
+    "version": "1.3.6",
     "description": "A vibrant neon synthwave theme.",
     "repository": "https://github.com/Saltssaumure/synthesis-discord-theme.git",
-    "author": "Saltssaumure <saltssaumure@gmail.com>",
+    "author": "Saltssaumure <themes@saltssaumure.net>",
     "license": "GPL-3.0",
     "private": true,
     "scripts": {
         "dev": "bd-scss dev",
         "bd": "bd-scss build",
-        "plug": "replugged build theme",
-        "bundle": "replugged bundle theme"
+        "rp": "replugged bundle theme",
+        "lint": "prettier ./scss --check",
+        "lint:fix": "prettier ./scss --write"
     },
     "type": "module",
     "dependencies": {
