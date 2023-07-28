@@ -14,9 +14,9 @@
 
 /* See https://github.com/Saltssaumure/synthesis-discord-theme#customisation for customisation settings. */
 :root {
-    --synth-background-image:   url(https://saltssaumure.github.io/synthesis-discord-theme/backgrounds/default.avif);
+    --synth-background-image:   url(https://imgur.com/RbgVLJT.png);
     --synth-backdrop-opacity:   0.3         ;
-    --synth-overlay-color:      255 165 0   ;
+    --synth-overlay-color:      7, 148, 230  ;
     --synth-crt-light:          255 255 255 ;
     --synth-crt-dark:           0   0   0   ;
     --synth-crt-flicker:        none        ;   /* This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy. */
