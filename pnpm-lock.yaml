@@ -26,9 +26,6 @@ dependencies:
   salt-bd-scss:
     specifier: ^1.0.0
     version: 1.0.0
-  synthesis-discord-theme:
-    specifier: 'link:'
-    version: 'link:'
 
 packages:
 

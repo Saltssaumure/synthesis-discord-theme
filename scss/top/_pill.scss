@@ -3,7 +3,7 @@
 @mixin unread($PILLSIZE) {
     width: 2 * $PILLSIZE;
     height: 2 * $PILLSIZE;
-    margin-left: - $PILLSIZE;
+    margin-left: -$PILLSIZE;
     border-radius: 0 $PILLSIZE $PILLSIZE 0;
     background-color: rgb($color-foreground);
 }
