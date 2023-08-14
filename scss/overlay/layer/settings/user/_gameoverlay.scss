@@ -1,0 +1,10 @@
+@use "../../../../top/vars" as *;
+
+// Game Overlay
+.wrapper-SdcMKg {
+    border-radius: calc(2 * $item-spacing);
+
+    .option-1QI4c9 {
+        border-radius: $item-spacing;
+    }
+}

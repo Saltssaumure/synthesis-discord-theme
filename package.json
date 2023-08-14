@@ -1,26 +1,28 @@
 {
     "name": "synthesis-discord-theme",
-    "version": "1.3.6",
+    "version": "1.3.7",
     "description": "A vibrant neon synthwave theme.",
     "repository": "https://github.com/Saltssaumure/synthesis-discord-theme.git",
     "author": "Saltssaumure <themes@saltssaumure.net>",
     "license": "GPL-3.0",
     "private": true,
+
     "scripts": {
         "dev": "bd-scss dev",
         "bd": "bd-scss build",
+        "dev:rp": "replugged build theme --watch",
         "rp": "replugged bundle theme",
         "lint": "prettier ./scss --check",
-        "lint:fix": "prettier ./scss --write"
+        "lint:fix": "prettier ./scss --write --log-level warn"
     },
     "type": "module",
     "dependencies": {
-        "@parcel/config-default": "^2.8.3",
-        "@parcel/core": "^2.8.3",
-        "@parcel/transformer-sass": "^2.8.3",
-        "@types/node": "^18.15.3",
-        "prettier": "^2.8.4",
-        "replugged": "^4.2.1",
+        "@parcel/config-default": "^2.9.3",
+        "@parcel/core": "^2.9.3",
+        "@parcel/transformer-sass": "^2.9.3",
+        "@types/node": "^20.4.5",
+        "prettier": "^3.0.0",
+        "replugged": "^4.5.1",
         "salt-bd-scss": "^1.0.0"
     }
 }

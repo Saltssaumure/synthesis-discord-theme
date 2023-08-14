@@ -1,0 +1,18 @@
+@forward "./createserver";
+@forward "./deletemessage";
+@forward "./image";
+@forward "./serverboost";
+@forward "./serverswitcher";
+@forward "./uploadimage";
+@forward "./userprofile";
+@forward "./viewreactions";
+
+@use "../../top/vars" as *;
+@use "../../top/box";
+
+// Modals
+.root-1CAIjD {
+    @include box.blue;
+    overflow: hidden;
+    background-color: transparentize($color-shadow, 0.7) !important;
+}
