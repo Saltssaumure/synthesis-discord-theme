@@ -6,22 +6,22 @@ settings:
 
 dependencies:
   '@parcel/config-default':
-    specifier: ^2.8.3
+    specifier: ^2.9.3
     version: 2.9.3(@parcel/core@2.9.3)(postcss@8.4.27)
   '@parcel/core':
-    specifier: ^2.8.3
+    specifier: ^2.9.3
     version: 2.9.3
   '@parcel/transformer-sass':
-    specifier: ^2.8.3
+    specifier: ^2.9.3
     version: 2.9.3(@parcel/core@2.9.3)
   '@types/node':
-    specifier: ^18.15.3
-    version: 18.17.1
+    specifier: ^20.4.5
+    version: 20.4.5
   prettier:
-    specifier: ^2.8.4
-    version: 2.8.8
+    specifier: ^3.0.0
+    version: 3.0.0
   replugged:
-    specifier: ^4.2.1
+    specifier: ^4.5.1
     version: 4.5.1(@codemirror/view@6.15.3)(@lezer/common@1.0.3)(postcss@8.4.27)
   salt-bd-scss:
     specifier: ^1.0.0
@@ -1541,6 +1541,10 @@ packages:
     resolution: {integrity: sha512-xlR1jahfizdplZYRU59JlUx9uzF1ARa8jbhM11ccpCJya8kvos5jwdm2ZAgxSCwOl0fq21svP18EVwPBXMQudw==}
     dev: false
 
+  /@types/node@20.4.5:
+    resolution: {integrity: sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==}
+    dev: false
+
   /abortcontroller-polyfill@1.7.5:
     resolution: {integrity: sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==}
     dev: false
@@ -2620,6 +2624,7 @@ packages:
   /node-gyp-build-optional-packages@5.0.7:
     resolution: {integrity: sha512-YlCCc6Wffkx0kHkmam79GKvDQ6x+QZkMjFGrIMxgFNILFvGSbCp2fCBC55pGTT9gVaz8Na5CLmxt/urtzRv36w==}
     hasBin: true
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -2755,9 +2760,9 @@ packages:
       posthtml-render: 3.0.0
     dev: false
 
-  /prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  /prettier@3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: false
 

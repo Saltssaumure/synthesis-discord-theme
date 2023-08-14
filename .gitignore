@@ -1,8 +1,10 @@
-test
-*.mdp
-
+.parcel-cache
 node_modules
 
-.parcel-cache
-bundle
 dist
+bundle
+src
+
+preview
+test
+*.mdp
