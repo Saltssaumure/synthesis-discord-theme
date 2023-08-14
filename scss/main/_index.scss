@@ -1,17 +1,17 @@
-@use "main/banner";
-@use "main/channels";
-@use "main/chat";
-@use "main/embed";
-@use "main/friends";
-@use "main/members";
-@use "main/misc";
-@use "main/servers";
-@use "main/title";
-@use "main/titlebar";
+@forward "./banner";
+@forward "./channels";
+@forward "./chat";
+@forward "./embed";
+@forward "./friends";
+@forward "./members";
+@forward "./misc";
+@forward "./servers";
+@forward "./title";
+@forward "./titlebar";
 
-@use "top/vars" as *;
-@use "top/tint";
-@use "top/box";
+@use "../top/vars" as *;
+@use "../top/tint";
+@use "../top/box";
 
 // Base colour
 .appMount-2yBXZl,

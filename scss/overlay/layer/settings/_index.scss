@@ -1,26 +1,11 @@
-@use "channelsetting/permissions";
+@forward "./channel";
+@forward "./server";
+@forward "./user";
 
-@use "serversetting/auditlog";
-@use "serversetting/overview";
-@use "serversetting/roles";
-@use "serversetting/serverbooststatus";
-@use "serversetting/stickers";
-@use "serversetting/welcomescreen";
-
-@use "usersetting/billing";
-@use "usersetting/connections";
-@use "usersetting/devices";
-@use "usersetting/gameoverlay";
-@use "usersetting/myaccount";
-@use "usersetting/privacyandsafety";
-@use "usersetting/profiles";
-@use "usersetting/registeredgames";
-@use "usersetting/voiceandvideo";
-
-@use "../../top/vars" as *;
-@use "../../top/tint";
-@use "../../top/box";
-@use "../../top/slider";
+@use "../../../top/vars" as *;
+@use "../../../top/tint";
+@use "../../../top/box";
+@use "../../../top/slider";
 
 // Settings
 .standardSidebarView-E9Pc3j {

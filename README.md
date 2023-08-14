@@ -119,6 +119,8 @@
 ## License
 [GNU General Public License v3.0][license]
 - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+### [RadialStatus](https://github.com/DiscordStyles/RadialStatus)
+[MIT License](https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md)
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.

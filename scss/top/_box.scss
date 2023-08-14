@@ -1,18 +1,20 @@
 @use "vars" as *;
 @use "tint";
 
-@mixin outmost {
-    @include box($outmost-spacing, $color-blurple, $outmost-border-width, $color-shadow, 0);
-    box-shadow: 0 0 30px 0 rgb($color-foreground) inset, 0 0 20px 0 rgb($color-shadow);
-    margin: $outmost-spacing;
-    margin-top: 10px;
-    background: rgb($color-shadow / $backdrop-opacity);
-}
-
 @mixin box($RADIUS, $BORDERCOLOR, $BORDERSIZE, $SHADOWCOLOR, $SHADOWSIZE) {
     border: $BORDERSIZE solid rgb($BORDERCOLOR);
     border-radius: $RADIUS;
     box-shadow: 0 0 $SHADOWSIZE 0 rgb($SHADOWCOLOR) !important;
+}
+
+@mixin outmost {
+    @include box($outmost-spacing, $color-blurple, $outmost-border-width, $color-shadow, 0);
+    box-shadow:
+        0 0 30px 0 rgb($color-foreground) inset,
+        0 0 20px 0 rgb($color-shadow);
+    margin: $outmost-spacing;
+    margin-top: 10px;
+    background: rgb($color-shadow / $backdrop-opacity);
 }
 
 @mixin medium($BORDERCOLOR, $SHADOWCOLOR, $SHADOWSIZE) {
@@ -30,20 +32,20 @@
     }
 }
 
-@mixin orange() {
+@mixin orange {
     @include medium($color-foreground, $color-foreground, 10px);
 }
 
-@mixin blue() {
+@mixin blue {
     @include medium($color-button, $color-shadow, 20px);
 }
 
-@mixin orange-small() {
+@mixin orange-small {
     @include small($color-foreground, $color-foreground, 10px);
     background: transparentize($color-shadow, 0.8);
 }
 
-@mixin blue-small() {
+@mixin blue-small {
     @include small($color-button, $color-shadow, 10px);
     background: transparentize($color-background, 0.3);
 }

@@ -1,14 +1,14 @@
-@use "popover/emojipicker";
-@use "popover/inbox";
-@use "popover/menu";
-@use "popover/pinned";
-@use "popover/search";
-@use "popover/selectfriends";
-@use "popover/threads";
-@use "popover/userprofile";
+@forward "./emojipicker";
+@forward "./inbox";
+@forward "./menu";
+@forward "./pinned";
+@forward "./search";
+@forward "./selectfriends";
+@forward "./threads";
+@forward "./userprofile";
 
-@use "../top/vars" as *;
-@use "../top/box";
+@use "../../top/vars" as *;
+@use "../../top/box";
 
 // Popovers
 .container-18GwIk,
