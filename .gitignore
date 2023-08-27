@@ -1,10 +1,11 @@
-.parcel-cache
-node_modules
+# Packages
+/.parcel-cache
+/node_modules
 
-dist
-bundle
-src
+# Build
+/dist
+/bundle
+/src
 
-preview
-test
-*.mdp
+# Social images
+/preview

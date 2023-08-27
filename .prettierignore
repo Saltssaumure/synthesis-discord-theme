@@ -1,15 +1,21 @@
-.github
+# Folders
+/.github
+/.parcel-cache
+/bundle
+/dist
+/node_modules
+/preview
 
-node_modules
-src
-
-LICENSE
+# File types
 *.md
-*.code-workspace
-
 *.min.css
 *.theme.css
 
+# Files
+LICENSE
+pnpm-lock.yaml
+
+# CSS files
 _css-default.scss
 _css-vars.scss
 _vars.scss

@@ -20,10 +20,14 @@
 [issues]:           https://github.com/Saltssaumure/synthesis-discord-theme/issues
 [.theme.css]:       https://github.com/Saltssaumure/synthesis-discord-theme/blob/main/Synthesis.theme.css
 
+[rs]:               https://github.com/DiscordStyles/RadialStatus
+[rs-author]:        https://github.com/Gibbu
+[rs-license]:       https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md
+
 [release-bd]:       https://betterdiscord.app/theme/?id=770 "BetterDiscord store page"
-[release-bd-gh]:    https://github.com/Saltssaumure/synthesis-discord-theme/releases/latest/download/Synthesis.theme.css "Latest Synthesis.theme.css"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.Synthesis "Replugged store page"
-[release-rp-gh]:    https://github.com/Saltssaumure/synthesis-discord-theme/releases/latest/download/net.saltssaumure.Synthesis.asar "Latest net.saltssaumure.Synthesis.asar"
+[release-bd-gh]:    https://github.com/Saltssaumure/synthesis-discord-theme/releases/latest/download/Synthesis.theme.css "Get latest release"
+[release-rp-gh]:    https://github.com/Saltssaumure/synthesis-discord-theme/releases/latest/download/net.saltssaumure.Synthesis.asar "Get latest release"
 
 [backgrounds]:      https://github.com/Saltssaumure/synthesis-discord-theme/tree/main/backgrounds
 
@@ -66,7 +70,7 @@
     - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
-    - `Settings` > `BetterDiscord` > `Themes` > `Local Themes` > `Open Themes Folder`
+    - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
 3. Click `Load missing Themes` and toggle on the theme card.
 #### Online
 1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
@@ -108,7 +112,7 @@
 
 ### Vencord
 #### Local
-2. `Open Themes Folder` in `Settings` > `BetterDiscord` > `Themes` > `Local Themes`
+2. `Open Themes Folder` in `Settings` > `Vencord` > `Themes` > `Local Themes`
 3. Open `Synthesis.theme.css` with your favourite text editor.
 4. Edit the variable values and save.
 #### Online
@@ -119,8 +123,9 @@
 ## License
 [GNU General Public License v3.0][license]
 - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
-### [RadialStatus](https://github.com/DiscordStyles/RadialStatus)
-[MIT License](https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md)
+
+### Includes
+- [RadialStatus][rs] by [Gibbu][rs-author] - [MIT License][rs-license]
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
