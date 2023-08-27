@@ -1,23 +1,23 @@
 {
-    "id": "net.saltssaumure.Synthesis",
-    "name": "Synthesis",
-    "description": "A vibrant neon synthwave theme.",
-    "author": {
-        "name": "Saltssaumure",
-        "discordID": "134142022092062720",
-        "github": "Saltssaumure"
-    },
-    "version": "1.3.7",
-    "updater": {
-        "type": "store",
-        "id": "net.saltssaumure.Synthesis"
-    },
-    "license": "GPL-3.0",
-    "type": "replugged-theme",
-    "main": "scss/synth.scss",
-    "source": "https://github.com/Saltssaumure/synthesis-discord-theme",
-    "image": [
-        "https://cdn.discordapp.com/attachments/946226984005025835/1129608274786922563/synthesis1.png",
-        "https://cdn.discordapp.com/attachments/946226984005025835/1129608275294421152/synthesis2.png"
-    ]
+  "id": "net.saltssaumure.Synthesis",
+  "name": "Synthesis",
+  "description": "A vibrant neon synthwave theme. See source README for customisation options.",
+  "author": {
+    "name": "Saltssaumure",
+    "discordID": "134142022092062720",
+    "github": "Saltssaumure"
+  },
+  "version": "1.4.0",
+  "updater": {
+    "type": "store",
+    "id": "net.saltssaumure.Synthesis"
+  },
+  "license": "GPL-3.0",
+  "type": "replugged-theme",
+  "main": "scss/synth.scss",
+  "source": "https://github.com/Saltssaumure/synthesis-discord-theme",
+  "image": [
+    "https://cdn.discordapp.com/attachments/946226984005025835/1129608274786922563/synthesis1.png",
+    "https://cdn.discordapp.com/attachments/946226984005025835/1129608275294421152/synthesis2.png"
+  ]
 }

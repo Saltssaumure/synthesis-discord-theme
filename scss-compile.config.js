@@ -1,13 +1,9 @@
 /** @type {import('bd-scss/lib/config').Config} */
 export default {
     meta: {
-        /** The official name of your theme. */
-        name: "Synthesis",
-        /** The name of your base scss file. */
-        scss: "synth",
-        /** The name of your theme repository. */
-        repo: "synthesis-discord-theme",
-        /** The version of your theme. */
-        version: "1.3.7"
+        name: "Synthesis" /* The official name of your theme. */,
+        scss: "synth" /* The name of your base scss file. */,
+        repo: "synthesis-discord-theme" /* The name of your theme repository. */,
+        version: "dev" /* The version of your theme. */
     }
 };
