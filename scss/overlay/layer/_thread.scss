@@ -2,11 +2,11 @@
 @use "../../top/box";
 
 // Thread floater (narrow screens)
-.chatTarget-3H6mpC {
+:is(.chatTarget-3H6mpC, .chatTarget-1ROClP) {
     background: transparentize($color-background, $amount: 0.2);
 }
 
-.floating-3M3WeH {
+:is(.floating-3M3WeH, .floating-1T0kDs) {
     margin: $sidebar-spacing;
     @include box.blue;
 }

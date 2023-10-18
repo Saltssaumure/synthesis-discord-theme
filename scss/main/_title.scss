@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 
 // Top bar
-.title-31SJ6t {
+:is(.title-31SJ6t, .title-5wgnIa) {
     // Search
     .search-2Mwzzq .DraftEditor-root .DraftEditor-editorContainer {
         height: 24px;
@@ -27,7 +27,7 @@
 }
 
 // Top bar shadow
-.content-1jQy2l:before,
+:is(.content-1jQy2l, .content-18rAwf):before,
 .chat-1-OBC7:before {
     display: none;
 }

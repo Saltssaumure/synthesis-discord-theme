@@ -3,7 +3,7 @@
 @use "../top/box";
 
 // Members sidebar
-.container-2o3qEW {
+:is(.container-2o3qEW, .container-2vWgD2) {
     position: relative;
     margin: 0 $sidebar-spacing $sidebar-spacing 0;
     height: auto;

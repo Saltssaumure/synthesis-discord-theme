@@ -29,8 +29,8 @@
     }
 
     // Self button
-    .withTagAsButton-OsgQ9L,
-    .withTagless-10ooWt {
+    :is(.withTagAsButton-OsgQ9L, .withTagAsButton-2_JkHX),
+    :is(.withTagless-10ooWt, .withTagless-Lx3LMo) {
         border-radius: 30px;
         margin-bottom: 4px;
         margin-right: 4px;
