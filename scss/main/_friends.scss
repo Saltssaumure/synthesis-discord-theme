@@ -43,7 +43,7 @@
 }
 
 // Status indicator
-.status-12NUUC {
+:is(.status-12NUUC, .status-3gxJ3T) {
     &[aria-label*="Online"] rect {
         fill: var(--rs-online-color);
     }
