@@ -3,24 +3,24 @@
 @use "../top/box";
 
 // Servers sidebar
-.guilds-2JjMmN {
+.guilds__2b93a {
     margin: $sidebar-spacing;
     margin-right: 0;
     @include box.orange;
 
-    .platform-osx & .scroller-3X7KbA,
-    .platform-win & .scroller-3X7KbA {
+    .platform-osx & .scroller__3d071,
+    .platform-win & .scroller__3d071 {
         padding: 12px 0 4px 0;
     }
 
     // New messages pill
     $pill-height: 6px;
 
-    .item-2LIpTv {
+    .item_f9d377 {
         @include pill.unread($pill-height);
     }
 
-    .pill-2RsI5Q:not(.bd-selected) .item-2LIpTv {
+    .pill__6b31b:not(.bd-selected) .item_f9d377 {
         height: calc(2 * $pill-height) !important;
 
         &[style="opacity: 1; height: 40px; transform: none;"] {
@@ -29,11 +29,11 @@
     }
 
     // Add and explore buttons
-    .circleIconButton-1VxDrg {
+    .circleIconButton_d8df29 {
         color: rgb($color-green);
     }
 
-    .circleIconButton-1VxDrg.selected-2r1Hvo {
+    .circleIconButton_d8df29.selected__5250e {
         color: rgb($color-text);
     }
 }

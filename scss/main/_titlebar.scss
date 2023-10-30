@@ -1,8 +1,8 @@
 @use "../top/vars" as *;
 
 // Windows title bar
-:is(.titleBar-1it3bQ, .titleBar-3AIemB) {
-    .alignCenter-14kD11 {
+.titleBar__01af6 {
+    .alignCenter__84269 {
         border-radius: 0 0 $item-spacing $item-spacing;
     }
 
@@ -24,6 +24,6 @@
     }
 }
 
-:is(.wordmark-2u86JB, .wordmark-3wYFg6) {
+.wordmark__0d178 {
     display: none;
 }

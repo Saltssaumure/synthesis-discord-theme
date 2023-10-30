@@ -3,16 +3,16 @@
 // Roles
 #roles-tab {
     // Role items
-    .container-3EtAkD,
-    .roleRow-230vCm {
+    .container_d5f6d0,
+    .roleRow_c357d5 {
         border-radius: $sidebar-spacing;
     }
 
     // Edit role page
-    .page-15bX59 {
+    .page__9db5c {
         // Role list
-        .sidebar-3K3Z4C {
-            .titleContainer-3fPic2 {
+        .sidebar_bdf6b7 {
+            .titleContainer_e558ff {
                 padding-bottom: 0;
             }
 
@@ -22,8 +22,8 @@
         }
 
         // Role details
-        .contentContainer-3hXFtK {
-            .header-JUTO-g {
+        .contentContainer__23092 {
+            .header__63c59 {
                 background: linear-gradient($color-background 92%, transparent);
                 margin-left: -24px;
                 padding-left: 24px;
@@ -37,21 +37,21 @@
             }
 
             // Role icon preview
-            .previewContainer-1GxmBJ {
+            .previewContainer_c7e80d {
                 background: transparentize($color-pop, 0.5);
 
-                .preview-3SR4Rd {
+                .preview__722b9 {
                     color: rgb($color-pop);
                 }
             }
 
             // Role icon demo
-            .previewContainer-1xQAsw {
+            .previewContainer_d2b616 {
                 border-radius: $sidebar-spacing;
             }
 
             // Member with role item
-            .memberRow-1FhJgR {
+            .memberRow__91c35 {
                 border-radius: $item-spacing;
             }
         }

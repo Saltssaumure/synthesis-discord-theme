@@ -11,7 +11,7 @@
 @use "../../top/box";
 
 // Modals
-.root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq) {
+.root_a28985:not(.modal_d2e7a7, .carouselModal-1eUFoq) {
     @include box.blue;
     overflow: hidden;
     background-color: transparentize($color-shadow, 0.7) !important;

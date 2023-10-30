@@ -14,18 +14,18 @@
 @use "../top/box";
 
 // Base colour
-.appMount-2yBXZl,
+.appMount_fae9dd,
 body {
     background-color: $color-background;
 }
 
 // Image background
-.bg-1QIAus {
+.bg__12180 {
     background: $background-image center/cover;
 }
 
 // Main view
-.container-1eFtFS {
+.container__037ed {
     @include box.outmost;
     width: auto;
 
