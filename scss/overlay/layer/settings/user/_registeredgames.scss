@@ -2,30 +2,30 @@
 
 // Registered Games
 #game-activity-tab {
-    .notDetected-M3Ghh2,
-    .nowPlaying-3UpuKc {
+    .notDetected__2a0c9,
+    .nowPlaying__353c3 {
         border-radius: calc(2 * $item-spacing);
     }
 
-    .game-2f2vPC {
+    .game__19f4b {
         box-shadow: none;
 
-        .gameName-zbZetm {
+        .gameName_aeeab5 {
             color: var(--header-primary);
         }
 
-        .gameNameInput-2wbDJ9:focus,
-        .gameNameInput-2wbDJ9:hover {
+        .gameNameInput_e25dd8:focus,
+        .gameNameInput_e25dd8:hover {
             background-color: transparentize($color-background, 0.3);
             border-color: transparent;
         }
 
-        .lastPlayed-1jum9A,
-        .overlayStatusText-In0YrK {
+        .lastPlayed_accc56,
+        .overlayStatusText__61367 {
             color: var(--header-secondary);
         }
 
-        .overlayToggleIconOn-21NN2N .fill-297bdf {
+        .overlayToggleIconOn-21NN2N .fill__80e66 {
             fill: rgb($color-foreground);
         }
     }

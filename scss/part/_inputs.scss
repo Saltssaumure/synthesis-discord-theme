@@ -1,16 +1,16 @@
 @use "../top/vars" as *;
 
 // Inputs
-.inputDefault-Ciwd-S,
+.inputDefault__80165,
 // Dropdown selectors
-.select-Zz0IcO,
+.select__0eb48,
 // Keybind recorders
 .container-30qY7E {
     border-radius: $size-m;
 }
 
 // Toggles
-.container-1QtPKm {
+.container__871ba {
     background-color: transparentize($color-toggle-off, 0.2) !important;
 
     path {
@@ -18,7 +18,7 @@
     }
 }
 
-.checked-16gMAN {
+.checked__6bdb0 {
     background-color: transparentize($color-toggle-on, 0.3) !important;
 
     path {

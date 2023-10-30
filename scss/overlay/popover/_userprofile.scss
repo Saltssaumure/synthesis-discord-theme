@@ -1,27 +1,27 @@
 @use "../../top/vars" as *;
 
 // Profile popout
-.userPopoutOuter-1OHwPL {
+.userPopoutOuter_d739b2 {
     position: relative;
 }
-.userPopoutInner-nv9Y92 {
+.userPopoutInner_f545a3 {
     max-height: calc(100vh - $outmost-spacing);
 
-    .banner-1YaD3N {
+    .banner__6d414 {
         mask-image: linear-gradient(black, black 60%, transparent);
     }
 
-    .overlayBackground-2aa7wt {
+    .overlayBackground__86b78 {
         border-radius: $size-s;
     }
-    .profileBadges-2pItdR {
+    .profileBadges__7a7cb {
         border-radius: $size-s;
     }
-    .role-2TIOKu {
+    .role__631a3 {
         border-radius: $size-s;
         border: 0;
     }
-    .messageInputContainer-24qqTx {
+    .messageInputContainer__768e6 {
         border: 0;
     }
 }
@@ -42,34 +42,34 @@
 }
 
 // with Nitro theme
-.userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL,
-.userProfileOuterThemed-2BgJCM.userProfileOuter-2tQwNf {
+.userProfileOuterThemed__6eb84.userPopoutOuter_d739b2,
+.userProfileOuterThemed__6eb84.userProfileOuter__46bb7 {
     padding: 0;
 }
 
-.userProfileOuterThemed-2BgJCM {
+.userProfileOuterThemed__6eb84 {
     overflow: hidden;
 
     &.theme-light {
         --channel-text-area-placeholder: rgb(#{$color-background} / 0.5);
         :is(
-                .defaultColor-1GKx81,
-                .defaultColor-1EVLSt,
-                .userTagUsernameBase-267ALn,
-                .discordIcon-32mgeP,
-                .textarea-_59yqs,
-                .input-3O04eu,
-                .customStatus-19KW6v,
-                :is(.activityProfile-1712BN, .activityProfileV2-1N7pee, .activityUserPopout-2MzGCj, .activityUserPopoutV2-3eKqzY)
-                    :is(.activityName-3YXl6e, .content-tXPNDw, .details-2-ciHo, .name-1-Q7l2, .nameNormal-2fPMD2, .nameWrap-3TyM52),
-                .themed-1LCNAV .textLeft-1Noen0,
-                .themed-1LCNAV .textRight-2IW704
+                .defaultColor__87d87,
+                .defaultColor__77578,
+                .userTagUsernameBase__75fb1,
+                .discordIcon_feeef1,
+                .textarea_c5a7a3,
+                .input_d266e7,
+                .customStatus__3aa7f,
+                :is(.activityProfile__61b44, .activityProfileV2__4de28, .activityUserPopout_c7e67d, .activityUserPopoutV2__32328)
+                    :is(.activityName__47e51, .content_d7cb7f, .details__445eb, .name_b6124d, .nameNormal__1d540, .nameWrap__7263f),
+                .themed__857a7 .textLeft_a97e50,
+                .themed__857a7 .textRight__26208
             ) {
             color: rgb($color-background);
         }
     }
 
-    .userProfileInner-1ngKnf {
+    .userProfileInner__8065b {
         max-height: calc(100vh - 64px - $outmost-spacing);
 
         &::before {
@@ -80,12 +80,12 @@
             border-radius: $sidebar-spacing;
         }
 
-        .avatarPositionPremiumBanner-2EAbSH {
+        .avatarPositionPremiumBanner__1e83d {
             left: 23px;
             top: 77px;
         }
 
-        .buttonColor-_0gSD_ {
+        .buttonColor__01bf8 {
             background-color: rgb($color-button);
         }
     }

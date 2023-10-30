@@ -3,10 +3,10 @@
 @use "../top/pill";
 
 // Video call
-.callContainer-HtHELf {
+.callContainer_cbde45 {
     background: transparent;
 
-    .gradientContainer-phMG8d {
+    .gradientContainer__9a5a6 {
         background-image: none;
     }
 }
@@ -17,27 +17,27 @@
 }
 
 // Various views
-.appMount-2yBXZl {
-    .container-2IKOsH,
-    .container-1um7CU,
-    .themed-Hp1KC_,
-    .emptyPage-2TGR7j,
-    .scrollerContainer-y16Rs9,
-    .pageWrapper-2PwDoS {
+.appMount_fae9dd {
+    .container__10dc7,
+    .container__7590f,
+    .themed_b152d4,
+    .emptyPage__3e15d,
+    .scrollerContainer_bf5dbd,
+    .pageWrapper_fef757 {
         background: transparent;
     }
 }
 
 // Discover servers
-.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4 {
+.categoryItem_b1be5c.selectedCategoryItem__0bf4c .itemInner__9e755 {
     background-color: var(--background-modifier-selected);
 }
 
-.pageWrapper-2PwDoS {
+.pageWrapper_fef757 {
     background-color: transparent;
 
     // Search
-    .searchBox-pyIJJj {
+    .searchBox_a63854 {
         border-radius: $item-spacing;
         background-color: transparent;
         box-shadow: none;
@@ -49,7 +49,7 @@
 }
 
 // Server home
-.background-fkKrXt,
-.headerBarInner-2pcZSM:after {
+.background_e80d5a,
+.headerBarInner__9a61d:after {
     background: transparent;
 }

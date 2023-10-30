@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 @use "../top/button";
 
-.appMount-2yBXZl {
+.appMount_fae9dd {
     $button-transparency: 0.3;
     $button-disabled-transparency: 0.8;
     $button-active-darken: 5;
@@ -41,23 +41,23 @@
     --button-outline-brand-background-active: #{rgb($color-button)};
 
     // Buttons
-    .button-ejjZWC,
+    .button_afdfd9,
     .bd-button:not(.bd-addon-button),
     .topPill-3DJJNV .item-3XjbnG,
     #bd-pub-button,
-    .streamerModeEnabledBtn-2nlJTD,
-    .button-1iHNQ2 {
+    .streamerModeEnabledBtn__51c2f,
+    .button__57d93 {
         border-radius: 50px;
     }
 
     // More buttons
-    .lookFilled-1H2Jvj,
+    .lookFilled__19298,
     .lookOutlined-3yKVGo,
     .lookInverted-2mDUMi {
         box-shadow: 0 0 5px 0 rgb($color-background);
     }
 
-    .lookFilled-1H2Jvj.colorBrand-I6CyqQ {
+    .lookFilled__19298.colorBrand-I6CyqQ {
         @include button.button($color-button);
     }
 
@@ -74,12 +74,12 @@
         @include button.button($color-red);
     }
 
-    .circleIconButton-1VxDrg.selected-2r1Hvo {
+    .circleIconButton_d8df29.selected__5250e {
         @include button.button($color-green);
     }
 
-    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
-    .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+    .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
+    .wrapper_d281dd:hover .childWrapper__01b9c {
         @include button.button($color-button);
     }
 
@@ -100,11 +100,11 @@
         }
     }
 
-    .streamerModeEnabledBtn-2nlJTD {
+    .streamerModeEnabledBtn__51c2f {
         @include button.button($color-twitch);
     }
 
-    .button-1_oXub.tertiary-1e-lAP:not(.disabled-184-il) {
+    .button_ddf91e.tertiary_bc0225:not(.disabled__8e315) {
         @include button.button($color-button);
     }
 }
