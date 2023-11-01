@@ -43,7 +43,7 @@
     // Buttons
     .button_afdfd9,
     .bd-button:not(.bd-addon-button),
-    .topPill-3DJJNV .item-3XjbnG,
+    .topPill__0cdf1 .item__48dda,
     #bd-pub-button,
     .streamerModeEnabledBtn__51c2f,
     .button__57d93 {
@@ -52,16 +52,16 @@
 
     // More buttons
     .lookFilled__19298,
-    .lookOutlined-3yKVGo,
-    .lookInverted-2mDUMi {
+    .lookOutlined__46d54,
+    .lookInverted_ee4261 {
         box-shadow: 0 0 5px 0 rgb($color-background);
     }
 
-    .lookFilled__19298.colorBrand-I6CyqQ {
+    .lookFilled__19298.colorBrand_b2253e {
         @include button.button($color-button);
     }
 
-    .lookInverted-2mDUMi.colorBrand-I6CyqQ {
+    .lookInverted_ee4261.colorBrand_b2253e {
         @include button.button($color-text);
     }
 
@@ -83,15 +83,15 @@
         @include button.button($color-button);
     }
 
-    .lookLink-15mFoz.colorLink-1Md3RZ {
+    .lookLink__93965.colorLink_b651e5 {
         --text-link: #{rgb($color-text)};
     }
 
-    .lookLink-15mFoz.colorPrimary-2AuQVo {
+    .lookLink__93965.colorPrimary__6ed40 {
         color: #{rgb($color-text)};
     }
 
-    .buttonWhite-hd8TaT {
+    .buttonWhite__30853 {
         border-color: transparentize($color-text, $button-transparency) !important;
 
         &:hover,
