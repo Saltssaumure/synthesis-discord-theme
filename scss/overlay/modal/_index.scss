@@ -6,12 +6,13 @@
 @forward "./uploadimage";
 @forward "./userprofile";
 @forward "./viewreactions";
+@forward "./whatsnew";
 
 @use "../../top/vars" as *;
 @use "../../top/box";
 
 // Modals
-.root_a28985:not(.modal_d2e7a7, .carouselModal_c0d5b7) {
+.root_a28985:not(.modal__6a96b, .carouselModal_c0d5b7) {
     @include box.blue;
     overflow: hidden;
     background-color: transparentize($color-shadow, 0.7) !important;
