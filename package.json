@@ -1,6 +1,6 @@
 {
   "name": "synthesis-discord-theme",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "A vibrant neon synthwave Discord theme.",
   "repository": "github:Saltssaumure/synthesis-discord-theme",
   "author": "Saltssaumure <themes@saltssaumure.net>",
@@ -21,6 +21,6 @@
   "devDependencies": {
     "prettier": "^3.2.5",
     "replugged": "^4.7.9",
-    "salt-bd-scss": "^1.2.1"
+    "salt-bd-scss": "^1.2.2"
   }
 }

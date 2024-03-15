@@ -1,13 +1,13 @@
 {
   "id": "net.saltssaumure.Synthesis",
   "name": "Synthesis",
-  "description": "A vibrant neon synthwave theme. See source README for customisation options.",
+  "description": "A vibrant neon synthwave theme. See GitHub for customisation options.",
   "author": {
     "name": "Saltssaumure",
     "discordID": "134142022092062720",
     "github": "Saltssaumure"
   },
-  "version": "1.6.3",
+  "version": "1.6.4",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.Synthesis"
@@ -17,7 +17,7 @@
   "main": "scss/synth.scss",
   "source": "https://github.com/Saltssaumure/synthesis-discord-theme",
   "image": [
-    "https://cdn.discordapp.com/attachments/946226984005025835/1129608274786922563/synthesis1.png",
-    "https://cdn.discordapp.com/attachments/946226984005025835/1129608275294421152/synthesis2.png"
+    "https://i.imgur.com/BFFR0IJ.png",
+    "https://i.imgur.com/bRpD5QN.png"
   ]
 }
