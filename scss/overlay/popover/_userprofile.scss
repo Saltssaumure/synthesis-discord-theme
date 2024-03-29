@@ -1,38 +1,38 @@
 @use "../../top/vars" as *;
 
 // Profile popout
-.userPopoutOuter_d739b2 {
+.userPopoutOuter__3884e {
     position: relative;
 }
-.userPopoutInner_f545a3 {
+.userPopoutInner_e90432 {
     max-height: calc(100vh - $outmost-spacing);
 
     .banner__6d414 {
         mask-image: linear-gradient(black, black 60%, transparent);
     }
 
-    .overlayBackground__86b78 {
+    .overlayBackground__2666e {
         border-radius: $size-s;
     }
-    .profileBadges__7a7cb {
+    .profileBadges__1f2ab {
         border-radius: $size-s;
     }
-    .role__631a3 {
+    .role_d81130 {
         border-radius: $size-s;
         border: 0;
     }
-    .messageInputContainer__768e6 {
+    .messageInputContainer_a93946 {
         border: 0;
     }
 }
 
 // View profile
-.avatarWrapper_f77579 {
+.avatarWrapper__0cd44 {
     left: 27px;
     top: 21px;
 
     // View profile shadow
-    .avatarHint__8e5b9 {
+    .avatarHint__15059 {
         border-radius: 50px;
 
         foreignObject {
@@ -42,34 +42,34 @@
 }
 
 // with Nitro theme
-.userProfileOuterThemed__6eb84.userPopoutOuter_d739b2,
-.userProfileOuterThemed__6eb84.userProfileOuter__46bb7 {
+.userProfileOuterThemed__1fbd7.userPopoutOuter__3884e,
+.userProfileOuterThemed__1fbd7.userProfileOuter__4ac83 {
     padding: 0;
 }
 
-.userProfileOuterThemed__6eb84 {
+.userProfileOuterThemed__1fbd7 {
     overflow: hidden;
 
     &.theme-light {
         --channel-text-area-placeholder: rgb(#{$color-background} / 0.5);
         :is(
-                .defaultColor__87d87,
+                .defaultColor__8610e,
                 .defaultColor__77578,
-                .userTagUsernameBase__75fb1,
-                .discordIcon_feeef1,
-                .textarea_c5a7a3,
-                .input_d266e7,
+                .userTagUsernameBase__2bd24,
+                .discordIcon__1e1be,
+                .textarea__0461c,
+                .input_f27786,
                 .customStatus__3aa7f,
-                :is(.activityProfile__61b44, .activityProfileV2__4de28, .activityUserPopout_c7e67d, .activityUserPopoutV2__32328)
-                    :is(.activityName__47e51, .content_d7cb7f, .details__445eb, .name_b6124d, .nameNormal__1d540, .nameWrap__7263f),
-                .themed__857a7 .textLeft_a97e50,
-                .themed__857a7 .textRight__26208
+                :is(.activityProfile__5d0ec, .activityProfileV2_f5335f, .activityUserPopout_eceeb9, .activityUserPopoutV2__89098)
+                    :is(.activityName_a7b7de, .content__7246b, .details_e26997, .name__0ac4b, .nameNormal_cb5c2b, .nameWrap_b61c4b),
+                .themed__857a7 .textLeft__05c15,
+                .themed__857a7 .textRight__8254a
             ) {
             color: rgb($color-background);
         }
     }
 
-    .userProfileInner__8065b {
+    .userProfileInner__61cc1 {
         max-height: calc(100vh - 64px - $outmost-spacing);
 
         &::before {
@@ -80,12 +80,12 @@
             border-radius: $sidebar-spacing;
         }
 
-        .avatarPositionPremiumBanner__1e83d {
+        .avatarPositionPremiumBanner_f3acc4 {
             left: 23px;
             top: 77px;
         }
 
-        .buttonColor__01bf8 {
+        .buttonColor_fd4fe8 {
             background-color: rgb($color-button);
         }
     }

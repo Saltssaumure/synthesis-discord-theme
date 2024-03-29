@@ -91,7 +91,7 @@ code,
     --status-warning-background:    #{transparentize($color-yellow, $status-transparency)};
 
     // Profile preview and popout
-    .profileColors__2e2f0 {
+    .profileColors_ac6ab4 {
         // --profile-body-background-color: rgb(#{$color-background};
         --profile-gradient-primary-color:   #{transparentize($color-background, 0.2)};
         --profile-gradient-secondary-color: #{transparentize($color-background, 0.5)};
@@ -102,8 +102,8 @@ code,
 }
 
 // Popovers
-.layerContainer_d5a653 .theme-dark,
-.layerContainer_d5a653 .theme-light {
+.layerContainer_a2fcaa .theme-dark,
+.layerContainer_a2fcaa .theme-light {
     --background-primary:       rgb(#{$color-background});
     --background-secondary:     rgb(#{$color-background});
     --background-secondary-alt: #{transparentize($color-background, 0.2)};

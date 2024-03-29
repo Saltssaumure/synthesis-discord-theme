@@ -1,24 +1,24 @@
 @use "../../../../top/vars" as *;
 
 // Voice & Video
-.userSettingsVoice__33015 {
+.userSettingsVoice_aa8574 {
     // Voice settings
-    .container__6d33c {
+    .container_ced194 {
         border-radius: 20px;
         background: $color-button !important;
 
-        .progress__2cc1d {
+        .progress_bcbb99 {
             background-color: transparentize($color-background, 0.5);
         }
 
-        .notches__065e9.gray__4fb3f {
+        .notches__5406c.gray__211f0 {
             background-image: none;
         }
     }
 
     // Video background
-    .backgroundOptionInner__1477f,
-    .backgroundOptionRing__1f209 {
+    .backgroundOptionInner_a128bb,
+    .backgroundOptionRing__45698 {
         border-radius: $item-spacing;
     }
 }

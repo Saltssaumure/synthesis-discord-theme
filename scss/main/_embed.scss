@@ -2,11 +2,11 @@
 @use "../top/tint";
 
 // Image embed
-.imageWrapper_fd6587 {
+.imageWrapper__178ee {
     border-radius: calc(2 * $item-spacing);
 
     // Gif label
-    .imageAccessory__64ab2 {
+    .imageAccessory__9614b {
         $tag-spacing: 12px;
         top: $tag-spacing;
         right: $tag-spacing;
@@ -17,21 +17,21 @@
     }
 }
 
-.embedFull__8dc21,
+.embedFull__14919,
 // Link embed
-.wrapper_efe67f,
+.wrapper__8a5dd,
 // Invite embed
-.embedSpotify_d58077,
+.embedSpotify__13fe9,
 // Spotify embed
-.wrapperAudio__555ce // Audio embed
+.wrapperAudio__178e9 // Audio embed
 {
     border-radius: calc(2 * $item-spacing);
     background-color: transparentize($color-foreground, 0.7);
 }
 
 // Link embed
-.embedFull__8dc21 {
-    .embedThumbnail__468e1 .imageWrapper_fd6587 {
+.embedFull__14919 {
+    .embedThumbnail__1f402 .imageWrapper__178ee {
         border-radius: $item-spacing;
     }
 
@@ -45,27 +45,27 @@
 }
 
 // Audio embed
-.audioControls__9fbe9 {
+.audioControls_da7066 {
     border-radius: $item-spacing;
 }
 
 // Spoiler embed
-.spoilerContainer_b653f1 {
+.spoilerContainer__89762 {
     border-radius: calc(2 * $item-spacing);
 }
 // Attachment embed
-.footer__06f4b {
+.footer__90194 {
     background-color: transparentize($color-button, 0.2);
 }
 
 // Gift embed
-.giftCodeContainer__7fa01 {
+.giftCodeContainer_fedf35 {
     .tile_ebc93b {
         background-color: transparentize($color-button, 0.7);
         border-radius: calc(2 * $item-spacing);
 
-        .invalidPoop__03aa3,
-        .description__883d4 {
+        .invalidPoop__9bdd8,
+        .description__7d5ad {
             background-color: transparent;
         }
     }
@@ -77,18 +77,18 @@
     background-color: transparentize($color-button, 0.7);
     border: none;
 
-    .header__8b673 {
+    .header__1c712 {
         color: var(--header-secondary);
     }
 
-    .partyMemberEmpty__94736,
-    .moreUsers__1d9e9 {
+    .partyMemberEmpty__01e36,
+    .moreUsers__4af66 {
         background: rgb($color-background);
         color: rgb($color-text);
         opacity: 0.5;
     }
 
-    .artwork__34afd {
+    .artwork_ea47dd {
         border-radius: $item-spacing;
     }
 }

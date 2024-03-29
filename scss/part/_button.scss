@@ -1,7 +1,7 @@
 @use "../top/vars" as *;
 @use "../top/button";
 
-.appMount_fae9dd {
+.appMount_c99875 {
     $button-transparency: 0.3;
     $button-disabled-transparency: 0.8;
     $button-active-darken: 5;
@@ -41,27 +41,27 @@
     --button-outline-brand-background-active: #{rgb($color-button)};
 
     // Buttons
-    .button_afdfd9,
+    .button__581d0,
     .bd-button:not(.bd-addon-button),
-    .topPill__0cdf1 .item__48dda,
+    .topPill__63ad4 .item__48dda,
     #bd-pub-button,
-    .streamerModeEnabledBtn__51c2f,
-    .button__57d93 {
+    .streamerModeEnabledBtn_b696dd,
+    .button__33db6 {
         border-radius: 50px;
     }
 
     // More buttons
-    .lookFilled__19298,
-    .lookOutlined__46d54,
-    .lookInverted_ee4261 {
+    .lookFilled__950dd,
+    .lookOutlined__014b5,
+    .lookInverted_a299dc {
         box-shadow: 0 0 5px 0 rgb($color-background);
     }
 
-    .lookFilled__19298.colorBrand_b2253e {
+    .lookFilled__950dd.colorBrand__27d57 {
         @include button.button($color-button);
     }
 
-    .lookInverted_ee4261.colorBrand_b2253e {
+    .lookInverted_a299dc.colorBrand__27d57 {
         @include button.button($color-text);
     }
 
@@ -74,24 +74,24 @@
         @include button.button($color-red);
     }
 
-    .circleIconButton_d8df29.selected__5250e {
+    .circleIconButton__05cf2.selected_aded59 {
         @include button.button($color-green);
     }
 
-    .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
-    .wrapper_d281dd:hover .childWrapper__01b9c {
+    .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15,
+    .wrapper__8436d:hover .childWrapper_a6ce15 {
         @include button.button($color-button);
     }
 
-    .lookLink__93965.colorLink_b651e5 {
+    .lookLink_a2da25.colorLink__4141a {
         --text-link: #{rgb($color-text)};
     }
 
-    .lookLink__93965.colorPrimary__6ed40 {
+    .lookLink_a2da25.colorPrimary_ebe632 {
         color: #{rgb($color-text)};
     }
 
-    .buttonWhite__30853 {
+    .buttonWhite__913ed {
         border-color: transparentize($color-text, $button-transparency) !important;
 
         &:hover,
@@ -100,11 +100,11 @@
         }
     }
 
-    .streamerModeEnabledBtn__51c2f {
+    .streamerModeEnabledBtn_b696dd {
         @include button.button($color-twitch);
     }
 
-    .button_ddf91e.tertiary_bc0225:not(.disabled__8e315) {
+    .button__292b6.tertiary_ad6d80:not(.disabled__4d064) {
         @include button.button($color-button);
     }
 }

@@ -8,8 +8,8 @@
     margin-right: 0;
     @include box.orange;
 
-    .platform-osx & .scroller__3d071,
-    .platform-win & .scroller__3d071 {
+    .platform-osx & .scroller_de945b,
+    .platform-win & .scroller_de945b {
         padding: 12px 0 4px 0;
     }
 
@@ -29,11 +29,11 @@
     }
 
     // Add and explore buttons
-    .circleIconButton_d8df29 {
+    .circleIconButton__05cf2 {
         color: rgb($color-green);
     }
 
-    .circleIconButton_d8df29.selected__5250e {
+    .circleIconButton__05cf2.selected_aded59 {
         color: rgb($color-text);
     }
 }

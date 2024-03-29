@@ -2,16 +2,16 @@
 @use "../top/pill";
 
 // Channels sidebar
-.sidebar_ded4b5 {
+.sidebar_e031be {
     margin: $sidebar-spacing 0;
 
     // Header
-    .header__104ca {
+    .header__77c95 {
         box-shadow: none;
     }
 
-    .clickable__2d589 .header__104ca:hover,
-    .selected__0b1ad .header__104ca {
+    .clickable__1383f .header__77c95:hover,
+    .selected__987e6 .header__77c95 {
         background-color: transparent;
     }
 
@@ -21,16 +21,16 @@
     }
 
     // Channel
-    .wrapper__7bcde,
+    .wrapper__612a5,
     .layout_bb8e67,
-    .content_b60865,
-    .link__95dc0 {
+    .content__3b07e,
+    .link_ddbb36 {
         border-radius: $size-s;
     }
 
     // Self button
-    .withTagAsButton_cc125f,
-    .withTagless__98b7d {
+    .withTagAsButton_e22174,
+    .withTagless__058f8 {
         border-radius: 30px;
         margin-bottom: 4px;
         margin-right: 4px;

@@ -1,13 +1,13 @@
 @use "../top/vars" as *;
 
 // Top bar
-.title_b7d661 {
+.title_d4ba1a {
     // Search
     .search_ac353c .DraftEditor-root .DraftEditor-editorContainer {
         height: 24px;
 
-        .searchFilter__118cb,
-        .searchAnswer_b452e7 {
+        .searchFilter_dbda51,
+        .searchAnswer__2ccaf {
             padding: 0 6px;
             border: 2px solid rgb($color-foreground);
             background: var(--background-modifier-selected);
@@ -15,11 +15,11 @@
             line-height: 18px;
         }
 
-        .searchFilter__118cb {
+        .searchFilter_dbda51 {
             border-radius: 10px 0 0 10px;
         }
 
-        .searchAnswer_b452e7 {
+        .searchAnswer__2ccaf {
             padding-left: 0;
             border-radius: 0 10px 10px 0;
         }
@@ -27,7 +27,7 @@
 }
 
 // Top bar shadow
-.content__1a4fe:before,
+.content__01e65:before,
 .chat__1d65d:before {
     display: none;
 }

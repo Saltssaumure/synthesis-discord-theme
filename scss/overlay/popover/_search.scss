@@ -1,13 +1,13 @@
 @use "../../top/vars" as *;
 
 // Search options
-.container_d6dad3.elevationBorderHigh_f9a758 {
-    .focused_f9cf2c {
+.container__84c26.elevationBorderHigh__24051 {
+    .focused__68b93 {
         background: rgb($color-button);
     }
 
     // Option item
-    .option_b5597b {
+    .option__91497 {
         border-radius: $item-spacing;
 
         &:hover::after {
@@ -16,7 +16,7 @@
     }
 
     // Calendar
-    .calendarPicker__5c474 {
+    .calendarPicker__47c85 {
         .react-datepicker {
             padding: 20px calc(20px - $sidebar-border-width);
             background-color: transparent;
@@ -76,9 +76,9 @@
         }
     }
 
-    .datePickerHint__7cc9b {
-        .hintValue_c2ce1f,
-        .hintValue_c2ce1f:hover {
+    .datePickerHint_d023b6 {
+        .hintValue__0c960,
+        .hintValue__0c960:hover {
             border: 2px solid rgb($color-foreground);
             background: var(--background-modifier-selected);
             border-radius: 20px;

@@ -7,18 +7,18 @@
     overflow: hidden;
 
     // Denied permission
-    .deny__71546.selected__47401,
-    .passthrough__7cd54.selected__47401 {
+    .deny__71546.selected__5faae,
+    .passthrough__91f95.selected__5faae {
         background-color: transparentize($color-red, 0.5);
     }
 
     // Neutral permission
-    .passthrough__7cd54.selected__47401 {
+    .passthrough__91f95.selected__5faae {
         background-color: transparentize($color-text, 0.5);
     }
 
     // Allowed permission
-    .allow_bbc621.selected__47401 {
+    .allow_bbc621.selected__5faae {
         background-color: transparentize($color-green, 0.5);
     }
 }

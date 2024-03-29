@@ -5,22 +5,22 @@
     border-radius: $sidebar-spacing;
     overflow: hidden;
 
-    .tierHeaderLocked__4d099 {
+    .tierHeaderLocked__0ca2e {
         color: rgb($color-pop);
         background-color: transparentize($color-pop, 0.7);
     }
 
-    .tierHeaderUnlocked_cc60fa {
-        @extend .tierHeaderLocked__4d099;
+    .tierHeaderUnlocked__960f7 {
+        @extend .tierHeaderLocked__0ca2e;
         color: #{$color-text};
     }
 
-    .tierBody__615a1 {
+    .tierBody_fd5f94 {
         background-color: transparentize($color-pop, 0.9);
         color: #{$color-text};
     }
 
-    .wrapper__93f27 {
+    .wrapper_d9a30a {
         background-color: transparentize($color-pop, 0.9);
     }
 }

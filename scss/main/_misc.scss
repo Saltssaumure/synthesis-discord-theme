@@ -3,53 +3,53 @@
 @use "../top/pill";
 
 // Video call
-.callContainer_cbde45 {
+.callContainer__1477d {
     background: transparent;
 
-    .gradientContainer__9a5a6 {
+    .gradientContainer_cdada6 {
         background-image: none;
     }
 }
 
 // Forum
-.container_b181b6 {
+.container_b92032 {
     background-color: transparent;
 }
 
 // Various views
-.appMount_fae9dd {
-    .container__10dc7,
-    .container__7590f,
+.appMount_c99875 {
+    .container__03ec9,
+    .container__6b2e5,
     .themed_b152d4,
-    .emptyPage__3e15d,
-    .scrollerContainer_bf5dbd,
-    .pageWrapper_fef757 {
+    .emptyPage_feb902,
+    .scrollerContainer_dda72c,
+    .pageWrapper_c182d3 {
         background: transparent;
     }
 }
 
 // Discover servers
-.categoryItem_b1be5c.selectedCategoryItem__0bf4c .itemInner__9e755 {
+.categoryItem__0608f.selectedCategoryItem__3e361 .itemInner_eedb2b {
     background-color: var(--background-modifier-selected);
 }
 
-.pageWrapper_fef757 {
+.pageWrapper_c182d3 {
     background-color: transparent;
 
     // Search
-    .searchBox_a63854 {
+    .searchBox__56feb {
         border-radius: $item-spacing;
         background-color: transparent;
         box-shadow: none;
     }
 
-    .select__0eb48 {
+    .select_fe2671 {
         border-radius: $item-spacing;
     }
 }
 
 // Server home
-.background_e80d5a,
-.headerBarInner__9a61d:after {
+.background_c54132,
+.headerBarInner_dc1a41:after {
     background: transparent;
 }

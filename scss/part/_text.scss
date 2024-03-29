@@ -4,16 +4,16 @@
 
 // Code block
 .markup_a7e664 code,
-.textContainer__709ff {
+.textContainer__65f57 {
     background: transparentize($color-button, 0.5);
 }
 
 // Spoiler text
-.spoilerMarkdownContent__2b8f8 {
+.spoilerMarkdownContent__5c448 {
     background: transparentize($color-button, 0.5);
 
     &.hidden_f44e41 {
-        @extend .spoilerMarkdownContent__2b8f8;
+        @extend .spoilerMarkdownContent__5c448;
 
         &:hover {
             background: rgb($color-button);
@@ -22,6 +22,6 @@
 }
 
 // Channel/user group name
-.container_de798d {
+.container__43554 {
     text-align: center;
 }
