@@ -11,27 +11,27 @@
 @use "../../top/box";
 
 // Popovers
-.container__8261a,
+.container_f93da8,
 // Threads
-.recentMentionsPopout__826a9,
+.recentMentionsPopout__40c54,
 // Inbox
-.messagesPopoutWrap_b3b384,
+.messagesPopoutWrap__10dd1,
 // Pinned messages
-.menu_dc52c6,
+.menu__088f7,
 // Account menu
-.container_d6dad3.elevationBorderHigh_f9a758,
+.container__84c26.elevationBorderHigh__24051,
 // Search options
-.userPopoutOuter_d739b2,
+.userPopoutOuter__3884e,
 // User profile
-.userProfileOuter__46bb7,
+.userProfileOuter__4ac83,
 // Emoji picker
-.contentWrapper__321ed,
+.contentWrapper_e0bb2c,
 // Emoji picker add reaction
 .contentWrapper_eab878,
 // User management add role selector
-.container__9bb08,
+.container__3d776,
 // View as role role selector
-.popoutContainer__7b9a3 // Emoji and role icon info
+.popoutContainer__66068 // Emoji and role icon info
 {
     @include box.blue;
     overflow: hidden;

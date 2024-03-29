@@ -1,12 +1,12 @@
 @use "../top/vars" as *;
 
 // Tooltips
-.appMount_fae9dd .tooltip__01384 {
+.appMount_c99875 .tooltip__7b090 {
     background-color: transparentize($color-pop, 0.2);
     border-radius: 20px;
     box-shadow: 0 0 5px 0 rgb($color-pop);
 
-    .tooltipPointer_a79354 {
+    .tooltipPointer_f7411c {
         border-top-color: rgb($color-pop);
     }
 }

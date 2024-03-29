@@ -3,55 +3,55 @@
 // Roles
 #roles-tab {
     // Role items
-    .container_d5f6d0,
-    .roleRow_c357d5 {
+    .container__9c57c,
+    .roleRow_dc2631 {
         border-radius: $sidebar-spacing;
     }
 
     // Edit role page
-    .page__9db5c {
+    .page_c3ed26 {
         // Role list
-        .sidebar_bdf6b7 {
-            .titleContainer_e558ff {
+        .sidebar__37984 {
+            .titleContainer_d09261 {
                 padding-bottom: 0;
             }
 
-            .scrollerBase_dc3aa9 {
+            .scrollerBase_f742b2 {
                 padding-top: 16px;
             }
         }
 
         // Role details
-        .contentContainer__23092 {
-            .header__63c59 {
+        .contentContainer__50662 {
+            .header_ee0bd9 {
                 background: linear-gradient($color-background 92%, transparent);
                 margin-left: -24px;
                 padding-left: 24px;
             }
 
             // Tabs
-            .top__592a7 .brand_ce3ecf.item__48dda:active,
-            .top__592a7 .brand_ce3ecf.selected__5711d.item__48dda,
-            .top__592a7 .brand_ce3ecf.item__48dda:hover {
+            .top_fae1fa .brand_ce3ecf.item__48dda:active,
+            .top_fae1fa .brand_ce3ecf.selected_a523ff.item__48dda,
+            .top_fae1fa .brand_ce3ecf.item__48dda:hover {
                 border-bottom-color: rgb($color-foreground);
             }
 
             // Role icon preview
-            .previewContainer_c7e80d {
+            .previewContainer__8cd30 {
                 background: transparentize($color-pop, 0.5);
 
-                .preview__722b9 {
+                .preview_c4fac1 {
                     color: rgb($color-pop);
                 }
             }
 
             // Role icon demo
-            .previewContainer_d2b616 {
+            .previewContainer__30793 {
                 border-radius: $sidebar-spacing;
             }
 
             // Member with role item
-            .memberRow__91c35 {
+            .memberRow_d581f4 {
                 border-radius: $item-spacing;
             }
         }

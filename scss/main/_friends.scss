@@ -4,31 +4,31 @@
 
 // Friends view
 // DM list
-.interactive_a868bc {
+.interactive__3e804 {
     border-radius: $item-spacing;
 }
 
 // Active Now sidebar
-.nowPlayingColumn_f5023f {
+.nowPlayingColumn_b025fe {
     position: relative;
     margin: 0 $sidebar-spacing $sidebar-spacing 0;
     height: auto;
     @include box.orange;
 
-    .scroller__00e7e {
+    .scroller__7c25e {
         border: none;
 
-        .wrapper__6e669 {
+        .wrapper__3c6d5 {
             border-width: 2px;
             border-radius: $item-spacing;
         }
 
         .outer_a41cf3.active__76f42,
-        .outer_a41cf3.interactive__01cfa:hover {
+        .outer_a41cf3.interactive__46c44:hover {
             background-color: transparent;
         }
 
-        .inset__0bfb3 {
+        .inset__61d5b {
             background-color: transparent;
         }
     }

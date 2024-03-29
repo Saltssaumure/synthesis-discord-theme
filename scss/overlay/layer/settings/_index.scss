@@ -8,7 +8,7 @@
 @use "../../../top/slider";
 
 // Settings
-.standardSidebarView__1129a {
+.standardSidebarView__12528 {
     @include box.outmost;
 
     // Scanline and tint overlay over whole view
@@ -21,28 +21,28 @@
     }
 
     // Settings sidebar
-    .sidebar__9e3e2 {
+    .sidebar__02e8d {
         .item__48dda,
-        .background__584e7 {
+        .background__3b760 {
             border-radius: $size-s;
         }
     }
 
     // Large menu items and info cards
     .item_b7fb7e,
-    .radioBar__40e1b,
+    .radioBar__70669,
     .card__4dc22,
-    .container_de00a3 {
+    .container_b9efb5 {
         border-radius: $size-m;
     }
 
     // Bar sliders
     .slider__22e99 {
-        .markDash_dc3ae9 {
+        .markDash__54545 {
             background: rgb($color-foreground);
         }
 
-        .defaultValue__4f02f .markValue_e7a6e4 {
+        .defaultValue__8e777 .markValue_c91c4e {
             color: rgb($color-text);
         }
 
@@ -50,13 +50,13 @@
             background: transparentize($color-pop, 0.5);
             overflow: visible;
 
-            .barFill__30e17 {
+            .barFill__1f56b {
                 border-radius: $size-xs;
                 @include slider.bar($color-pop);
             }
         }
 
-        .grabber_d2868c {
+        .grabber_e3daf3 {
             $grabber-size: 15px;
             border: none;
             height: $grabber-size;
@@ -69,13 +69,13 @@
     }
 
     // Remove item x bubble
-    .default__3e2f5 {
+    .default__23a5a {
         background-color: var(--status-danger);
         background-image: url(https://discord.com/assets/eb69ec9fdd30653a3ade1ab501a7cd3d.svg);
     }
 
     // Careful you have unsaved changes!
-    .container__467eb {
+    .container__353bc {
         background-color: transparentize($color-green, 0.5) !important;
         border-radius: $size-m;
     }
