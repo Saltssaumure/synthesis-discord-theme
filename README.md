@@ -1,5 +1,5 @@
-[backgroundless]: https://user-images.githubusercontent.com/29710355/187690344-9369a7a6-a424-48af-a020-bc9582b1d3ee.png
-[backgrounded]: https://user-images.githubusercontent.com/29710355/188302911-efd255ea-77f6-4f62-9aea-37159406e7f3.png
+[backgroundless]:   https://saltssaumure.github.io/synthesis-discord-theme/preview/synthesis1.png
+[backgrounded]:     https://saltssaumure.github.io/synthesis-discord-theme/preview/synthesis2.png
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb
 [discord]:          https://discord.gg/uy8nKQVatp
