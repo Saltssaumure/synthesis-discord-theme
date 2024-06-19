@@ -20,10 +20,6 @@
 [issues]:           https://github.com/Saltssaumure/synthesis-discord-theme/issues
 [.theme.css]:       https://github.com/Saltssaumure/synthesis-discord-theme/blob/main/Synthesis.theme.css
 
-[rs]:               https://github.com/DiscordStyles/RadialStatus
-[rs-author]:        https://github.com/Gibbu
-[rs-license]:       https://github.com/DiscordStyles/RadialStatus/blob/master/LICENSE.md
-
 [release-bd]:       https://betterdiscord.app/theme/?id=770 "BetterDiscord store page"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.Synthesis "Replugged store page"
 [release-bd-gh]:    https://github.com/Saltssaumure/synthesis-discord-theme/releases/latest/download/Synthesis.theme.css "Get latest release"
@@ -121,11 +117,24 @@
 3. Edit the variable values.
 
 ## License
-[GNU General Public License v3.0][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+Copyright (c) 2019-2024 Saltssaumure
 
-### Includes
-- [RadialStatus][rs] by [Gibbu][rs-author] - [MIT License][rs-license]
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
+
+## Credits
+### Themes
+[radialstatus]: https://github.com/DiscordStyles/RadialStatus
+
+- [RadialStatus][radialstatus] by [DiscordStyles](https://github.com/DiscordStyles) ([Gibbu](https://github.com/Gibbu)) - MIT license
+
+### Fonts
+[inter]:        https://github.com/rsms/inter
+[firacode]:     https://github.com/tonsky/FiraCode
+
+- [Inter][inter] by [Rasmus Andersson](https://github.com/rsms) - OFL-1.1
+- [Fira Code][firacode] by [Nikita Prokopov](https://github.com/tonsky) - OFL-1.1
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
