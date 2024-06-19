@@ -2,10 +2,10 @@
 
 // Small menu popover
 // Focused menu option
-.colorDefault_e361cf.focused_dcafb9 {
+.colorDefault_d90b3d.focused_d90b3d {
     background-color: transparentize($color-pop, 0.7);
 }
 
-.colorDefault_e361cf:active:not(.hideInteraction__0b569) {
+.colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
     background-color: transparentize($color-pop, 0.5);
 }

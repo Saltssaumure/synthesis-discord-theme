@@ -1,23 +1,23 @@
 @use "../../top/vars" as *;
 
 // Emoji picker
-.contentWrapper_e0bb2c,
-.didRender__7e24c > #emoji-picker-tab-panel {
+.contentWrapper_af5dbb,
+.didRender_f88ae3 > #emoji-picker-tab-panel {
     background-color: rgb($color-button);
 
-    .emojiPicker__5e2e2 {
+    .emojiPicker_c6ee36 {
         background-color: transparent;
     }
 
     // Header
-    .header_e5d8b2,
-    .header__643ce,
-    .header_aac16f {
+    .header_c6ee36,
+    .header_d8cdac,
+    .header_b56bbc {
         background-color: rgb($color-button);
         box-shadow: none;
 
         // Search
-        .container_ec5ce2,
+        .container_effbe2,
         .container__33507 {
             background-color: transparentize($color-background, 0.2);
             border-radius: 20px;
@@ -25,35 +25,35 @@
     }
 
     // Main picker
-    .bodyWrapper__5f209,
-    .listWrapper__588b8,
-    .content__2faa3 {
+    .bodyWrapper_c6ee36,
+    .listWrapper_d8cdac,
+    .content_b56bbc {
         background-color: rgb($color-background);
 
         // Hovered emoji or sticker
-        .emojiItem_de65fd.emojiItemSelected__023be,
-        .stickerInspected__29120 .inspectedIndicator__0c5e3 {
+        .emojiItem_fbfedd.emojiItemSelected_fbfedd,
+        .stickerInspected_a708c4 .inspectedIndicator_a708c4 {
             background-color: transparentize($color-pop, 0.5);
         }
 
         // Loading emoji
-        .imageLoading_fb7de7 {
+        .imageLoading_b000dd {
             background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVRoge3asU4bMRzH8Q8OB5XoUFjKWAY6tTtVkULfISpDeYs+R9+CDlT3Du1JILHTqQx0JAt0AKlwROrgCwoUSEJQnJPy3RL5ou/PduyT/54xIK1mmeE1XmEZi5jH7KC/cQ9XuMApjvEbv/IiKwd5eKZfg1azXMQ63mDu0ZrDcYmf2M2L7PShhvcGaDXLBjbwDo2ntBuCDvbxPS+yzl0N7gxQ9fpHcapMAsf4dtdo/Beg1SyX8QnPxyA2DGf4mhfZce+XofdD1fNbJk+e6LRVOV5zHaDVLGfFabMwZrFhWMBm5YqbI7Bhcub8Q7wUXVEFqIZlLZHQY1jrTqXuCKxLt1Q+hobobKbVLOfw2fg2qafiEl8CVtVPnui8GrCS2mQEVoL4r64rLwOWUluMwFIQX4nrynxQr+XzNo3Qv81kMw2QmmmA1EwDpGYaIDXTAKmZBkjNNEBqgngCXFc6QSwu1JWLgJPUFiNwEtBObTEC7YCj1BYjcBRwKB7T1Y0ShyEvsm5BrW4c5EV22d0HdtVrOe1gj2ojq4pn+ymNhmQ/L7ITbu7EP9RjRWqLrugJkBfZFXZwPn6ngTnHTuWKW+9C1VTaFkuak8YZtm/Xih8qdG+anKP3ttjz/QvdXaqrBh/E4l+9rhr00mqWS3iPt8ieVO9+Shxgr7va3EffAF16rtusiPXkF3hm9NHp4C/+iHcijgxx3eYfS5qEazM7noMAAAAASUVORK5CYII=");
         }
     }
 
     // Emoji info
-    .inspector__80c84 {
+    .inspector_c3120f {
         background-color: transparentize($color-background, 0.2);
     }
 }
 
 // Server/category list
-.wrapper__85934 {
+.wrapper_dc0b29 {
     background-color: transparentize($color-background, 0.2);
 }
 
 // Emoji info
-.popoutLoadingForeground__1d922 {
+.popoutLoadingForeground_cf58b5 {
     background: rgb($color-background);
 }

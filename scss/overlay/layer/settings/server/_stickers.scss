@@ -1,26 +1,26 @@
 @use "../../../../top/vars" as *;
 
 // Stickers
-.tier_d16770 {
+.tier_da77bd {
     border-radius: $sidebar-spacing;
     overflow: hidden;
 
-    .tierHeaderLocked__0ca2e {
+    .tierHeaderLocked_da77bd {
         color: rgb($color-pop);
         background-color: transparentize($color-pop, 0.7);
     }
 
-    .tierHeaderUnlocked__960f7 {
-        @extend .tierHeaderLocked__0ca2e;
+    .tierHeaderUnlocked_da77bd {
+        @extend .tierHeaderLocked_da77bd;
         color: #{$color-text};
     }
 
-    .tierBody_fd5f94 {
+    .tierBody_da77bd {
         background-color: transparentize($color-pop, 0.9);
         color: #{$color-text};
     }
 
-    .wrapper_d9a30a {
+    .wrapper_d864ab {
         background-color: transparentize($color-pop, 0.9);
     }
 }

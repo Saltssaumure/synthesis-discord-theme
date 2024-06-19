@@ -11,27 +11,27 @@
         top: $tag-spacing;
         right: $tag-spacing;
 
-        .gifTag__9db5a {
+        .gifTag_b30195 {
             border-top-right-radius: calc((2 * $item-spacing) - $tag-spacing);
         }
     }
 }
 
-.embedFull__14919,
+.embedFull_ad0b71,
 // Link embed
-.wrapper__8a5dd,
+.wrapper_b9fe76,
 // Invite embed
-.embedSpotify__13fe9,
+.embedSpotify_ad0b71,
 // Spotify embed
-.wrapperAudio__178e9 // Audio embed
+.wrapperAudio_f316dd // Audio embed
 {
     border-radius: calc(2 * $item-spacing);
     background-color: transparentize($color-foreground, 0.7);
 }
 
 // Link embed
-.embedFull__14919 {
-    .embedThumbnail__1f402 .imageWrapper__178ee {
+.embedFull_ad0b71 {
+    .embedThumbnail_ad0b71 .imageWrapper__178ee {
         border-radius: $item-spacing;
     }
 
@@ -45,50 +45,50 @@
 }
 
 // Audio embed
-.audioControls_da7066 {
+.audioControls_f316dd {
     border-radius: $item-spacing;
 }
 
 // Spoiler embed
-.spoilerContainer__89762 {
+.spoilerContainer_a3d0f7 {
     border-radius: calc(2 * $item-spacing);
 }
 // Attachment embed
-.footer__90194 {
+.footer_ad9cbd {
     background-color: transparentize($color-button, 0.2);
 }
 
 // Gift embed
-.giftCodeContainer_fedf35 {
-    .tile_ebc93b {
+.giftCodeContainer_b558d0 {
+    .tile_ab47a1 {
         background-color: transparentize($color-button, 0.7);
         border-radius: calc(2 * $item-spacing);
 
-        .invalidPoop__9bdd8,
-        .description__7d5ad {
+        .invalidPoop_ff31dd,
+        .description_ab47a1 {
             background-color: transparent;
         }
     }
 }
 
 // Spotify/game invite
-.invite__2a93b {
+.invite_cdcad9 {
     border-radius: $sidebar-spacing;
     background-color: transparentize($color-button, 0.7);
     border: none;
 
-    .header__1c712 {
+    .header_cdcad9 {
         color: var(--header-secondary);
     }
 
-    .partyMemberEmpty__01e36,
-    .moreUsers__4af66 {
+    .partyMemberEmpty_cdcad9,
+    .moreUsers_cdcad9 {
         background: rgb($color-background);
         color: rgb($color-text);
         opacity: 0.5;
     }
 
-    .artwork_ea47dd {
+    .artwork_cdcad9 {
         border-radius: $item-spacing;
     }
 }

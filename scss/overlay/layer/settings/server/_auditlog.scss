@@ -1,18 +1,18 @@
 @use "../../../../top/vars" as *;
 
 // Audit Log
-.auditLog__9228d {
+.auditLog_eebd33 {
     border-radius: $sidebar-spacing;
     border-color: rgb($color-button);
     overflow: hidden;
 
-    .headerClickable__334f7,
-    .headerExpanded__05a35 {
+    .headerClickable_eebd33,
+    .headerExpanded_eebd33 {
         background-color: transparentize($color-button, 0.7);
         color: rgb($color-text);
     }
 
-    .changeDetails_c0aa16 {
+    .changeDetails_eebd33 {
         background-color: transparentize($color-button, 0.9);
     }
 }
