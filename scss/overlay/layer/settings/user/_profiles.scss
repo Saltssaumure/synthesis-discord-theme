@@ -4,14 +4,14 @@
 // Profiles
 #profile-customization-tab {
     // Preview
-    .profileCustomizationPreview_a1502f {
+    .profileCustomizationPreview_ab876d {
         @include box.blue;
     }
 
     // User/Server Profile tabs
-    .top_fae1fa .brand_ce3ecf.item__48dda:hover,
-    .top_fae1fa .brand_ce3ecf.item__48dda:active,
-    .top_fae1fa .brand_ce3ecf.selected_a523ff.item__48dda {
+    .top_a0 .brand_a0.item_a0:hover,
+    .top_a0 .brand_a0.item_a0:active,
+    .top_a0 .brand_a0.selected_a0.item_a0 {
         border-bottom-color: rgb($color-foreground);
     }
 }

@@ -3,17 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter&display=swap");
 
 // Code block
-.markup_a7e664 code,
-.textContainer__65f57 {
+.markup_d6076c code,
+.textContainer_ad9cbd {
     background: transparentize($color-button, 0.5);
 }
 
 // Spoiler text
-.spoilerMarkdownContent__5c448 {
+.spoilerMarkdownContent_a3d0f7 {
     background: transparentize($color-button, 0.5);
 
-    &.hidden_f44e41 {
-        @extend .spoilerMarkdownContent__5c448;
+    &.hidden_a3d0f7 {
+        @extend .spoilerMarkdownContent_a3d0f7;
 
         &:hover {
             background: rgb($color-button);
@@ -22,6 +22,6 @@
 }
 
 // Channel/user group name
-.container__43554 {
+.container_cc72c1 {
     text-align: center;
 }

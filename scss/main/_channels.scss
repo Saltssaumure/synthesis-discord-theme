@@ -2,35 +2,35 @@
 @use "../top/pill";
 
 // Channels sidebar
-.sidebar_e031be {
+.sidebar_a4d4d9 {
     margin: $sidebar-spacing 0;
 
     // Header
-    .header__77c95 {
+    .header_fd6364 {
         box-shadow: none;
     }
 
-    .clickable__1383f .header__77c95:hover,
-    .selected__987e6 .header__77c95 {
+    .clickable_fd6364 .header_fd6364:hover,
+    .selected_fd6364 .header_fd6364 {
         background-color: transparent;
     }
 
     // New messages pill
-    .unread__48cf4 {
+    .unread_d8bfb3 {
         @include pill.unread(6px);
     }
 
     // Channel
-    .wrapper__612a5,
-    .layout_bb8e67,
-    .content__3b07e,
-    .link_ddbb36 {
+    .wrapper_d8bfb3,
+    .layout_e9f61e,
+    .content_cdc675,
+    .link_d8bfb3 {
         border-radius: $size-s;
     }
 
     // Self button
-    .withTagAsButton_e22174,
-    .withTagless__058f8 {
+    .withTagAsButton_b2ca13,
+    .withTagless_b2ca13 {
         border-radius: 30px;
         margin-bottom: 4px;
         margin-right: 4px;

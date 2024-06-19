@@ -2,23 +2,23 @@
 
 // Create group chat select friends
 // Search entry
-.tag__69d9d {
+.tag_effbe2 {
     border-radius: 16px;
 }
 
 // Friend item
-.friend__05c43 {
+.friend_ebf869 {
     border-radius: $item-spacing;
 
-    &.friendSelected__98d91 {
+    &.friendSelected_ebf869 {
         background-color: var(--background-modifier-hover);
     }
 
-    .checkbox_fcf2ad {
+    .checkbox_f6cde8 {
         border-radius: 50%;
         border: 2px solid rgb($color-foreground);
 
-        &.checked__16f88 {
+        &.checked_f6cde8 {
             border-color: $color-foreground !important;
 
             path {

@@ -3,37 +3,37 @@
 @use "../top/pill";
 
 // Video call
-.callContainer__1477d {
+.callContainer_d880dc {
     background: transparent;
 
-    .gradientContainer_cdada6 {
+    .gradientContainer_dd069c {
         background-image: none;
     }
 }
 
 // Forum
-.container_b92032 {
+.container_a6d69a {
     background-color: transparent;
 }
 
 // Various views
-.appMount_c99875 {
-    .container__03ec9,
-    .container__6b2e5,
-    .themed_b152d4,
-    .emptyPage_feb902,
-    .scrollerContainer_dda72c,
-    .pageWrapper_c182d3 {
+.appMount_ea7e65 {
+    .container_f1fd9c,
+    .container_c2efea,
+    .themed_e44302,
+    .emptyPage_c6b11b,
+    .scrollerContainer_c6b11b,
+    .pageWrapper_a3a4ce {
         background: transparent;
     }
 }
 
 // Discover servers
-.categoryItem__0608f.selectedCategoryItem__3e361 .itemInner_eedb2b {
+.categoryItem_c72b37.selectedCategoryItem_c72b37 .itemInner_c72b37 {
     background-color: var(--background-modifier-selected);
 }
 
-.pageWrapper_c182d3 {
+.pageWrapper_a3a4ce {
     background-color: transparent;
 
     // Search
@@ -43,7 +43,7 @@
         box-shadow: none;
     }
 
-    .select_fe2671 {
+    .select_f6639d {
         border-radius: $item-spacing;
     }
 }

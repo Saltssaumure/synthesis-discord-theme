@@ -1,13 +1,13 @@
 @use "../../top/vars" as *;
 
 // Search options
-.container__84c26.elevationBorderHigh__24051 {
-    .focused__68b93 {
+.container_eedf95.elevationBorderHigh_ff8688 {
+    .focused_eedf95 {
         background: rgb($color-button);
     }
 
     // Option item
-    .option__91497 {
+    .option_b0286e {
         border-radius: $item-spacing;
 
         &:hover::after {
@@ -76,9 +76,9 @@
         }
     }
 
-    .datePickerHint_d023b6 {
-        .hintValue__0c960,
-        .hintValue__0c960:hover {
+    .datePickerHint_b0286e {
+        .hintValue_b0286e,
+        .hintValue_b0286e:hover {
             border: 2px solid rgb($color-foreground);
             background: var(--background-modifier-selected);
             border-radius: 20px;
