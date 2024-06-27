@@ -39,8 +39,8 @@ body {
         background-color: $overlay-color;
     }
 
-    // Scanline overlay over server and channel sidebars
-    &::before {
+    // Scanline overlay over server and channel sidebars (when not in fullscreen mode)
+    &:not(:has(.fullScreen_d880dc))::before {
         margin: $sidebar-spacing;
         width: $sidebar-width + $channels-width + $sidebar-border-width;
         height: calc(100% - (2 * ($sidebar-spacing + $sidebar-border-width)));
